@@ -1,3 +1,3 @@
 # go-quote
 
-[![GoDoc](http:/
+[![GoDoc](http://godoc.org/github.com/markcheno/go-qu
