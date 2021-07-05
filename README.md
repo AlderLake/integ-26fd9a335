@@ -4,4 +4,4 @@
 
 A free quote downloader library and cli 
 
-Downloads daily historical pric
+Downloads daily historical price quotes from Yahoo and daily/intraday
