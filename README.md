@@ -10,4 +10,6 @@ Downloads daily historical price quotes from Yahoo and daily/intraday data from 
 
 - Update: 7/18/2021 - Removed obsolete Google support
 
-- Update: 6/26/2019 - updated GDAX to Coinbase, added coinbase
+- Update: 6/26/2019 - updated GDAX to Coinbase, added coinbase market
+
+- Update: 4/26/2018 - Added preliminary [tiingo](http
