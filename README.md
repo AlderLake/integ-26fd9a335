@@ -8,4 +8,6 @@ Downloads daily historical price quotes from Yahoo and daily/intraday data from 
 
 - Update: 11/15/2021 - Removed obsolete markets, converted to go modules
 
-- Update: 7/18/2021 - Removed obsolete Goog
+- Update: 7/18/2021 - Removed obsolete Google support
+
+- Update: 6/26/2019 - upd
