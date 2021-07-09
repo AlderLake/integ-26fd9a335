@@ -12,4 +12,4 @@ Downloads daily historical price quotes from Yahoo and daily/intraday data from 
 
 - Update: 6/26/2019 - updated GDAX to Coinbase, added coinbase market
 
-- Update: 4/26/2018 - Added preliminary [tiingo](https://api.tiingo.com/) CRYPTO support. Use 
+- Update: 4/26/2018 - Added preliminary [tiingo](https://api.tiingo.com/) CRYPTO support. Use -source=tiingo-crypto -token=<your_ting
