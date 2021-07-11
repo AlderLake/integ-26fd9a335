@@ -16,4 +16,4 @@ Downloads daily historical price quotes from Yahoo and daily/intraday data from 
 
 - Update: 12/21/2017 - Added Amibroker format option (creates csv file with separate date and time). Use -format=ami
 
-- Update: 12/20/2017 - Added [Binance](http
+- Update: 12/20/2017 - Added [Binance](https://www.binance.com/trade.html) exchange support. Use
