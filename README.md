@@ -18,4 +18,4 @@ Downloads daily historical price quotes from Yahoo and daily/intraday data from 
 
 - Update: 12/20/2017 - Added [Binance](https://www.binance.com/trade.html) exchange support. Use -source=binance
 
-- Update: 12/18/2017 - Added [Bittrex](https://bittrex.com/home/ma
+- Update: 12/18/2017 - Added [Bittrex](https://bittrex.com/home/markets) exchange support. Use -source=bittrex 
