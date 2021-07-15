@@ -22,4 +22,4 @@ Downloads daily historical price quotes from Yahoo and daily/intraday data from 
 
 - Update: 10/21/2017 - Added Coinbase [GDAX](https://www.gdax.com/trade/BTC-USD) exchange support. Use -source=gdax All times are in UTC. Automatically rate limited. 
 
-- Update: 7/19/2017 - Added preliminary [tiingo]
+- Update: 7/19/2017 - Added preliminary [tiingo](https://api.tiingo.com/) support. Use -sour
