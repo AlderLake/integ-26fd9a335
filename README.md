@@ -24,4 +24,4 @@ Downloads daily historical price quotes from Yahoo and daily/intraday data from 
 
 - Update: 7/19/2017 - Added preliminary [tiingo](https://api.tiingo.com/) support. Use -source=tiingo -token=<your_tingo_token> You can also set env variable TIINGO_API_TOKEN
 
-- Update: 5/24/2017 - Now works with the new Yahoo download format. Beware - Yahoo data quality is n
+- Update: 5/24/2017 - Now works with the new Yahoo download format. Beware - Yahoo data quality is now questionable and the free Yahoo quotes are 
