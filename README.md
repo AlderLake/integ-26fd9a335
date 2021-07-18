@@ -30,4 +30,7 @@ Still very much in alpha mode. Expect bugs and API changes. Comments/suggestions
 
 Copyright 2018 Mark Chenoweth
 
-Install
+Install CLI utility (quote) with:
+
+```bash
+go install 
