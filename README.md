@@ -33,4 +33,4 @@ Copyright 2018 Mark Chenoweth
 Install CLI utility (quote) with:
 
 ```bash
-go install 
+go install github.com/markcheno/go-quote/quote@lat
