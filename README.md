@@ -39,4 +39,6 @@ go install github.com/markcheno/go-quote/quote@latest
 ```
 Usage:
   quote -h | -help
-  quote -v |
+  quote -v | -version
+  quote <market> [-output=<outputFile>]
+ 
