@@ -45,3 +45,5 @@ Usage:
 
 Options:
   -h -help             show help
+  -v -version          show version
+  -years=<
