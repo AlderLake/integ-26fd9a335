@@ -41,4 +41,7 @@ Usage:
   quote -h | -help
   quote -v | -version
   quote <market> [-output=<outputFile>]
-  quote [-years=<years>|(-start=<datestr> [-end=<datestr>])] [options] [-infile=<filename>|<
+  quote [-years=<years>|(-start=<datestr> [-end=<datestr>])] [options] [-infile=<filename>|<symbol> ...]
+
+Options:
+  -h -help             show help
