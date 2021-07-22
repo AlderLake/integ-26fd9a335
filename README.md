@@ -46,4 +46,6 @@ Usage:
 Options:
   -h -help             show help
   -v -version          show version
-  -years=<years>       number of years to download [defa
+  -years=<years>       number of years to download [default=5]
+  -start=<datestr>     yyyy[-[mm-[dd]]]
+  -e
