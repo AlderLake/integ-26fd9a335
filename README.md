@@ -48,4 +48,5 @@ Options:
   -v -version          show version
   -years=<years>       number of years to download [default=5]
   -start=<datestr>     yyyy[-[mm-[dd]]]
-  -end=<datestr>       yyyy[-[mm-[dd]]] [defaul
+  -end=<datestr>       yyyy[-[mm-[dd]]] [default=today]
+  -infile=<filename>   lis
