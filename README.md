@@ -50,4 +50,5 @@ Options:
   -start=<datestr>     yyyy[-[mm-[dd]]]
   -end=<datestr>       yyyy[-[mm-[dd]]] [default=today]
   -infile=<filename>   list of symbols to download
-  -outfile=<filenam
+  -outfile=<filename>  output filename
+  -period=<period>     
