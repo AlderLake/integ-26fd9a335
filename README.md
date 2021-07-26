@@ -55,4 +55,5 @@ Options:
   -source=<source>     yahoo|tiingo|tiingo-crypto|coinbase|bittrex|binance [default=yahoo]
   -token=<tiingo_tok>  tingo api token [default=TIINGO_API_TOKEN]
   -format=<format>     (csv|json|hs|ami) [default=csv]
-  -adjust=<bool>       adju
+  -adjust=<bool>       adjust yahoo prices [default=true]
+  -all=<bool>       
