@@ -57,4 +57,5 @@ Options:
   -format=<format>     (csv|json|hs|ami) [default=csv]
   -adjust=<bool>       adjust yahoo prices [default=true]
   -all=<bool>          all in one file (true|false) [default=false]
-  -log=<dest>          filename|stdout|stderr|discard [
+  -log=<dest>          filename|stdout|stderr|discard [default=stdout]
+  -delay=<ms>          delay 
