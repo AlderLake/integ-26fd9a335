@@ -56,4 +56,5 @@ Options:
   -token=<tiingo_tok>  tingo api token [default=TIINGO_API_TOKEN]
   -format=<format>     (csv|json|hs|ami) [default=csv]
   -adjust=<bool>       adjust yahoo prices [default=true]
-  -all=<bool>       
+  -all=<bool>          all in one file (true|false) [default=false]
+  -
