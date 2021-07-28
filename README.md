@@ -62,4 +62,6 @@ Options:
 
 Note: not all periods work with all sources
 
-Valid mar
+Valid markets:
+etfs:       etf
+crypto:     bittrex-bt
