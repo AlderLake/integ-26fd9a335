@@ -58,4 +58,6 @@ Options:
   -adjust=<bool>       adjust yahoo prices [default=true]
   -all=<bool>          all in one file (true|false) [default=false]
   -log=<dest>          filename|stdout|stderr|discard [default=stdout]
-  -delay=<ms>          delay 
+  -delay=<ms>          delay in milliseconds between quote requests
+
+N
