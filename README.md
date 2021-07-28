@@ -60,4 +60,6 @@ Options:
   -log=<dest>          filename|stdout|stderr|discard [default=stdout]
   -delay=<ms>          delay in milliseconds between quote requests
 
-N
+Note: not all periods work with all sources
+
+Valid mar
