@@ -64,4 +64,5 @@ Note: not all periods work with all sources
 
 Valid markets:
 etfs:       etf
-crypto:     bittrex-bt
+crypto:     bittrex-btc,bittrex-eth,bittrex-usdt,
+         
