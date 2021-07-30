@@ -65,4 +65,6 @@ Note: not all periods work with all sources
 Valid markets:
 etfs:       etf
 crypto:     bittrex-btc,bittrex-eth,bittrex-usdt,
-            binance-bnb,binance-btc,binance-eth,
+            binance-bnb,binance-btc,binance-eth,binance-usdt,
+            coinbase
+```
