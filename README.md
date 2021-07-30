@@ -68,3 +68,8 @@ crypto:     bittrex-btc,bittrex-eth,bittrex-usdt,
             binance-bnb,binance-btc,binance-eth,binance-usdt,
             coinbase
 ```
+
+## CLI Examples
+
+```bash
+# disp
