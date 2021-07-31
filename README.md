@@ -76,4 +76,6 @@ crypto:     bittrex-btc,bittrex-eth,bittrex-usdt,
 quote -help
 
 # downloads 5 years of Yahoo SPY history to spy.csv 
-quo
+quote spy
+
+# downloads 1 year of bitcoin history 
