@@ -72,4 +72,7 @@ crypto:     bittrex-btc,bittrex-eth,bittrex-usdt,
 ## CLI Examples
 
 ```bash
-# disp
+# display usage
+quote -help
+
+# downloads 5 year
