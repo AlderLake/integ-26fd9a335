@@ -78,4 +78,5 @@ quote -help
 # downloads 5 years of Yahoo SPY history to spy.csv 
 quote spy
 
-# downloads 1 year of bitcoin history 
+# downloads 1 year of bitcoin history to BTC-USD.csv
+quote -years=1 -source=c
