@@ -79,4 +79,6 @@ quote -help
 quote spy
 
 # downloads 1 year of bitcoin history to BTC-USD.csv
-quote -years=1 -source=c
+quote -years=1 -source=coinbase BTC-USD
+
+# downloads 1 year of 
