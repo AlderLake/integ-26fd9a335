@@ -82,4 +82,4 @@ quote spy
 quote -years=1 -source=coinbase BTC-USD
 
 # downloads 1 year of Yahoo SPY & AAPL history to quotes.csv 
-quote -ye
+quote -years=1 -all=true -outfile=quotes.cs
