@@ -84,4 +84,4 @@ quote -years=1 -source=coinbase BTC-USD
 # downloads 1 year of Yahoo SPY & AAPL history to quotes.csv 
 quote -years=1 -all=true -outfile=quotes.csv spy aapl
 
-# downloads full etf symbol list to etf.t
+# downloads full etf symbol list to etf.txt, also works for nasdaq,ny
