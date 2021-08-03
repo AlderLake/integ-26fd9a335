@@ -88,4 +88,4 @@ quote -years=1 -all=true -outfile=quotes.csv spy aapl
 quote etf
 
 # download fresh etf list and 5 years of etf data all in one file
-quote et
+quote etf && quote -all=true -outfile=etf.csv -infi
