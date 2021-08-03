@@ -87,4 +87,5 @@ quote -years=1 -all=true -outfile=quotes.csv spy aapl
 # downloads full etf symbol list to etf.txt, also works for nasdaq,nyse,amex
 quote etf
 
-# download fresh etf lis
+# download fresh etf list and 5 years of etf data all in one file
+quote et
