@@ -90,4 +90,5 @@ quote etf
 # download fresh etf list and 5 years of etf data all in one file
 quote etf && quote -all=true -outfile=etf.csv -infile=etf.txt 
 
-# download hourly data for all Bittrex BTC markets all in
+# download hourly data for all Bittrex BTC markets all in one file
+quote bittrex-btc && quote -so
