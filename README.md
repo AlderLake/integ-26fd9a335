@@ -91,4 +91,9 @@ quote etf
 quote etf && quote -all=true -outfile=etf.csv -infile=etf.txt 
 
 # download hourly data for all Bittrex BTC markets all in one file
-quote bittrex-btc && quote -source=bittrex -all=true -period=1h -outfile=bittrex-btc.csv -infile=bittre
+quote bittrex-btc && quote -source=bittrex -all=true -period=1h -outfile=bittrex-btc.csv -infile=bittrex-btc.txt 
+```
+
+## Install library
+
+Install the pack
