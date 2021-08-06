@@ -96,4 +96,7 @@ quote bittrex-btc && quote -source=bittrex -all=true -period=1h -outfile=bittrex
 
 ## Install library
 
-Install the pack
+Install the package with:
+
+```bash
+go get github.
