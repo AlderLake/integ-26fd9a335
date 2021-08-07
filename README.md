@@ -107,4 +107,6 @@ go get github.com/markcheno/go-quote@latest
 ```go
 package main
 
-import
+import (
+	"fmt"
+	"github.com/markcheno/go-quote"
