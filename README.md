@@ -110,3 +110,6 @@ package main
 import (
 	"fmt"
 	"github.com/markcheno/go-quote"
+	"github.com/markcheno/go-talib"
+)
+
