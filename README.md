@@ -102,4 +102,9 @@ Install the package with:
 go get github.com/markcheno/go-quote@latest
 ```
 
-## Lib
+## Library example
+
+```go
+package main
+
+import
