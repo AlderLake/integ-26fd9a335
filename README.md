@@ -114,4 +114,4 @@ import (
 )
 
 func main() {
-	spy, _ := quote.NewQuoteFromY
+	spy, _ := quote.NewQuoteFromYahoo("spy", "2016-01-01", "2016-04-01", quote.Dai
