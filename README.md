@@ -113,3 +113,5 @@ import (
 	"github.com/markcheno/go-talib"
 )
 
+func main() {
+	spy, _ := quote.NewQuoteFromY
