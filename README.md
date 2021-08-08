@@ -114,4 +114,6 @@ import (
 )
 
 func main() {
-	spy, _ := quote.NewQuoteFromYahoo("spy", "2016-01-01", "2016-04-01", quote.Dai
+	spy, _ := quote.NewQuoteFromYahoo("spy", "2016-01-01", "2016-04-01", quote.Daily, true)
+	fmt.Print(spy.CSV())
+	rsi2 :
