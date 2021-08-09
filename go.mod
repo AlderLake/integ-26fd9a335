@@ -1,1 +1,3 @@
-module github.com/markcheno/go
+module github.com/markcheno/go-quote
+
+go 1.16
