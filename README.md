@@ -123,4 +123,4 @@ func main() {
 
 ## License
 
-MIT License  - see LICENSE
+MIT License  - see LICENSE for more details
