@@ -153,3 +153,43 @@ func checkFlags(flags quoteflags) error {
 			flags.period == "3d" ||
 			flags.period == "w" ||
 			flags.period == "m") {
+		return fmt.Errorf("invalid source for binance, must be '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', or '1M'")
+	}
+
+	return nil
+}
+
+func setOutput(flags quoteflags) error {
+	var err error
+	if flags.log == "stdout" {
+		quote.Log.SetOutput(os.Stdout)
+	} else if flags.log == "stderr" {
+		quote.Log.SetOutput(os.Stderr)
+	} else if flags.log == "discard" {
+		quote.Log.SetOutput(ioutil.Discard)
+	} else {
+		var f *os.File
+		f, err = os.OpenFile(flags.log, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+		defer f.Close()
+		quote.Log.SetOutput(f)
+	}
+	return err
+}
+
+func getSymbols(flags quoteflags, args []string) ([]string, error) {
+
+	var err error
+	var symbols []string
+
+	if flags.infile != "" {
+		symbols, err = quote.NewSymbolsFromFile(flags.infile)
+		if err != nil {
+			return symbols, err
+		}
+	} else {
+		symbols = args
+	}
+
+	// make sure we found some symbols
+	if len(symbols) == 0 {
+		return symbols, fmt.Errorf("no symbols specified")
