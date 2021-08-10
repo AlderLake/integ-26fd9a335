@@ -114,3 +114,42 @@ func checkFlags(flags quoteflags) error {
 	}
 
 	if flags.source == "tiingo-crypto" &&
+		!(flags.period == "1m" ||
+			flags.period == "3m" ||
+			flags.period == "5m" ||
+			flags.period == "15m" ||
+			flags.period == "30m" ||
+			flags.period == "1h" ||
+			flags.period == "2h" ||
+			flags.period == "4h" ||
+			flags.period == "6h" ||
+			flags.period == "8h" ||
+			flags.period == "12h" ||
+			flags.period == "d") {
+		return fmt.Errorf("invalid source for tiingo-crypto, must be '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', or '1M'")
+	}
+
+	if flags.source == "tiingo-crypto" && flags.token == "" {
+		return fmt.Errorf("missing token for tiingo-crypto, must be passed or TIINGO_API_TOKEN must be set")
+	}
+
+	if flags.source == "bittrex" && !(flags.period == "1m" || flags.period == "5m" || flags.period == "30m" || flags.period == "1h" || flags.period == "d") {
+		return fmt.Errorf("invalid source for bittrex, must be '1m', '5m', '30m', '1h' or 'd'")
+	}
+
+	if flags.source == "binance" &&
+		!(flags.period == "1m" ||
+			flags.period == "3m" ||
+			flags.period == "5m" ||
+			flags.period == "15m" ||
+			flags.period == "30m" ||
+			flags.period == "1h" ||
+			flags.period == "2h" ||
+			flags.period == "4h" ||
+			flags.period == "6h" ||
+			flags.period == "8h" ||
+			flags.period == "12h" ||
+			flags.period == "d" ||
+			flags.period == "3d" ||
+			flags.period == "w" ||
+			flags.period == "m") {
