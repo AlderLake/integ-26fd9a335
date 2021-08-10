@@ -68,3 +68,49 @@ type quoteflags struct {
 	source  string
 	token   string
 	infile  string
+	outfile string
+	format  string
+	log     string
+	all     bool
+	adjust  bool
+	version bool
+}
+
+func check(e error) {
+	if e != nil {
+		fmt.Printf("\nerror: %v\n\n", e)
+		fmt.Println(usage)
+		os.Exit(0)
+		//panic(e)
+	}
+}
+
+func checkFlags(flags quoteflags) error {
+
+	// validate source
+	if flags.source != "yahoo" &&
+		flags.source != "tiingo" &&
+		flags.source != "tiingo-crypto" &&
+		flags.source != "coinbase" &&
+		flags.source != "bittrex" &&
+		flags.source != "binance" {
+		return fmt.Errorf("invalid source, must be either 'yahoo', 'tiingo', 'coinbase', 'bittrex', or 'binance'")
+	}
+
+	// validate period
+	if flags.source == "yahoo" &&
+		(flags.period == "1m" || flags.period == "5m" || flags.period == "15m" || flags.period == "30m" || flags.period == "1h") {
+		return fmt.Errorf("invalid period for yahoo, must be 'd'")
+	}
+	if flags.source == "tiingo" {
+		// check period
+		if flags.period != "d" {
+			return fmt.Errorf("invalid period for tiingo, must be 'd'")
+		}
+		// check token
+		if flags.token == "" {
+			return fmt.Errorf("missing token for tiingo, must be passed or TIINGO_API_TOKEN must be set")
+		}
+	}
+
+	if flags.source == "tiingo-crypto" &&
