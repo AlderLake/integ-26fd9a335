@@ -193,3 +193,55 @@ func getSymbols(flags quoteflags, args []string) ([]string, error) {
 	// make sure we found some symbols
 	if len(symbols) == 0 {
 		return symbols, fmt.Errorf("no symbols specified")
+	}
+
+	// validate outfileFlag
+	if len(symbols) > 1 && flags.outfile != "" && !flags.all {
+		return symbols, fmt.Errorf("outfile not valid with multiple symbols\nuse -all=true")
+	}
+
+	return symbols, nil
+}
+
+func getPeriod(periodFlag string) quote.Period {
+	period := quote.Daily
+	switch periodFlag {
+	case "1m":
+		period = quote.Min1
+	case "3m":
+		period = quote.Min3
+	case "5m":
+		period = quote.Min5
+	case "15m":
+		period = quote.Min15
+	case "30m":
+		period = quote.Min30
+	case "1h":
+		period = quote.Min60
+	case "2h":
+		period = quote.Hour2
+	case "4h":
+		period = quote.Hour4
+	case "6h":
+		period = quote.Hour6
+	case "8h":
+		period = quote.Hour8
+	case "12h":
+		period = quote.Hour12
+	case "d":
+		period = quote.Daily
+	case "1d":
+		period = quote.Daily
+	case "3d":
+		period = quote.Day3
+	case "w":
+		period = quote.Weekly
+	case "1w":
+		period = quote.Weekly
+	case "m":
+		period = quote.Monthly
+	case "1M":
+		period = quote.Monthly
+	}
+	return period
+}
