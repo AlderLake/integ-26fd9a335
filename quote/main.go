@@ -291,3 +291,45 @@ func outputAll(symbols []string, flags quoteflags) error {
 		err = quotes.WriteAmibroker(flags.outfile)
 	}
 	return err
+}
+
+func outputIndividual(symbols []string, flags quoteflags) error {
+	// output individual symbol files
+
+	from, to := getTimes(flags)
+	period := getPeriod(flags.period)
+
+	for _, sym := range symbols {
+		var q quote.Quote
+		if flags.source == "yahoo" {
+			q, _ = quote.NewQuoteFromYahoo(sym, from.Format(dateFormat), to.Format(dateFormat), period, flags.adjust)
+		} else if flags.source == "tiingo" {
+			q, _ = quote.NewQuoteFromTiingo(sym, from.Format(dateFormat), to.Format(dateFormat), flags.token)
+		} else if flags.source == "tiingo-crypto" {
+			q, _ = quote.NewQuoteFromTiingoCrypto(sym, from.Format(dateFormat), to.Format(dateFormat), period, flags.token)
+		} else if flags.source == "coinbase" {
+			q, _ = quote.NewQuoteFromCoinbase(sym, from.Format(dateFormat), to.Format(dateFormat), period)
+		} else if flags.source == "bittrex" {
+			q, _ = quote.NewQuoteFromBittrex(sym, period)
+		} else if flags.source == "binance" {
+			q, _ = quote.NewQuoteFromBinance(sym, from.Format(dateFormat), to.Format(dateFormat), period)
+		}
+		var err error
+		if flags.format == "csv" {
+			err = q.WriteCSV(flags.outfile)
+		} else if flags.format == "json" {
+			err = q.WriteJSON(flags.outfile, false)
+		} else if flags.format == "hs" {
+			err = q.WriteHighstock(flags.outfile)
+		} else if flags.format == "ami" {
+			err = q.WriteAmibroker(flags.outfile)
+		}
+		if err != nil {
+			fmt.Printf("Error writing file: %v\n", err)
+		}
+		time.Sleep(quote.Delay * time.Millisecond)
+	}
+	return nil
+}
+
+func handleCommand(cmd string, flags quoteflags) bool {
