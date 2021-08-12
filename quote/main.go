@@ -245,3 +245,49 @@ func getPeriod(periodFlag string) quote.Period {
 	}
 	return period
 }
+
+func getTimes(flags quoteflags) (time.Time, time.Time) {
+	// determine start/end times
+	to := quote.ParseDateString(flags.end)
+	var from time.Time
+	if flags.start != "" {
+		from = quote.ParseDateString(flags.start)
+	} else { // use years
+		from = to.Add(-time.Duration(int(time.Hour) * 24 * 365 * flags.years))
+	}
+	return from, to
+}
+
+func outputAll(symbols []string, flags quoteflags) error {
+	// output all in one file
+	from, to := getTimes(flags)
+	period := getPeriod(flags.period)
+	quotes := quote.Quotes{}
+	var err error
+	if flags.source == "yahoo" {
+		quotes, err = quote.NewQuotesFromYahooSyms(symbols, from.Format(dateFormat), to.Format(dateFormat), period, flags.adjust)
+	} else if flags.source == "tiingo" {
+		quotes, err = quote.NewQuotesFromTiingoSyms(symbols, from.Format(dateFormat), to.Format(dateFormat), flags.token)
+	} else if flags.source == "tiingo-crypto" {
+		quotes, err = quote.NewQuotesFromTiingoCryptoSyms(symbols, from.Format(dateFormat), to.Format(dateFormat), period, flags.token)
+	} else if flags.source == "coinbase" {
+		quotes, err = quote.NewQuotesFromCoinbaseSyms(symbols, from.Format(dateFormat), to.Format(dateFormat), period)
+	} else if flags.source == "bittrex" {
+		quotes, err = quote.NewQuotesFromBittrexSyms(symbols, period)
+	} else if flags.source == "binance" {
+		quotes, err = quote.NewQuotesFromBinanceSyms(symbols, from.Format(dateFormat), to.Format(dateFormat), period)
+	}
+	if err != nil {
+		return err
+	}
+
+	if flags.format == "csv" {
+		err = quotes.WriteCSV(flags.outfile)
+	} else if flags.format == "json" {
+		err = quotes.WriteJSON(flags.outfile, false)
+	} else if flags.format == "hs" {
+		err = quotes.WriteHighstock(flags.outfile)
+	} else if flags.format == "ami" {
+		err = quotes.WriteAmibroker(flags.outfile)
+	}
+	return err
