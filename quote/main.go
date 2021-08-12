@@ -333,3 +333,43 @@ func outputIndividual(symbols []string, flags quoteflags) error {
 }
 
 func handleCommand(cmd string, flags quoteflags) bool {
+
+	// handle market special commands
+	if !quote.ValidMarket(cmd) {
+		return false
+	}
+	switch cmd {
+	case "etf":
+		quote.NewEtfFile(flags.outfile)
+	default:
+		quote.NewMarketFile(cmd, flags.outfile)
+	}
+	return true
+}
+
+func main() {
+
+	var err error
+	var symbols []string
+	var flags quoteflags
+
+	flag.IntVar(&flags.years, "years", 5, "number of years to download")
+	flag.IntVar(&flags.delay, "delay", 100, "milliseconds to delay between requests")
+	flag.StringVar(&flags.start, "start", "", "start date (yyyy[-mm[-dd]])")
+	flag.StringVar(&flags.end, "end", "", "end date (yyyy[-mm[-dd]])")
+	flag.StringVar(&flags.period, "period", "d", "1m|5m|15m|30m|1h|d")
+	flag.StringVar(&flags.source, "source", "yahoo", "yahoo|tiingo|coinbase|bittrex|binance")
+	flag.StringVar(&flags.token, "token", os.Getenv("TIINGO_API_TOKEN"), "tiingo api token")
+	flag.StringVar(&flags.infile, "infile", "", "input filename")
+	flag.StringVar(&flags.outfile, "outfile", "", "output filename")
+	flag.StringVar(&flags.format, "format", "csv", "csv|json")
+	flag.StringVar(&flags.log, "log", "stdout", "<filename>|stdout")
+	flag.BoolVar(&flags.all, "all", false, "all output in one file")
+	flag.BoolVar(&flags.adjust, "adjust", true, "adjust Yahoo prices")
+	flag.BoolVar(&flags.version, "v", false, "show version")
+	flag.BoolVar(&flags.version, "version", false, "show version")
+	flag.Parse()
+
+	if flags.version {
+		fmt.Println(version)
+		os.Exit(0)
