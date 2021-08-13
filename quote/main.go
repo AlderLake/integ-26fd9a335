@@ -373,3 +373,28 @@ func main() {
 	if flags.version {
 		fmt.Println(version)
 		os.Exit(0)
+	}
+
+	quote.Delay = time.Duration(flags.delay)
+
+	err = setOutput(flags)
+	check(err)
+
+	err = checkFlags(flags)
+	check(err)
+
+	symbols, err = getSymbols(flags, flag.Args())
+	check(err)
+
+	// check for and handled special commands
+	if handleCommand(symbols[0], flags) {
+		os.Exit(0)
+	}
+
+	// main output
+	if flags.all {
+		err = outputAll(symbols, flags)
+	} else {
+		err = outputIndividual(symbols, flags)
+	}
+}
