@@ -11,3 +11,6 @@ package quote
 
 import (
 	"bufio"
+	"bytes"
+	"encoding/csv"
+	"encodin
