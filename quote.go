@@ -33,4 +33,5 @@ import (
 // Quote - stucture for historical price data
 type Quote struct {
 	Symbol    string      `json:"symbol"`
-	Pr
+	Precision int64       `json:"-"`
+	Date      []tim
