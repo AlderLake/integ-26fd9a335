@@ -30,4 +30,5 @@ import (
 	"time"
 )
 
-// Quote - stucture for h
+// Quote - stucture for historical price data
+type Quote st
