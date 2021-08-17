@@ -31,4 +31,6 @@ import (
 )
 
 // Quote - stucture for historical price data
-type Quote st
+type Quote struct {
+	Symbol    string      `json:"symbol"`
+	Pr
