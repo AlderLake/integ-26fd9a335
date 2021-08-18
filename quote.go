@@ -37,4 +37,5 @@ type Quote struct {
 	Date      []time.Time `json:"date"`
 	Open      []float64   `json:"open"`
 	High      []float64   `json:"high"`
-	Low       []float64   `js
+	Low       []float64   `json:"low"`
+	Close     []float64   `json:"clos
