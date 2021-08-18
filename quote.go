@@ -34,4 +34,5 @@ import (
 type Quote struct {
 	Symbol    string      `json:"symbol"`
 	Precision int64       `json:"-"`
-	Date      []tim
+	Date      []time.Time `json:"date"`
+	Open      []flo
