@@ -35,4 +35,5 @@ type Quote struct {
 	Symbol    string      `json:"symbol"`
 	Precision int64       `json:"-"`
 	Date      []time.Time `json:"date"`
-	Open      []flo
+	Open      []float64   `json:"open"`
+	High      []float64   `j
