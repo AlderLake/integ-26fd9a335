@@ -39,4 +39,7 @@ type Quote struct {
 	High      []float64   `json:"high"`
 	Low       []float64   `json:"low"`
 	Close     []float64   `json:"close"`
-	Volume    []float64   `json
+	Volume    []float64   `json:"volume"`
+}
+
+// Quotes - an array of his
