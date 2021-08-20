@@ -45,4 +45,7 @@ type Quote struct {
 // Quotes - an array of historical price data
 type Quotes []Quote
 
-// Per
+// Period - for quote history
+type Period string
+
+/
