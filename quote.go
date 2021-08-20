@@ -42,4 +42,7 @@ type Quote struct {
 	Volume    []float64   `json:"volume"`
 }
 
-// Quotes - an array of his
+// Quotes - an array of historical price data
+type Quotes []Quote
+
+// Per
