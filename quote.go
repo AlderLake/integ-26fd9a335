@@ -50,3 +50,7 @@ type Period string
 
 // ClientTimeout - connect/read timeout for client requests
 const ClientTimeout = 10 * time.Second
+
+const (
+	// Min1 - 1 Minute time period
+	Min1 Perio
