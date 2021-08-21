@@ -48,4 +48,4 @@ type Quotes []Quote
 // Period - for quote history
 type Period string
 
-/
+// ClientTimeout - connect/read timeout for client 
