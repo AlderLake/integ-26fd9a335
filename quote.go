@@ -48,4 +48,5 @@ type Quotes []Quote
 // Period - for quote history
 type Period string
 
-// ClientTimeout - connect/read timeout for client 
+// ClientTimeout - connect/read timeout for client requests
+const ClientTimeout = 10 * time.Second
