@@ -53,4 +53,6 @@ const ClientTimeout = 10 * time.Second
 
 const (
 	// Min1 - 1 Minute time period
-	Min1 Perio
+	Min1 Period = "60"
+	// Min3 - 3 Minute time period
+	Min3
