@@ -56,4 +56,6 @@ const (
 	Min1 Period = "60"
 	// Min3 - 3 Minute time period
 	Min3 Period = "3m"
-	// Min5 - 5 Minute time peri
+	// Min5 - 5 Minute time period
+	Min5 Period = "300"
+	// Min15 - 15 Min
