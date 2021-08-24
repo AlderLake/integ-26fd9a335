@@ -64,4 +64,6 @@ const (
 	Min30 Period = "1800"
 	// Min60 - 60 Minute time period
 	Min60 Period = "3600"
-	// Hour2 - 2 hou
+	// Hour2 - 2 hour time period
+	Hour2 Period = "2h"
+	// H
