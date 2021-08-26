@@ -71,4 +71,5 @@ const (
 	// Hour6 - 6 hour time period
 	Hour6 Period = "6h"
 	// Hour8 - 8 hour time period
-	Hour8
+	Hour8 Period = "8h"
+	// Hour12 - 12
