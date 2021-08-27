@@ -77,4 +77,6 @@ const (
 	// Daily time period
 	Daily Period = "d"
 	// Day3 - 3 day time period
-	Day3 Period 
+	Day3 Period = "3d"
+	// Weekly time period
+	Weekly Pe
