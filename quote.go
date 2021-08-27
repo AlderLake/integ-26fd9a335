@@ -76,4 +76,5 @@ const (
 	Hour12 Period = "12h"
 	// Daily time period
 	Daily Period = "d"
-	// Day3 - 3 day t
+	// Day3 - 3 day time period
+	Day3 Period 
