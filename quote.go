@@ -79,4 +79,6 @@ const (
 	// Day3 - 3 day time period
 	Day3 Period = "3d"
 	// Weekly time period
-	Weekly Pe
+	Weekly Period = "w"
+	// Monthly time period
+	Monthly P
