@@ -81,4 +81,7 @@ const (
 	// Weekly time period
 	Weekly Period = "w"
 	// Monthly time period
-	Monthly P
+	Monthly Period = "m"
+)
+
+// Log - standard logger, disabl
