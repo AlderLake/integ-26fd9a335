@@ -84,4 +84,7 @@ const (
 	Monthly Period = "m"
 )
 
-// Log - standard logger, disabl
+// Log - standard logger, disabled by default
+var Log *log.Logger
+
+// Del
