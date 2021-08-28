@@ -87,4 +87,4 @@ const (
 // Log - standard logger, disabled by default
 var Log *log.Logger
 
-// Del
+// Delay - time delay in milliseconds
