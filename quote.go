@@ -89,4 +89,7 @@ var Log *log.Logger
 
 // Delay - time delay in milliseconds between quote requests (default=100)
 // Be nice, don't get blocked
-var De
+var Delay time.Duration
+
+func init() {
+	Log
