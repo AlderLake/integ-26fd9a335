@@ -87,4 +87,5 @@ const (
 // Log - standard logger, disabled by default
 var Log *log.Logger
 
-// Delay - time delay in milliseconds
+// Delay - time delay in milliseconds between quote requests (default=100)
+/
