@@ -96,4 +96,5 @@ func init() {
 	Delay = 100
 }
 
-/
+// NewQuote - new empty Quote struct
+func NewQuote(symbol strin
