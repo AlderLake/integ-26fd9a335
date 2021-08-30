@@ -92,4 +92,8 @@ var Log *log.Logger
 var Delay time.Duration
 
 func init() {
-	Log = log.New(ioutil.Discard, "quote: ", log.Ldate|log.L
+	Log = log.New(ioutil.Discard, "quote: ", log.Ldate|log.Ltime|log.Lshortfile)
+	Delay = 100
+}
+
+/
