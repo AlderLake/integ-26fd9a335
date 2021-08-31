@@ -99,4 +99,5 @@ func init() {
 // NewQuote - new empty Quote struct
 func NewQuote(symbol string, bars int) Quote {
 	return Quote{
-		Symb
+		Symbol: symbol,
+		Date:   make([]time.Time, ba
