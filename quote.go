@@ -97,4 +97,6 @@ func init() {
 }
 
 // NewQuote - new empty Quote struct
-func NewQuote(symbol strin
+func NewQuote(symbol string, bars int) Quote {
+	return Quote{
+		Symb
