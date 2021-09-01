@@ -100,4 +100,5 @@ func init() {
 func NewQuote(symbol string, bars int) Quote {
 	return Quote{
 		Symbol: symbol,
-		Date:   make([]time.Time, ba
+		Date:   make([]time.Time, bars),
+		Open:   make([]float64, b
