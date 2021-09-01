@@ -103,4 +103,5 @@ func NewQuote(symbol string, bars int) Quote {
 		Date:   make([]time.Time, bars),
 		Open:   make([]float64, bars),
 		High:   make([]float64, bars),
-		Lo
+		Low:    make([]float64, bars),
+		Clos
