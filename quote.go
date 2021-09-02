@@ -105,4 +105,8 @@ func NewQuote(symbol string, bars int) Quote {
 		High:   make([]float64, bars),
 		Low:    make([]float64, bars),
 		Close:  make([]float64, bars),
-		Volume: make([]flo
+		Volume: make([]float64, bars),
+	}
+}
+
+// ParseDateString 
