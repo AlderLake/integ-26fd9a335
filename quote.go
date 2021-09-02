@@ -104,4 +104,5 @@ func NewQuote(symbol string, bars int) Quote {
 		Open:   make([]float64, bars),
 		High:   make([]float64, bars),
 		Low:    make([]float64, bars),
-		Clos
+		Close:  make([]float64, bars),
+		Volume: make([]flo
