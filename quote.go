@@ -110,4 +110,6 @@ func NewQuote(symbol string, bars int) Quote {
 }
 
 // ParseDateString - parse a potentially partial date string to Time
-func ParseDateString(dt stri
+func ParseDateString(dt string) time.Time {
+	if dt == "" {
+		return tim
