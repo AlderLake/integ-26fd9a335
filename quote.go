@@ -109,4 +109,5 @@ func NewQuote(symbol string, bars int) Quote {
 	}
 }
 
-// ParseDateString - parse a potentially partial date string t
+// ParseDateString - parse a potentially partial date string to Time
+func ParseDateString(dt stri
