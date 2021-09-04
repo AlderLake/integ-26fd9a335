@@ -114,4 +114,4 @@ func ParseDateString(dt string) time.Time {
 	if dt == "" {
 		return time.Now()
 	}
-	t, _ := time.Parse("2006-01
+	t, _ := time.Parse("2006-01-02 15:04", dt+"0000-01-01 00:00"[len(dt):])
