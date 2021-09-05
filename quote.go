@@ -120,4 +120,5 @@ func ParseDateString(dt string) time.Time {
 
 func getPrecision(symbol string) int {
 	var precision int
-	precision = 
+	precision = 2
+	if strings.Contains(strings.ToUpper(sy
