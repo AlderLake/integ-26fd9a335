@@ -118,4 +118,6 @@ func ParseDateString(dt string) time.Time {
 	return t
 }
 
-func getPrecision(symbol
+func getPrecision(symbol string) int {
+	var precision int
+	precision = 
