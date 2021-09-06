@@ -123,4 +123,5 @@ func getPrecision(symbol string) int {
 	precision = 2
 	if strings.Contains(strings.ToUpper(symbol), "BTC") ||
 		strings.Contains(strings.ToUpper(symbol), "ETH") ||
-		strings
+		strings.Contains(strings.ToUpper(symbol), "USD") {
+		pr
