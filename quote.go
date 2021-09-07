@@ -129,4 +129,4 @@ func getPrecision(symbol string) int {
 	return precision
 }
 
-// CSV -
+// CSV - convert Quote structure to csv string
