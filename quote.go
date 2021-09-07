@@ -130,3 +130,6 @@ func getPrecision(symbol string) int {
 }
 
 // CSV - convert Quote structure to csv string
+func (q Quote) CSV() string {
+
+	precisio
