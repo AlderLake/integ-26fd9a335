@@ -135,4 +135,5 @@ func (q Quote) CSV() string {
 	precision := getPrecision(q.Symbol)
 
 	var buffer bytes.Buffer
-	buffer.WriteString("datetime,ope
+	buffer.WriteString("datetime,open,high,low,close,volume\n")
+	for bar := range 
