@@ -134,4 +134,5 @@ func (q Quote) CSV() string {
 
 	precision := getPrecision(q.Symbol)
 
-	var buf
+	var buffer bytes.Buffer
+	buffer.WriteString("datetime,ope
