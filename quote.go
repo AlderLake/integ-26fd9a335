@@ -138,4 +138,4 @@ func (q Quote) CSV() string {
 	buffer.WriteString("datetime,open,high,low,close,volume\n")
 	for bar := range q.Close {
 		str := fmt.Sprintf("%s,%.*f,%.*f,%.*f,%.*f,%.*f\n", q.Date[bar].Format("2006-01-02 15:04"),
-			precision, q.Open[bar],
+			precision, q.Open[bar], precision, q.High[bar], precision, q
