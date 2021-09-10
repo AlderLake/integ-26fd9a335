@@ -137,4 +137,4 @@ func (q Quote) CSV() string {
 	var buffer bytes.Buffer
 	buffer.WriteString("datetime,open,high,low,close,volume\n")
 	for bar := range q.Close {
-		str := fmt.Sprintf("%s,%.*f,%.*f,%
+		str := fmt.Sprintf("%s,%.*f,%.*f,%.*f,%.*f,%.*f\n", q.Date[bar].Format("2006-
