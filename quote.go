@@ -144,4 +144,4 @@ func (q Quote) CSV() string {
 	return buffer.String()
 }
 
-// Hi
+// Highstock - convert Quote structure to Highst
