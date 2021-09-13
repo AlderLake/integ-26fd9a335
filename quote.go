@@ -150,4 +150,6 @@ func (q Quote) Highstock() string {
 	precision := getPrecision(q.Symbol)
 
 	var buffer bytes.Buffer
-	buffer.WriteString("
+	buffer.WriteString("[\n")
+	for bar := range q.Close {
+		comma :=
