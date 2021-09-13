@@ -145,4 +145,6 @@ func (q Quote) CSV() string {
 }
 
 // Highstock - convert Quote structure to Highstock json format
-func (q Quote) Highstock(
+func (q Quote) Highstock() string {
+
+	precision := getPrecision(q.Symbol)
