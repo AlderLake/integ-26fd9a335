@@ -148,3 +148,6 @@ func (q Quote) CSV() string {
 func (q Quote) Highstock() string {
 
 	precision := getPrecision(q.Symbol)
+
+	var buffer bytes.Buffer
+	buffer.WriteString("
