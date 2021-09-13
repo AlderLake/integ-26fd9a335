@@ -152,4 +152,6 @@ func (q Quote) Highstock() string {
 	var buffer bytes.Buffer
 	buffer.WriteString("[\n")
 	for bar := range q.Close {
-		comma :=
+		comma := ","
+		if bar == len(q.Close)-1 {
+			comma = ""
