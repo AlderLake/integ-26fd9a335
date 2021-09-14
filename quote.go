@@ -156,4 +156,5 @@ func (q Quote) Highstock() string {
 		if bar == len(q.Close)-1 {
 			comma = ""
 		}
-		str := fmt.Sprintf("[%d,%.*f,%.*f,%.
+		str := fmt.Sprintf("[%d,%.*f,%.*f,%.*f,%.*f,%.*f]%s\n",
+			q.Date[bar].UnixNan
