@@ -155,3 +155,5 @@ func (q Quote) Highstock() string {
 		comma := ","
 		if bar == len(q.Close)-1 {
 			comma = ""
+		}
+		str := fmt.Sprintf("[%d,%.*f,%.*f,%.
