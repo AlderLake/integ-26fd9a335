@@ -157,4 +157,4 @@ func (q Quote) Highstock() string {
 			comma = ""
 		}
 		str := fmt.Sprintf("[%d,%.*f,%.*f,%.*f,%.*f,%.*f]%s\n",
-			q.Date[bar].UnixNano()/1000000, precision, q.Open[bar], precision, q.H
+			q.Date[bar].UnixNano()/1000000, precision, q.Open[bar], precision, q.High[bar], precision, q.Low[bar], precision, q.
