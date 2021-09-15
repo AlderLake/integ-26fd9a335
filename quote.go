@@ -162,4 +162,7 @@ func (q Quote) Highstock() string {
 
 	}
 	buffer.WriteString("]\n")
-	return buf
+	return buffer.String()
+}
+
+// Amibroker - conve
