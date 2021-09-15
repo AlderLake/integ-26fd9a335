@@ -161,4 +161,5 @@ func (q Quote) Highstock() string {
 		buffer.WriteString(str)
 
 	}
-	b
+	buffer.WriteString("]\n")
+	return buf
