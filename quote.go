@@ -166,4 +166,6 @@ func (q Quote) Highstock() string {
 }
 
 // Amibroker - convert Quote structure to csv string
-f
+func (q Quote) Amibroker() string {
+
+	precision := ge
