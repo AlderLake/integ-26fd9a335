@@ -171,4 +171,5 @@ func (q Quote) Amibroker() string {
 	precision := getPrecision(q.Symbol)
 
 	var buffer bytes.Buffer
-	buffer.WriteString("date,time,open,hi
+	buffer.WriteString("date,time,open,high,low,close,volume\n")
+	for b
