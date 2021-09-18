@@ -172,4 +172,5 @@ func (q Quote) Amibroker() string {
 
 	var buffer bytes.Buffer
 	buffer.WriteString("date,time,open,high,low,close,volume\n")
-	for b
+	for bar := range q.Close {
+		str := fmt.Sprintf("%s,%s,%.*f
