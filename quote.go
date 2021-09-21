@@ -177,4 +177,7 @@ func (q Quote) Amibroker() string {
 			precision, q.Open[bar], precision, q.High[bar], precision, q.Low[bar], precision, q.Close[bar], precision, q.Volume[bar])
 		buffer.WriteString(str)
 	}
-	return buff
+	return buffer.String()
+}
+
+// WriteCSV - write Quote struct
