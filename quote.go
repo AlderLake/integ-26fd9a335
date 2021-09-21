@@ -175,3 +175,6 @@ func (q Quote) Amibroker() string {
 	for bar := range q.Close {
 		str := fmt.Sprintf("%s,%s,%.*f,%.*f,%.*f,%.*f,%.*f\n", q.Date[bar].Format("2006-01-02"), q.Date[bar].Format("15:04"),
 			precision, q.Open[bar], precision, q.High[bar], precision, q.Low[bar], precision, q.Close[bar], precision, q.Volume[bar])
+		buffer.WriteString(str)
+	}
+	return buff
