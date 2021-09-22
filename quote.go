@@ -180,4 +180,5 @@ func (q Quote) Amibroker() string {
 	return buffer.String()
 }
 
-// WriteCSV - write Quote struct
+// WriteCSV - write Quote struct to csv file
+func (q Quote) WriteCSV(filename stri
