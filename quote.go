@@ -183,4 +183,5 @@ func (q Quote) Amibroker() string {
 // WriteCSV - write Quote struct to csv file
 func (q Quote) WriteCSV(filename string) error {
 	if filename == "" {
-		if q.S
+		if q.Symbol != "" {
+			filename = q.Symbol + ".
