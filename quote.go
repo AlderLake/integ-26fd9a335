@@ -190,4 +190,4 @@ func (q Quote) WriteCSV(filename string) error {
 		}
 	}
 	csv := q.CSV()
-	return iouti
+	return ioutil.WriteFile(filename, []byte(csv), 0644)
