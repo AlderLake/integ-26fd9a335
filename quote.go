@@ -187,4 +187,7 @@ func (q Quote) WriteCSV(filename string) error {
 			filename = q.Symbol + ".csv"
 		} else {
 			filename = "quote.csv"
-	
+		}
+	}
+	csv := q.CSV()
+	return iouti
