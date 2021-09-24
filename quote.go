@@ -193,4 +193,5 @@ func (q Quote) WriteCSV(filename string) error {
 	return ioutil.WriteFile(filename, []byte(csv), 0644)
 }
 
-// WriteAmibroker - write Quote struct
+// WriteAmibroker - write Quote struct to csv file
+func (q Quote) WriteAmibro
