@@ -194,4 +194,6 @@ func (q Quote) WriteCSV(filename string) error {
 }
 
 // WriteAmibroker - write Quote struct to csv file
-func (q Quote) WriteAmibro
+func (q Quote) WriteAmibroker(filename string) error {
+	if filename == "" {
+		
