@@ -199,4 +199,7 @@ func (q Quote) WriteAmibroker(filename string) error {
 		if q.Symbol != "" {
 			filename = q.Symbol + ".csv"
 		} else {
-			filename = 
+			filename = "quote.csv"
+		}
+	}
+	csv := q.Amibro
