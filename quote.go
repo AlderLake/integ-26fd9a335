@@ -202,4 +202,5 @@ func (q Quote) WriteAmibroker(filename string) error {
 			filename = "quote.csv"
 		}
 	}
-	csv := q.Amibro
+	csv := q.Amibroker()
+	return ioutil.WriteFile(filename, []byte(csv)
