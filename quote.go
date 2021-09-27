@@ -203,4 +203,7 @@ func (q Quote) WriteAmibroker(filename string) error {
 		}
 	}
 	csv := q.Amibroker()
-	return ioutil.WriteFile(filename, []byte(csv)
+	return ioutil.WriteFile(filename, []byte(csv), 0644)
+}
+
+// WriteHighstock - write Quote str
