@@ -210,4 +210,6 @@ func (q Quote) WriteAmibroker(filename string) error {
 func (q Quote) WriteHighstock(filename string) error {
 	if filename == "" {
 		if q.Symbol != "" {
-			filename
+			filename = q.Symbol + ".json"
+		} else {
+			filenam
