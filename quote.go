@@ -208,4 +208,6 @@ func (q Quote) WriteAmibroker(filename string) error {
 
 // WriteHighstock - write Quote struct to Highstock json format
 func (q Quote) WriteHighstock(filename string) error {
-	i
+	if filename == "" {
+		if q.Symbol != "" {
+			filename
