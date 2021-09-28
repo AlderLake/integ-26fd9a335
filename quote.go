@@ -206,4 +206,5 @@ func (q Quote) WriteAmibroker(filename string) error {
 	return ioutil.WriteFile(filename, []byte(csv), 0644)
 }
 
-// WriteHighstock - write Quote str
+// WriteHighstock - write Quote struct to Highstock json format
+func (q Quote)
