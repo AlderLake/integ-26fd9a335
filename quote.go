@@ -212,4 +212,7 @@ func (q Quote) WriteHighstock(filename string) error {
 		if q.Symbol != "" {
 			filename = q.Symbol + ".json"
 		} else {
-			filenam
+			filename = "quote.json"
+		}
+	}
+	csv := q.Highst
