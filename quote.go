@@ -219,4 +219,5 @@ func (q Quote) WriteHighstock(filename string) error {
 	return ioutil.WriteFile(filename, []byte(csv), 0644)
 }
 
-// NewQuoteFromC
+// NewQuoteFromCSV - parse csv quote string into Quote structure
+func NewQ
