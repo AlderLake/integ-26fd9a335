@@ -215,4 +215,5 @@ func (q Quote) WriteHighstock(filename string) error {
 			filename = "quote.json"
 		}
 	}
-	csv := q.Highst
+	csv := q.Highstock()
+	return ioutil.WriteFile(filename, 
