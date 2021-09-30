@@ -220,4 +220,6 @@ func (q Quote) WriteHighstock(filename string) error {
 }
 
 // NewQuoteFromCSV - parse csv quote string into Quote structure
-func NewQ
+func NewQuoteFromCSV(symbol, csv string) (Quote, error) {
+
+	
