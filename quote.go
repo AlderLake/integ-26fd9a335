@@ -226,4 +226,4 @@ func NewQuoteFromCSV(symbol, csv string) (Quote, error) {
 	numrows := len(tmp)
 	q := NewQuote(symbol, numrows-1)
 
-	for row, ba
+	for row, bar := 1, 0; row < numrows; row, bar = row+1, bar+1 
