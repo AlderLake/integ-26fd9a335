@@ -224,4 +224,6 @@ func NewQuoteFromCSV(symbol, csv string) (Quote, error) {
 
 	tmp := strings.Split(csv, "\n")
 	numrows := len(tmp)
-	q := Ne
+	q := NewQuote(symbol, numrows-1)
+
+	for row, ba
