@@ -228,4 +228,7 @@ func NewQuoteFromCSV(symbol, csv string) (Quote, error) {
 
 	for row, bar := 1, 0; row < numrows; row, bar = row+1, bar+1 {
 		line := strings.Split(tmp[row], ",")
-		if l
+		if len(line) != 6 {
+			break
+		}
+		q.Date[ba
