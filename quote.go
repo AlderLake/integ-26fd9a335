@@ -232,3 +232,4 @@ func NewQuoteFromCSV(symbol, csv string) (Quote, error) {
 			break
 		}
 		q.Date[bar], _ = time.Parse("2006-01-02 15:04", line[0])
+		q.Open[bar], _ = strconv.ParseFloat(li
