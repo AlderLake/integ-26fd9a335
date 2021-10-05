@@ -241,4 +241,4 @@ func NewQuoteFromCSV(symbol, csv string) (Quote, error) {
 	return q, nil
 }
 
-// NewQuoteFromCSVDateFormat - parse 
+// NewQuoteFromCSVDateFormat - parse csv quote string into Quote structure
