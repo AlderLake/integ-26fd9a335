@@ -244,3 +244,5 @@ func NewQuoteFromCSV(symbol, csv string) (Quote, error) {
 // NewQuoteFromCSVDateFormat - parse csv quote string into Quote structure
 // with specified DateTime format
 func NewQuoteFromCSVDateFormat(symbol, csv string, format string) (Quote, error) {
+
+	tmp := strings.Split(csv, "\n
