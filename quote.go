@@ -250,4 +250,7 @@ func NewQuoteFromCSVDateFormat(symbol, csv string, format string) (Quote, error)
 	q := NewQuote("", numrows-1)
 
 	if len(strings.TrimSpace(format)) == 0 {
-		format = "2006-01-02 
+		format = "2006-01-02 15:04"
+	}
+
+	for row, bar := 1, 0; row < n
