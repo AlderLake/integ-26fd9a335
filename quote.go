@@ -247,4 +247,6 @@ func NewQuoteFromCSVDateFormat(symbol, csv string, format string) (Quote, error)
 
 	tmp := strings.Split(csv, "\n")
 	numrows := len(tmp)
-	q := NewQuo
+	q := NewQuote("", numrows-1)
+
+	if len(strings.TrimSpa
