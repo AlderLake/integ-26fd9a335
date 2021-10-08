@@ -254,4 +254,5 @@ func NewQuoteFromCSVDateFormat(symbol, csv string, format string) (Quote, error)
 	}
 
 	for row, bar := 1, 0; row < numrows; row, bar = row+1, bar+1 {
-		line := strings.S
+		line := strings.Split(tmp[row], ",")
+		q.Date[bar], _ = 
