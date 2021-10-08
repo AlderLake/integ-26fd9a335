@@ -253,4 +253,5 @@ func NewQuoteFromCSVDateFormat(symbol, csv string, format string) (Quote, error)
 		format = "2006-01-02 15:04"
 	}
 
-	for row, bar := 1, 0; row < n
+	for row, bar := 1, 0; row < numrows; row, bar = row+1, bar+1 {
+		line := strings.S
