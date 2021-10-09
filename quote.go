@@ -257,3 +257,4 @@ func NewQuoteFromCSVDateFormat(symbol, csv string, format string) (Quote, error)
 		line := strings.Split(tmp[row], ",")
 		q.Date[bar], _ = time.Parse(format, line[0])
 		q.Open[bar], _ = strconv.ParseFloat(line[1], 64)
+		q.High[bar], _ = strconv.ParseFloa
