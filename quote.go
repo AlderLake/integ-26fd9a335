@@ -260,4 +260,9 @@ func NewQuoteFromCSVDateFormat(symbol, csv string, format string) (Quote, error)
 		q.High[bar], _ = strconv.ParseFloat(line[2], 64)
 		q.Low[bar], _ = strconv.ParseFloat(line[3], 64)
 		q.Close[bar], _ = strconv.ParseFloat(line[4], 64)
-		q.Volume[bar], _ = strconv.ParseFloat(line[5],
+		q.Volume[bar], _ = strconv.ParseFloat(line[5], 64)
+	}
+	return q, nil
+}
+
+// NewQuoteFrom
