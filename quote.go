@@ -265,4 +265,4 @@ func NewQuoteFromCSVDateFormat(symbol, csv string, format string) (Quote, error)
 	return q, nil
 }
 
-// NewQuoteFrom
+// NewQuoteFromCSVFile - parse csv quote file in
