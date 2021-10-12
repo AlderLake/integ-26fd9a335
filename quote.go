@@ -268,3 +268,5 @@ func NewQuoteFromCSVDateFormat(symbol, csv string, format string) (Quote, error)
 // NewQuoteFromCSVFile - parse csv quote file into Quote structure
 func NewQuoteFromCSVFile(symbol, filename string) (Quote, error) {
 	csv, err := ioutil.ReadFile(filename)
+	if err != nil {
+		return NewQuote(""
