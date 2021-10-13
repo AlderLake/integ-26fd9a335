@@ -271,4 +271,7 @@ func NewQuoteFromCSVFile(symbol, filename string) (Quote, error) {
 	if err != nil {
 		return NewQuote("", 0), err
 	}
-	return NewQuoteFromCSV(symbol, st
+	return NewQuoteFromCSV(symbol, string(csv))
+}
+
+// NewQuoteFromCSVFi
