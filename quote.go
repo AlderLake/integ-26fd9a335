@@ -275,4 +275,5 @@ func NewQuoteFromCSVFile(symbol, filename string) (Quote, error) {
 }
 
 // NewQuoteFromCSVFileDateFormat - parse csv quote file into Quote structure
-// with specified DateTime form
+// with specified DateTime format
+func NewQuoteFromCSVFileDateFormat(symbol, 
