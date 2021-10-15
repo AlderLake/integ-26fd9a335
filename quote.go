@@ -279,4 +279,6 @@ func NewQuoteFromCSVFile(symbol, filename string) (Quote, error) {
 func NewQuoteFromCSVFileDateFormat(symbol, filename string, format string) (Quote, error) {
 	csv, err := ioutil.ReadFile(filename)
 	if err != nil {
-		return NewQuote("
+		return NewQuote("", 0), err
+	}
+	return NewQuoteFromC
