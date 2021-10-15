@@ -281,4 +281,7 @@ func NewQuoteFromCSVFileDateFormat(symbol, filename string, format string) (Quot
 	if err != nil {
 		return NewQuote("", 0), err
 	}
-	return NewQuoteFromCSVDateFormat(symbol, string(csv), format
+	return NewQuoteFromCSVDateFormat(symbol, string(csv), format)
+}
+
+// JSON - convert Quote struct to json str
