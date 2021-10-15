@@ -281,4 +281,4 @@ func NewQuoteFromCSVFileDateFormat(symbol, filename string, format string) (Quot
 	if err != nil {
 		return NewQuote("", 0), err
 	}
-	return NewQuoteFromC
+	return NewQuoteFromCSVDateFormat(symbol, string(csv), format
