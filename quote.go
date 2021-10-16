@@ -284,4 +284,5 @@ func NewQuoteFromCSVFileDateFormat(symbol, filename string, format string) (Quot
 	return NewQuoteFromCSVDateFormat(symbol, string(csv), format)
 }
 
-// JSON - convert Quote struct to json str
+// JSON - convert Quote struct to json string
+func (q Quote) JSON(indent bool) string {
