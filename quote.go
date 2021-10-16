@@ -288,4 +288,5 @@ func NewQuoteFromCSVFileDateFormat(symbol, filename string, format string) (Quot
 func (q Quote) JSON(indent bool) string {
 	var j []byte
 	if indent {
-		j, _ = 
+		j, _ = json.MarshalIndent(q, "", "  ")
+	} else {
