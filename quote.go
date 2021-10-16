@@ -290,3 +290,6 @@ func (q Quote) JSON(indent bool) string {
 	if indent {
 		j, _ = json.MarshalIndent(q, "", "  ")
 	} else {
+		j, _ = json.Marshal(q)
+	}
+	
