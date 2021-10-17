@@ -292,4 +292,7 @@ func (q Quote) JSON(indent bool) string {
 	} else {
 		j, _ = json.Marshal(q)
 	}
-	
+	return string(j)
+}
+
+// WriteJSON - write Quot
