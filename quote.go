@@ -295,4 +295,5 @@ func (q Quote) JSON(indent bool) string {
 	return string(j)
 }
 
-// WriteJSON - write Quot
+// WriteJSON - write Quote struct to json file
+func (q Quote) WriteJSON(f
