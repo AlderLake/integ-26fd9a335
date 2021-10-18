@@ -298,4 +298,7 @@ func (q Quote) JSON(indent bool) string {
 // WriteJSON - write Quote struct to json file
 func (q Quote) WriteJSON(filename string, indent bool) error {
 	if filename == "" {
-		filename = q.Symbol +
+		filename = q.Symbol + ".json"
+	}
+	json := q.JSON(indent)
+	return iout
