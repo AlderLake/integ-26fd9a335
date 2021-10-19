@@ -301,4 +301,4 @@ func (q Quote) WriteJSON(filename string, indent bool) error {
 		filename = q.Symbol + ".json"
 	}
 	json := q.JSON(indent)
-	return iout
+	return ioutil.WriteFile(filename, []byte(json), 0644)
