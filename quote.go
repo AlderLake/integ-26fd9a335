@@ -302,3 +302,7 @@ func (q Quote) WriteJSON(filename string, indent bool) error {
 	}
 	json := q.JSON(indent)
 	return ioutil.WriteFile(filename, []byte(json), 0644)
+
+}
+
+// NewQuoteFromJSON - parse json quote 
