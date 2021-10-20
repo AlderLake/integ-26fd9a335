@@ -308,4 +308,6 @@ func (q Quote) WriteJSON(filename string, indent bool) error {
 // NewQuoteFromJSON - parse json quote string into Quote structure
 func NewQuoteFromJSON(jsn string) (Quote, error) {
 	q := Quote{}
-	err := json
+	err := json.Unmarshal([]byte(jsn), &q)
+	if err != nil {
+		return q, 
