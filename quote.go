@@ -305,4 +305,5 @@ func (q Quote) WriteJSON(filename string, indent bool) error {
 
 }
 
-// NewQuoteFromJSON - parse json quote 
+// NewQuoteFromJSON - parse json quote string into Quote structure
+func NewQuoteFromJSON(jsn s
