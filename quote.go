@@ -310,4 +310,9 @@ func NewQuoteFromJSON(jsn string) (Quote, error) {
 	q := Quote{}
 	err := json.Unmarshal([]byte(jsn), &q)
 	if err != nil {
-		return q, 
+		return q, err
+	}
+	return q, nil
+}
+
+// NewQuoteFromJSONF
