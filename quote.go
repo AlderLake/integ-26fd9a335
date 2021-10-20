@@ -306,4 +306,6 @@ func (q Quote) WriteJSON(filename string, indent bool) error {
 }
 
 // NewQuoteFromJSON - parse json quote string into Quote structure
-func NewQuoteFromJSON(jsn s
+func NewQuoteFromJSON(jsn string) (Quote, error) {
+	q := Quote{}
+	err := json
