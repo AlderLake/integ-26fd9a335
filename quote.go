@@ -315,4 +315,5 @@ func NewQuoteFromJSON(jsn string) (Quote, error) {
 	return q, nil
 }
 
-// NewQuoteFromJSONFile - parse json quote string into Quote struct
+// NewQuoteFromJSONFile - parse json quote string into Quote structure
+func NewQuoteFromJSONFile(filename str
