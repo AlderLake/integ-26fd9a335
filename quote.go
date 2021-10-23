@@ -321,4 +321,7 @@ func NewQuoteFromJSONFile(filename string) (Quote, error) {
 	if err != nil {
 		return NewQuote("", 0), err
 	}
-	return NewQuoteFro
+	return NewQuoteFromJSON(string(jsn))
+}
+
+// CSV - convert Quote
