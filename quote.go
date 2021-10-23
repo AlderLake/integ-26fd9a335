@@ -324,4 +324,5 @@ func NewQuoteFromJSONFile(filename string) (Quote, error) {
 	return NewQuoteFromJSON(string(jsn))
 }
 
-// CSV - convert Quote
+// CSV - convert Quotes structure to csv string
+func (q Quotes)
