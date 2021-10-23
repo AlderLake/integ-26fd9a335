@@ -319,4 +319,6 @@ func NewQuoteFromJSON(jsn string) (Quote, error) {
 func NewQuoteFromJSONFile(filename string) (Quote, error) {
 	jsn, err := ioutil.ReadFile(filename)
 	if err != nil {
-		return N
+		return NewQuote("", 0), err
+	}
+	return NewQuoteFro
