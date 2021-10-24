@@ -329,4 +329,6 @@ func (q Quotes) CSV() string {
 
 	var buffer bytes.Buffer
 
-	buffer.WriteString("symbol,dat
+	buffer.WriteString("symbol,datetime,open,high,low,close,volume\n")
+
+	f
