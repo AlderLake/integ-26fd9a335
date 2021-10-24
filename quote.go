@@ -325,4 +325,6 @@ func NewQuoteFromJSONFile(filename string) (Quote, error) {
 }
 
 // CSV - convert Quotes structure to csv string
-func (q Quotes)
+func (q Quotes) CSV() string {
+
+	var buffer byt
