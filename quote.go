@@ -331,4 +331,5 @@ func (q Quotes) CSV() string {
 
 	buffer.WriteString("symbol,datetime,open,high,low,close,volume\n")
 
-	f
+	for sym := 0; sym < len(q); sym++ {
+		q
