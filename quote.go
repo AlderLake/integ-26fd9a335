@@ -332,4 +332,5 @@ func (q Quotes) CSV() string {
 	buffer.WriteString("symbol,datetime,open,high,low,close,volume\n")
 
 	for sym := 0; sym < len(q); sym++ {
-		q
+		quote := q[sym]
+		precision := getPrec
