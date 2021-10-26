@@ -333,4 +333,5 @@ func (q Quotes) CSV() string {
 
 	for sym := 0; sym < len(q); sym++ {
 		quote := q[sym]
-		precision := getPrec
+		precision := getPrecision(quote.Symbol)
+		for bar := range quote
