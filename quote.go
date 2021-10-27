@@ -335,4 +335,5 @@ func (q Quotes) CSV() string {
 		quote := q[sym]
 		precision := getPrecision(quote.Symbol)
 		for bar := range quote.Close {
-			str := fmt.Sprintf("%s,%s
+			str := fmt.Sprintf("%s,%s,%.*f,%.*f,%.*f,%.*f,%.*f\n",
+				quote.Symb
