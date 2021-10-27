@@ -336,4 +336,4 @@ func (q Quotes) CSV() string {
 		precision := getPrecision(quote.Symbol)
 		for bar := range quote.Close {
 			str := fmt.Sprintf("%s,%s,%.*f,%.*f,%.*f,%.*f,%.*f\n",
-				quote.Symb
+				quote.Symbol, quote.Date[bar].Format("2006-01-02 15
