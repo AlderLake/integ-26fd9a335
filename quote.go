@@ -341,4 +341,7 @@ func (q Quotes) CSV() string {
 		}
 	}
 
-	return buf
+	return buffer.String()
+}
+
+// Highstock - convert Quotes s
