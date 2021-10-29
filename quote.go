@@ -345,4 +345,6 @@ func (q Quotes) CSV() string {
 }
 
 // Highstock - convert Quotes structure to Highstock json format
-func (q Quote
+func (q Quotes) Highstock() string {
+
+	var buffer bytes.B
