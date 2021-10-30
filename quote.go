@@ -351,4 +351,5 @@ func (q Quotes) Highstock() string {
 
 	buffer.WriteString("{")
 
-	for sym 
+	for sym := 0; sym < len(q); sym++ {
+		quote := q
