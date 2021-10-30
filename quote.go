@@ -352,4 +352,5 @@ func (q Quotes) Highstock() string {
 	buffer.WriteString("{")
 
 	for sym := 0; sym < len(q); sym++ {
-		quote := q
+		quote := q[sym]
+		precision := getPrecision(quote
