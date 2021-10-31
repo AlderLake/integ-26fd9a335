@@ -359,4 +359,5 @@ func (q Quotes) Highstock() string {
 			if bar == len(quote.Close)-1 {
 				comma = ""
 			}
-		
+			if bar == 0 {
+				buffer.WriteString(fmt.Sp
