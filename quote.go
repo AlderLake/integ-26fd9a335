@@ -360,4 +360,5 @@ func (q Quotes) Highstock() string {
 				comma = ""
 			}
 			if bar == 0 {
-				buffer.WriteString(fmt.Sp
+				buffer.WriteString(fmt.Sprintf("\"%s\":[\n", quote.Symbol))
+			}
