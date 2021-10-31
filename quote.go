@@ -355,4 +355,8 @@ func (q Quotes) Highstock() string {
 		quote := q[sym]
 		precision := getPrecision(quote.Symbol)
 		for bar := range quote.Close {
-			comma := 
+			comma := ","
+			if bar == len(quote.Close)-1 {
+				comma = ""
+			}
+		
