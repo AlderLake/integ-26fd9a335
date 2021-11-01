@@ -363,4 +363,4 @@ func (q Quotes) Highstock() string {
 				buffer.WriteString(fmt.Sprintf("\"%s\":[\n", quote.Symbol))
 			}
 			str := fmt.Sprintf("[%d,%.*f,%.*f,%.*f,%.*f,%.*f]%s\n",
-				quote.Date[bar].UnixNano()/
+				quote.Date[bar].UnixNano()/1000000, precision, quote.Open[bar]
