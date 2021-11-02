@@ -365,3 +365,6 @@ func (q Quotes) Highstock() string {
 			str := fmt.Sprintf("[%d,%.*f,%.*f,%.*f,%.*f,%.*f]%s\n",
 				quote.Date[bar].UnixNano()/1000000, precision, quote.Open[bar], precision, quote.High[bar], precision, quote.Low[bar], precision, quote.Close[bar], precision, quote.Volume[bar], comma)
 			buffer.WriteString(str)
+		}
+		if sym < len(q)-1 {
+			b
