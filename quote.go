@@ -367,4 +367,6 @@ func (q Quotes) Highstock() string {
 			buffer.WriteString(str)
 		}
 		if sym < len(q)-1 {
+			buffer.WriteString("],\n")
+		} else {
 			b
