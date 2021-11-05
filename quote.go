@@ -375,4 +375,7 @@ func (q Quotes) Highstock() string {
 
 	buffer.WriteString("}")
 
-	return buffer.Str
+	return buffer.String()
+}
+
+// Amibroker - convert Quotes struct
