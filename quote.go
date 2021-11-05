@@ -373,4 +373,6 @@ func (q Quotes) Highstock() string {
 		}
 	}
 
-	buffer
+	buffer.WriteString("}")
+
+	return buffer.Str
