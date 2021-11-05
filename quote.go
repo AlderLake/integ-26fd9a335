@@ -379,4 +379,6 @@ func (q Quotes) Highstock() string {
 }
 
 // Amibroker - convert Quotes structure to csv string
-func (q Qu
+func (q Quotes) Amibroker() string {
+
+	var buffer bytes.Buffe
