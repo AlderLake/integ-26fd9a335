@@ -378,4 +378,5 @@ func (q Quotes) Highstock() string {
 	return buffer.String()
 }
 
-// Amibroker - convert Quotes struct
+// Amibroker - convert Quotes structure to csv string
+func (q Qu
