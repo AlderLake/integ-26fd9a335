@@ -386,4 +386,5 @@ func (q Quotes) Amibroker() string {
 	buffer.WriteString("symbol,date,time,open,high,low,close,volume\n")
 
 	for sym := 0; sym < len(q); sym++ {
-		quote := 
+		quote := q[sym]
+		precision := getPrecision(q
