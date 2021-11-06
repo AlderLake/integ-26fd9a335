@@ -383,4 +383,6 @@ func (q Quotes) Amibroker() string {
 
 	var buffer bytes.Buffer
 
-	buffer.WriteString("symbol,date,time,
+	buffer.WriteString("symbol,date,time,open,high,low,close,volume\n")
+
+	for sym 
