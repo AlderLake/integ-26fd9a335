@@ -387,4 +387,5 @@ func (q Quotes) Amibroker() string {
 
 	for sym := 0; sym < len(q); sym++ {
 		quote := q[sym]
-		precision := getPrecision(q
+		precision := getPrecision(quote.Symbol)
+		for bar := range quote.Close {
