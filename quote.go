@@ -389,4 +389,5 @@ func (q Quotes) Amibroker() string {
 		quote := q[sym]
 		precision := getPrecision(quote.Symbol)
 		for bar := range quote.Close {
-			str := fmt.Sprintf("%s,%s,%s,%.*f,%.*f,%
+			str := fmt.Sprintf("%s,%s,%s,%.*f,%.*f,%.*f,%.*f,%.*f\n",
+				quote.Symbol, quote.Date
