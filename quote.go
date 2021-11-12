@@ -395,4 +395,7 @@ func (q Quotes) Amibroker() string {
 		}
 	}
 
-	r
+	return buffer.String()
+}
+
+// WriteCSV - write Quo
