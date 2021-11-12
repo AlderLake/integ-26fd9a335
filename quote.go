@@ -399,4 +399,6 @@ func (q Quotes) Amibroker() string {
 }
 
 // WriteCSV - write Quotes structure to file
-func (q Quotes) WriteCSV(filena
+func (q Quotes) WriteCSV(filename string) error {
+	if filename == "" {
+		filename = "quotes
