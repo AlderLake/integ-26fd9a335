@@ -398,4 +398,5 @@ func (q Quotes) Amibroker() string {
 	return buffer.String()
 }
 
-// WriteCSV - write Quo
+// WriteCSV - write Quotes structure to file
+func (q Quotes) WriteCSV(filena
