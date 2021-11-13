@@ -401,4 +401,8 @@ func (q Quotes) Amibroker() string {
 // WriteCSV - write Quotes structure to file
 func (q Quotes) WriteCSV(filename string) error {
 	if filename == "" {
-		filename = "quotes
+		filename = "quotes.csv"
+	}
+	csv := q.CSV()
+	ba := []byte(csv)
+	re
