@@ -405,4 +405,7 @@ func (q Quotes) WriteCSV(filename string) error {
 	}
 	csv := q.CSV()
 	ba := []byte(csv)
-	return ioutil.WriteFile(filename, ba, 064
+	return ioutil.WriteFile(filename, ba, 0644)
+}
+
+// WriteAmibroker - write Quotes 
