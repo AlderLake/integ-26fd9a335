@@ -408,4 +408,5 @@ func (q Quotes) WriteCSV(filename string) error {
 	return ioutil.WriteFile(filename, ba, 0644)
 }
 
-// WriteAmibroker - write Quotes 
+// WriteAmibroker - write Quotes structure to file
+func (q Quotes) WriteAmi
