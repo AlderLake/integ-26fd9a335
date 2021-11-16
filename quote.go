@@ -412,3 +412,6 @@ func (q Quotes) WriteCSV(filename string) error {
 func (q Quotes) WriteAmibroker(filename string) error {
 	if filename == "" {
 		filename = "quotes.csv"
+	}
+	csv := q.Amibroker()
+	ba := []byte(cs
