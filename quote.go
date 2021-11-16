@@ -409,4 +409,5 @@ func (q Quotes) WriteCSV(filename string) error {
 }
 
 // WriteAmibroker - write Quotes structure to file
-func (q Quotes) WriteAmi
+func (q Quotes) WriteAmibroker(filename string) error {
+	if filena
