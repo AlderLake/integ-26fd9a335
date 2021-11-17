@@ -418,4 +418,5 @@ func (q Quotes) WriteAmibroker(filename string) error {
 	return ioutil.WriteFile(filename, ba, 0644)
 }
 
-// NewQuotesFromCSV - parse csv quote string into Quo
+// NewQuotesFromCSV - parse csv quote string into Quotes array
+func NewQuotesFromCSV
