@@ -414,4 +414,8 @@ func (q Quotes) WriteAmibroker(filename string) error {
 		filename = "quotes.csv"
 	}
 	csv := q.Amibroker()
-	ba := []byte(cs
+	ba := []byte(csv)
+	return ioutil.WriteFile(filename, ba, 0644)
+}
+
+// NewQ
