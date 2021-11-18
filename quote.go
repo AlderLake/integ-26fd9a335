@@ -419,4 +419,6 @@ func (q Quotes) WriteAmibroker(filename string) error {
 }
 
 // NewQuotesFromCSV - parse csv quote string into Quotes array
-func NewQuotesFromCSV
+func NewQuotesFromCSV(csv string) (Quotes, error) {
+
+	quo
