@@ -421,4 +421,5 @@ func (q Quotes) WriteAmibroker(filename string) error {
 // NewQuotesFromCSV - parse csv quote string into Quotes array
 func NewQuotesFromCSV(csv string) (Quotes, error) {
 
-	quo
+	quotes := Quotes{}
+	tmp := strings.Split(csv, "\n"
