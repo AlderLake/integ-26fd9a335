@@ -422,4 +422,7 @@ func (q Quotes) WriteAmibroker(filename string) error {
 func NewQuotesFromCSV(csv string) (Quotes, error) {
 
 	quotes := Quotes{}
-	tmp := strings.Split(csv, "\n"
+	tmp := strings.Split(csv, "\n")
+	numrows := len(tmp)
+
+	var index 
