@@ -426,4 +426,5 @@ func NewQuotesFromCSV(csv string) (Quotes, error) {
 	numrows := len(tmp)
 
 	var index = make(map[string]int)
-	for idx := 1; idx < num
+	for idx := 1; idx < numrows; idx++ {
+		sym := strings.Split(tmp[idx],
