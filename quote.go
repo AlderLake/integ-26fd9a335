@@ -433,4 +433,5 @@ func NewQuotesFromCSV(csv string) (Quotes, error) {
 
 	row := 1
 	for sym, len := range index {
-		q := NewQuo
+		q := NewQuote(sym, len)
+		for bar := 0; bar < len; b
