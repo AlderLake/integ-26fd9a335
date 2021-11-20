@@ -434,4 +434,5 @@ func NewQuotesFromCSV(csv string) (Quotes, error) {
 	row := 1
 	for sym, len := range index {
 		q := NewQuote(sym, len)
-		for bar := 0; bar < len; b
+		for bar := 0; bar < len; bar++ {
+			line := strings.Split(tmp[row], ","
