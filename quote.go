@@ -435,4 +435,5 @@ func NewQuotesFromCSV(csv string) (Quotes, error) {
 	for sym, len := range index {
 		q := NewQuote(sym, len)
 		for bar := 0; bar < len; bar++ {
-			line := strings.Split(tmp[row], ","
+			line := strings.Split(tmp[row], ",")
+			q.Date[bar], _ = time.Parse("2006-01-02
