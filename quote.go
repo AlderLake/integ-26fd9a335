@@ -439,4 +439,4 @@ func NewQuotesFromCSV(csv string) (Quotes, error) {
 			q.Date[bar], _ = time.Parse("2006-01-02 15:04", line[1])
 			q.Open[bar], _ = strconv.ParseFloat(line[2], 64)
 			q.High[bar], _ = strconv.ParseFloat(line[3], 64)
-			q.Low[ba
+			q.Low[bar], _ = strconv.ParseFloat(line[4], 
