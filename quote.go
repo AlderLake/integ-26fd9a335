@@ -442,3 +442,7 @@ func NewQuotesFromCSV(csv string) (Quotes, error) {
 			q.Low[bar], _ = strconv.ParseFloat(line[4], 64)
 			q.Close[bar], _ = strconv.ParseFloat(line[5], 64)
 			q.Volume[bar], _ = strconv.ParseFloat(line[6], 64)
+			row++
+		}
+		quotes = append(quotes, q)
+	
