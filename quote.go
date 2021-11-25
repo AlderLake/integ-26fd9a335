@@ -441,4 +441,4 @@ func NewQuotesFromCSV(csv string) (Quotes, error) {
 			q.High[bar], _ = strconv.ParseFloat(line[3], 64)
 			q.Low[bar], _ = strconv.ParseFloat(line[4], 64)
 			q.Close[bar], _ = strconv.ParseFloat(line[5], 64)
-			q.Volume[ba
+			q.Volume[bar], _ = strconv.ParseFloat(line[6], 64)
