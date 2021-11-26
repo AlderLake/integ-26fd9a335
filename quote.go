@@ -450,4 +450,4 @@ func NewQuotesFromCSV(csv string) (Quotes, error) {
 }
 
 // NewQuotesFromCSVFile - parse csv quote file into Quotes array
-func NewQuotesFrom
+func NewQuotesFromCSVFile(filename string) (Quotes, error) {
