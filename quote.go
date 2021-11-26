@@ -449,4 +449,5 @@ func NewQuotesFromCSV(csv string) (Quotes, error) {
 	return quotes, nil
 }
 
-// NewQuotesFromCSVFile - par
+// NewQuotesFromCSVFile - parse csv quote file into Quotes array
+func NewQuotesFrom
