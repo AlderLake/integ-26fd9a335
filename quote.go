@@ -458,4 +458,4 @@ func NewQuotesFromCSVFile(filename string) (Quotes, error) {
 	return NewQuotesFromCSV(string(csv))
 }
 
-// JSON 
+// JSON - convert Quotes struct to json stri
