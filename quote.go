@@ -455,4 +455,7 @@ func NewQuotesFromCSVFile(filename string) (Quotes, error) {
 	if err != nil {
 		return Quotes{}, err
 	}
-	return
+	return NewQuotesFromCSV(string(csv))
+}
+
+// JSON 
