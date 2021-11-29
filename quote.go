@@ -462,3 +462,6 @@ func NewQuotesFromCSVFile(filename string) (Quotes, error) {
 func (q Quotes) JSON(indent bool) string {
 	var j []byte
 	if indent {
+		j, _ = json.MarshalIndent(q, "", "  ")
+	} else {
+		j,
