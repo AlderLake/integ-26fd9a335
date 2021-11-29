@@ -459,4 +459,6 @@ func NewQuotesFromCSVFile(filename string) (Quotes, error) {
 }
 
 // JSON - convert Quotes struct to json string
-func (q Quotes) JSON(indent bool) st
+func (q Quotes) JSON(indent bool) string {
+	var j []byte
+	if indent {
