@@ -464,4 +464,6 @@ func (q Quotes) JSON(indent bool) string {
 	if indent {
 		j, _ = json.MarshalIndent(q, "", "  ")
 	} else {
-		j,
+		j, _ = json.Marshal(q)
+	}
+	return st
