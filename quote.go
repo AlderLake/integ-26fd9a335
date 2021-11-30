@@ -466,4 +466,7 @@ func (q Quotes) JSON(indent bool) string {
 	} else {
 		j, _ = json.Marshal(q)
 	}
-	return st
+	return string(j)
+}
+
+// WriteJSON - write Quote stru
