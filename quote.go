@@ -470,4 +470,4 @@ func (q Quotes) JSON(indent bool) string {
 }
 
 // WriteJSON - write Quote struct to json file
-func (q Quotes) WriteJSON(file
+func (q Quotes) WriteJSON(filename string, indent bool) error {
