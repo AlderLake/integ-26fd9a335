@@ -474,3 +474,5 @@ func (q Quotes) WriteJSON(filename string, indent bool) error {
 	if filename == "" {
 		filename = "quotes.json"
 	}
+	jsn := q.JSON(indent)
+	return ioutil.WriteFile(
