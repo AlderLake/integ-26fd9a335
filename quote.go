@@ -475,4 +475,7 @@ func (q Quotes) WriteJSON(filename string, indent bool) error {
 		filename = "quotes.json"
 	}
 	jsn := q.JSON(indent)
-	return ioutil.WriteFile(
+	return ioutil.WriteFile(filename, []byte(jsn), 0644)
+}
+
+// WriteHighstoc
