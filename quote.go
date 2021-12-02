@@ -478,4 +478,4 @@ func (q Quotes) WriteJSON(filename string, indent bool) error {
 	return ioutil.WriteFile(filename, []byte(jsn), 0644)
 }
 
-// WriteHighstoc
+// WriteHighstock - write Quote struct to json file in Highs
