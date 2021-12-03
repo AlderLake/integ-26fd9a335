@@ -480,4 +480,7 @@ func (q Quotes) WriteJSON(filename string, indent bool) error {
 
 // WriteHighstock - write Quote struct to json file in Highstock format
 func (q Quotes) WriteHighstock(filename string) error {
-	if filename == ""
+	if filename == "" {
+		filename = "quotes.json"
+	}
+	hc := q.
