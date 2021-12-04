@@ -483,4 +483,5 @@ func (q Quotes) WriteHighstock(filename string) error {
 	if filename == "" {
 		filename = "quotes.json"
 	}
-	hc := q.
+	hc := q.Highstock()
+	return ioutil.WriteFile
