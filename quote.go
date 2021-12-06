@@ -487,4 +487,5 @@ func (q Quotes) WriteHighstock(filename string) error {
 	return ioutil.WriteFile(filename, []byte(hc), 0644)
 }
 
-// NewQuotesFromJSON - parse json quote stri
+// NewQuotesFromJSON - parse json quote string into Quote structure
+func NewQuotesFrom
