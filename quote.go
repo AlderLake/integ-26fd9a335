@@ -488,4 +488,6 @@ func (q Quotes) WriteHighstock(filename string) error {
 }
 
 // NewQuotesFromJSON - parse json quote string into Quote structure
-func NewQuotesFrom
+func NewQuotesFromJSON(jsn string) (Quotes, error) {
+	quotes := Quotes{}
+	e
