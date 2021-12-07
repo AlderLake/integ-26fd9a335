@@ -490,4 +490,6 @@ func (q Quotes) WriteHighstock(filename string) error {
 // NewQuotesFromJSON - parse json quote string into Quote structure
 func NewQuotesFromJSON(jsn string) (Quotes, error) {
 	quotes := Quotes{}
-	err := json.Unmarshal([]byte(jsn), &q
+	err := json.Unmarshal([]byte(jsn), &quotes)
+	if err != nil {
+		return quotes, e
