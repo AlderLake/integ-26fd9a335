@@ -492,4 +492,9 @@ func NewQuotesFromJSON(jsn string) (Quotes, error) {
 	quotes := Quotes{}
 	err := json.Unmarshal([]byte(jsn), &quotes)
 	if err != nil {
-		return quotes, e
+		return quotes, err
+	}
+	return quotes, nil
+}
+
+// NewQuotesFromJSO
