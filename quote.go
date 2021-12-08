@@ -497,4 +497,4 @@ func NewQuotesFromJSON(jsn string) (Quotes, error) {
 	return quotes, nil
 }
 
-// NewQuotesFromJSO
+// NewQuotesFromJSONFile - parse json quote string int
