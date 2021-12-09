@@ -498,4 +498,4 @@ func NewQuotesFromJSON(jsn string) (Quotes, error) {
 }
 
 // NewQuotesFromJSONFile - parse json quote string into Quote structure
-func NewQuotesFro
+func NewQuotesFromJSONFile(filename string) (Quotes, error) {
