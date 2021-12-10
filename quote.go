@@ -506,4 +506,5 @@ func NewQuotesFromJSONFile(filename string) (Quotes, error) {
 	return NewQuotesFromJSON(string(jsn))
 }
 
-// NewQuoteFro
+// NewQuoteFromYahoo - Yahoo historical prices for a symbol
+func 
