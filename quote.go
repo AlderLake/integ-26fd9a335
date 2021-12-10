@@ -503,4 +503,7 @@ func NewQuotesFromJSONFile(filename string) (Quotes, error) {
 	if err != nil {
 		return Quotes{}, err
 	}
-	return Ne
+	return NewQuotesFromJSON(string(jsn))
+}
+
+// NewQuoteFro
