@@ -509,4 +509,5 @@ func NewQuotesFromJSONFile(filename string) (Quotes, error) {
 // NewQuoteFromYahoo - Yahoo historical prices for a symbol
 func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQuote bool) (Quote, error) {
 
-	if 
+	if period != Daily {
+		Log.Printf("Yahoo intraday da
