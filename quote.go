@@ -510,4 +510,5 @@ func NewQuotesFromJSONFile(filename string) (Quotes, error) {
 func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQuote bool) (Quote, error) {
 
 	if period != Daily {
-		Log.Printf("Yahoo intraday da
+		Log.Printf("Yahoo intraday data no longer supported\n")
+		return Ne
