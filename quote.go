@@ -515,4 +515,7 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 	}
 
 	from := ParseDateString(startDate)
-	to := ParseDateString(
+	to := ParseDateString(endDate)
+
+	client := &http.Client{
+		Ti
