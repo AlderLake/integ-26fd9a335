@@ -514,4 +514,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		return NewQuote("", 0), errors.New("Yahoo intraday data no longer supported")
 	}
 
-	from := 
+	from := ParseDateString(startDate)
+	to := ParseDateString(
