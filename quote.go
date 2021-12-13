@@ -511,4 +511,4 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 
 	if period != Daily {
 		Log.Printf("Yahoo intraday data no longer supported\n")
-		return Ne
+		return NewQuote("", 0), errors.New("Yahoo in
