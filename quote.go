@@ -521,4 +521,4 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		Timeout: ClientTimeout,
 	}
 
-	initReq, err :=
+	initReq, err := http.NewRequest("GET", "https://financ
