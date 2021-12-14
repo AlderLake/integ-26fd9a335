@@ -523,4 +523,6 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 
 	initReq, err := http.NewRequest("GET", "https://finance.yahoo.com", nil)
 	if err != nil {
-		return NewQu
+		return NewQuote("", 0), err
+	}
+	initReq.Header.Set("
