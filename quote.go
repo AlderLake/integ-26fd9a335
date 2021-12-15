@@ -525,4 +525,4 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 	if err != nil {
 		return NewQuote("", 0), err
 	}
-	initReq.Header.Set("
+	initReq.Header.Set("User-Agent", "Mozilla/5.0 (X11; U; Linux i686)
