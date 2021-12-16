@@ -529,3 +529,4 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 	resp, _ := client.Do(initReq)
 
 	url := fmt.Sprintf(
+		"https://query1.finance.yahoo.com/v7/finance/dow
