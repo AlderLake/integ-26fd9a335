@@ -533,4 +533,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		symbol,
 		from.Unix(),
 		to.Unix())
-	resp, 
+	resp, err = client.Get(url)
+	if err != nil
