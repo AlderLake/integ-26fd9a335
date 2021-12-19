@@ -534,4 +534,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		from.Unix(),
 		to.Unix())
 	resp, err = client.Get(url)
-	if err != nil
+	if err != nil {
+		Log.Printf("symbol '%s' not found
