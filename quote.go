@@ -548,4 +548,7 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		return NewQuote("", 0), err
 	}
 
-	numrows := len(csvdata) -
+	numrows := len(csvdata) - 1
+	quote := NewQuote(symbol, numrows)
+
+	for 
