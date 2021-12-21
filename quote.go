@@ -545,4 +545,7 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 	csvdata, err = reader.ReadAll()
 	if err != nil {
 		Log.Printf("bad data for symbol '%s'\n", symbol)
-		return Ne
+		return NewQuote("", 0), err
+	}
+
+	numrows := len(csvdata) -
