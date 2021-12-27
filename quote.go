@@ -573,4 +573,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		} else {
 			ratio := c / a
 			quote.Open[row-1] = o * ratio
-			quote.High
+			quote.High[row-1] = h * ratio
+			quote.Low[row-1] = l *
