@@ -578,4 +578,8 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 			quote.Close[row-1] = c
 		}
 
-	
+		quote.Volume[row-1] = v
+
+	}
+
+	r
