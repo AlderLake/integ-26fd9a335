@@ -586,4 +586,4 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 }
 
 /*
-func NewQuoteFromYahoo(
+func NewQuoteFromYahoo(symbol, startDate, endDate string, per
