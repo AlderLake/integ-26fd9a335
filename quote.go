@@ -588,4 +588,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 /*
 func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQuote bool) (Quote, error) {
 
-	f
+	from := ParseDateString(startDate)
+	to
