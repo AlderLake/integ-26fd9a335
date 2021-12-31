@@ -591,4 +591,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 	from := ParseDateString(startDate)
 	to := ParseDateString(endDate)
 
-	url := fmt.
+	url := fmt.Sprintf(
+		"http://ichart.yahoo.com/t
