@@ -592,4 +592,4 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 	to := ParseDateString(endDate)
 
 	url := fmt.Sprintf(
-		"http://ichart.yahoo.com/t
+		"http://ichart.yahoo.com/table.csv?s=%s&a=%d&b=%d&c=%d&d=%d&e=%d&f=%d&g=%s&ignore=
