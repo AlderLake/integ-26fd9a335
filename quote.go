@@ -597,4 +597,6 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		from.Month()-1, from.Day(), from.Year(),
 		to.Month()-1, to.Day(), to.Year(),
 		period)
-	resp, err 
+	resp, err := http.Get(url)
+	if err != nil {
+		Lo
