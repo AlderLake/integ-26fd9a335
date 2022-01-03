@@ -599,4 +599,7 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		period)
 	resp, err := http.Get(url)
 	if err != nil {
-		Log.Printf("symbol '%s' not found\n", symb
+		Log.Printf("symbol '%s' not found\n", symbol)
+		return NewQuote("", 0), err
+	}
+	defer re
