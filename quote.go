@@ -602,4 +602,7 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		Log.Printf("symbol '%s' not found\n", symbol)
 		return NewQuote("", 0), err
 	}
-	defer re
+	defer resp.Body.Close()
+
+	var csvdata [][]string
+	read
