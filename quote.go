@@ -605,4 +605,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 	defer resp.Body.Close()
 
 	var csvdata [][]string
-	read
+	reader := csv.NewReader(resp.Body)
+	csvdata
