@@ -618,4 +618,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 	for row := 1; row < len(csvdata); row++ {
 
 		// Parse row of data
-		d, _ := time.Parse("2006-01-02", csvdata[row][
+		d, _ := time.Parse("2006-01-02", csvdata[row][0])
+		o, _ := strconv.ParseFloat(csvdata[row][
