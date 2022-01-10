@@ -624,4 +624,6 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		l, _ := strconv.ParseFloat(csvdata[row][3], 64)
 		c, _ := strconv.ParseFloat(csvdata[row][4], 64)
 		v, _ := strconv.ParseFloat(csvdata[row][5], 64)
-		a, _ 
+		a, _ := strconv.ParseFloat(csvdata[row][6], 64)
+
+		/
