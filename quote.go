@@ -628,4 +628,9 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 
 		// Adjustment factor
 		factor := 1.0
-		if adjustQuote
+		if adjustQuote {
+			factor = a / c
+		}
+
+		// Append to quote
+		bar 
