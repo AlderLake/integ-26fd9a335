@@ -633,4 +633,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		}
 
 		// Append to quote
-		bar 
+		bar := numrows - row // reverse the order
+		quot
