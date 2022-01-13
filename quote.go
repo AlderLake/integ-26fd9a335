@@ -638,4 +638,5 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		quote.Open[bar] = o * factor
 		quote.High[bar] = h * factor
 		quote.Low[bar] = l * factor
-		quote.Cl
+		quote.Close[bar] = c * factor
+		quote.Volu
