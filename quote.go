@@ -639,4 +639,12 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		quote.High[bar] = h * factor
 		quote.Low[bar] = l * factor
 		quote.Close[bar] = c * factor
-		quote.Volu
+		quote.Volume[bar] = v
+
+	}
+
+	return quote, nil
+}
+*/
+
+// N
