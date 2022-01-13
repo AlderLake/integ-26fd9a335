@@ -636,4 +636,6 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 		bar := numrows - row // reverse the order
 		quote.Date[bar] = d
 		quote.Open[bar] = o * factor
-		quote.High[bar] = h * facto
+		quote.High[bar] = h * factor
+		quote.Low[bar] = l * factor
+		quote.Cl
