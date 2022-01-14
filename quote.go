@@ -647,4 +647,4 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 }
 */
 
-// N
+// NewQuotesFromYahoo - create a list 
