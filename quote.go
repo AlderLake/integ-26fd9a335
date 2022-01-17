@@ -653,4 +653,7 @@ func NewQuotesFromYahoo(filename, startDate, endDate string, period Period, adju
 	quotes := Quotes{}
 	inFile, err := os.Open(filename)
 	if err != nil {
-		return q
+		return quotes, err
+	}
+	defer inFile.Close()
+	
