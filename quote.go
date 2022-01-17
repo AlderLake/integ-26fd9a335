@@ -649,3 +649,6 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 
 // NewQuotesFromYahoo - create a list of prices from symbols in file
 func NewQuotesFromYahoo(filename, startDate, endDate string, period Period, adjustQuote bool) (Quotes, error) {
+
+	quotes := Quotes{}
+	inFile, err := os.O
