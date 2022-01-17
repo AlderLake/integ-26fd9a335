@@ -651,4 +651,6 @@ func NewQuoteFromYahoo(symbol, startDate, endDate string, period Period, adjustQ
 func NewQuotesFromYahoo(filename, startDate, endDate string, period Period, adjustQuote bool) (Quotes, error) {
 
 	quotes := Quotes{}
-	inFile, err := os.O
+	inFile, err := os.Open(filename)
+	if err != nil {
+		return q
