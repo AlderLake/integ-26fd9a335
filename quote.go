@@ -657,4 +657,6 @@ func NewQuotesFromYahoo(filename, startDate, endDate string, period Period, adju
 	}
 	defer inFile.Close()
 	scanner := bufio.NewScanner(inFile)
-	scanner
+	scanner.Split(bufio.ScanLines)
+
+	for scanner.
