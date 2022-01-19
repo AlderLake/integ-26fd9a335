@@ -662,4 +662,6 @@ func NewQuotesFromYahoo(filename, startDate, endDate string, period Period, adju
 	for scanner.Scan() {
 		sym := scanner.Text()
 		quote, err := NewQuoteFromYahoo(sym, startDate, endDate, period, adjustQuote)
-		if err =
+		if err == nil {
+			quotes = append(quotes, quote)
+	
