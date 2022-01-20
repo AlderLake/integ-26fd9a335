@@ -664,4 +664,6 @@ func NewQuotesFromYahoo(filename, startDate, endDate string, period Period, adju
 		quote, err := NewQuoteFromYahoo(sym, startDate, endDate, period, adjustQuote)
 		if err == nil {
 			quotes = append(quotes, quote)
-	
+		}
+		time.Sleep(Delay * time.Millisecond)
+	}
