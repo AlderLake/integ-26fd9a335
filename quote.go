@@ -667,3 +667,7 @@ func NewQuotesFromYahoo(filename, startDate, endDate string, period Period, adju
 		}
 		time.Sleep(Delay * time.Millisecond)
 	}
+	return quotes, nil
+}
+
+// NewQuotesFromYa
