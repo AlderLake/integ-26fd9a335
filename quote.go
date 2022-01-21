@@ -671,4 +671,4 @@ func NewQuotesFromYahoo(filename, startDate, endDate string, period Period, adju
 }
 
 // NewQuotesFromYahooSyms - create a list of prices from symbols in string array
-func NewQuotesFromYahooSyms(symbols []string, startDate, endDate string, 
+func NewQuotesFromYahooSyms(symbols []string, startDate, endDate string, period Period, adjustQuote bool) (Quotes, error)
