@@ -670,4 +670,4 @@ func NewQuotesFromYahoo(filename, startDate, endDate string, period Period, adju
 	return quotes, nil
 }
 
-// NewQuotesFromYa
+// NewQuotesFromYahooSyms - create a list of prices fr
