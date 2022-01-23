@@ -684,4 +684,4 @@ func NewQuotesFromYahooSyms(symbols []string, startDate, endDate string, period 
 	return quotes, nil
 }
 
-func tiingoDaily(symbol strin
+func tiingoDaily(symbol string, from, to time.Time, token string) (Quote,
