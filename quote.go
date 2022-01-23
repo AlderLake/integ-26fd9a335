@@ -679,4 +679,6 @@ func NewQuotesFromYahooSyms(symbols []string, startDate, endDate string, period 
 		if err == nil {
 			quotes = append(quotes, quote)
 		}
-		time.
+		time.Sleep(Delay * time.Millisecond)
+	}
+	retur
