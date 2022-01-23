@@ -681,4 +681,7 @@ func NewQuotesFromYahooSyms(symbols []string, startDate, endDate string, period 
 		}
 		time.Sleep(Delay * time.Millisecond)
 	}
-	retur
+	return quotes, nil
+}
+
+func tiingoDaily(symbol strin
