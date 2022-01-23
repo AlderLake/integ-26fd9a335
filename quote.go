@@ -677,4 +677,6 @@ func NewQuotesFromYahooSyms(symbols []string, startDate, endDate string, period 
 	for _, symbol := range symbols {
 		quote, err := NewQuoteFromYahoo(symbol, startDate, endDate, period, adjustQuote)
 		if err == nil {
-			quot
+			quotes = append(quotes, quote)
+		}
+		time.
