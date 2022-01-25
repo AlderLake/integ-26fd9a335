@@ -687,4 +687,5 @@ func NewQuotesFromYahooSyms(symbols []string, startDate, endDate string, period 
 func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error) {
 
 	type tquote struct {
-		AdjClose
+		AdjClose    float64 `json:"adjClose"`
+		AdjHigh     float64 `
