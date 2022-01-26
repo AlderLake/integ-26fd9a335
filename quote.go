@@ -689,4 +689,6 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 	type tquote struct {
 		AdjClose    float64 `json:"adjClose"`
 		AdjHigh     float64 `json:"adjHigh"`
-		AdjLow      float64 `json:"adjLow"
+		AdjLow      float64 `json:"adjLow"`
+		AdjOpen     float64 `json:"adjOpen"`
+		AdjV
