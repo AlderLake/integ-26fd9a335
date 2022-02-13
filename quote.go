@@ -693,4 +693,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 		AdjOpen     float64 `json:"adjOpen"`
 		AdjVolume   int64   `json:"adjVolume"`
 		Close       float64 `json:"close"`
-		Date        stri
+		Date        string  `json:"date"`
+		DivCash     float64 `json:"d
