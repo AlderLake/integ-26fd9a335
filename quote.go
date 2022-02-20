@@ -697,4 +697,6 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 		DivCash     float64 `json:"divCash"`
 		High        float64 `json:"high"`
 		Low         float64 `json:"low"`
-		Open        float64 `json:"open"
+		Open        float64 `json:"open"`
+		SplitFactor float64 `json:"splitFactor"`
+		
