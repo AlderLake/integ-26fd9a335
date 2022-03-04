@@ -699,4 +699,9 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 		Low         float64 `json:"low"`
 		Open        float64 `json:"open"`
 		SplitFactor float64 `json:"splitFactor"`
-		Volume      int64   `json:"volume"
+		Volume      int64   `json:"volume"`
+	}
+
+	var tiingo []tquote
+
+	url := fmt
