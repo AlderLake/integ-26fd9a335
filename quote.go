@@ -704,4 +704,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 
 	var tiingo []tquote
 
-	url := fmt
+	url := fmt.Sprintf(
+		"https://api.tiingo.com/tiingo/daily/%s
