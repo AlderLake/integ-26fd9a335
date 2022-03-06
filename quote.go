@@ -707,4 +707,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 	url := fmt.Sprintf(
 		"https://api.tiingo.com/tiingo/daily/%s/prices?startDate=%s&endDate=%s",
 		symbol,
-		ur
+		url.QueryEscape(from.Format("2006-1-2")),
+		
