@@ -708,4 +708,6 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 		"https://api.tiingo.com/tiingo/daily/%s/prices?startDate=%s&endDate=%s",
 		symbol,
 		url.QueryEscape(from.Format("2006-1-2")),
-		
+		url.QueryEscape(to.Format("2006-1-2")))
+
+	
