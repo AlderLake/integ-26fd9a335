@@ -711,4 +711,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 		url.QueryEscape(to.Format("2006-1-2")))
 
 	client := &http.Client{Timeout: ClientTimeout}
-	req, _ := http.NewRequest("G
+	req, _ := http.NewRequest("GET", url, nil)
+	req.Header.Set("Authorization", fmt.Sprintf(
