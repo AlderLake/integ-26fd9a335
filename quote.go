@@ -714,3 +714,6 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 	req, _ := http.NewRequest("GET", url, nil)
 	req.Header.Set("Authorization", fmt.Sprintf("Token %s", token))
 	resp, err := client.Do(req)
+
+	if err != nil {
+		Log.Printf("tiingo
