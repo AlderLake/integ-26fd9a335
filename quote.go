@@ -716,4 +716,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 	resp, err := client.Do(req)
 
 	if err != nil {
-		Log.Printf("tiingo
+		Log.Printf("tiingo error: %v\n", err)
+		return NewQuote("", 0
