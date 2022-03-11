@@ -721,4 +721,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 	}
 	defer resp.Body.Close()
 
-	if resp.StatusC
+	if resp.StatusCode == http.StatusOK {
+		contents, _ := iou
