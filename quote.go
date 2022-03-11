@@ -722,4 +722,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 	defer resp.Body.Close()
 
 	if resp.StatusCode == http.StatusOK {
-		contents, _ := iou
+		contents, _ := ioutil.ReadAll(resp.Body)
+		err = json.Unmarshal(cont
