@@ -725,4 +725,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 		contents, _ := ioutil.ReadAll(resp.Body)
 		err = json.Unmarshal(contents, &tiingo)
 		if err != nil {
-			Log.Printf("ti
+			Log.Printf("tiingo error: %v\n", err)
+			return NewQuote("", 0), err
