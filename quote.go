@@ -728,4 +728,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 			Log.Printf("tiingo error: %v\n", err)
 			return NewQuote("", 0), err
 		}
-	} else if resp.StatusCode == h
+	} else if resp.StatusCode == http.StatusNotFound {
+		Log.Printf("symbo
