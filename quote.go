@@ -730,4 +730,8 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 		}
 	} else if resp.StatusCode == http.StatusNotFound {
 		Log.Printf("symbol '%s' not found\n", symbol)
-		return NewQuote("
+		return NewQuote("", 0), err
+	}
+
+	numrows := len(tiingo)
+	quo
