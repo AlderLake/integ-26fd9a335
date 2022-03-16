@@ -736,4 +736,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 	numrows := len(tiingo)
 	quote := NewQuote(symbol, numrows)
 
-	for bar := 0; 
+	for bar := 0; bar < numrows; bar++ {
+		quote.Date[bar], _ = t
