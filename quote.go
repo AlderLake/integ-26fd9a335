@@ -740,4 +740,5 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 		quote.Date[bar], _ = time.Parse("2006-01-02", tiingo[bar].Date[0:10])
 		quote.Open[bar] = tiingo[bar].AdjOpen
 		quote.High[bar] = tiingo[bar].AdjHigh
-		quote.Low[bar] = tiingo[b
+		quote.Low[bar] = tiingo[bar].AdjLow
+		quote.Close[bar] = tiingo[bar]
