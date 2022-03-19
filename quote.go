@@ -742,4 +742,10 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 		quote.High[bar] = tiingo[bar].AdjHigh
 		quote.Low[bar] = tiingo[bar].AdjLow
 		quote.Close[bar] = tiingo[bar].AdjClose
-		quote.Volume[bar] = float64(tiingo[bar].
+		quote.Volume[bar] = float64(tiingo[bar].Volume)
+	}
+
+	return quote, nil
+}
+
+fun
