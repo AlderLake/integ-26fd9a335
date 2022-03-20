@@ -748,4 +748,4 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 	return quote, nil
 }
 
-fun
+func tiingoCrypto(symbol string, from, 
