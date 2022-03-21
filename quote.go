@@ -755,4 +755,6 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	case Min1:
 		resampleFreq = "1min"
 	case Min3:
-		resam
+		resampleFreq = "3min"
+	case Min5:
+		resampleFreq = 
