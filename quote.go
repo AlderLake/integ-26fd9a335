@@ -748,4 +748,6 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 	return quote, nil
 }
 
-func tiingoCrypto(symbol string, from, to time.Time, period Period, token str
+func tiingoCrypto(symbol string, from, to time.Time, period Period, token string) (Quote, error) {
+
+	resamp
