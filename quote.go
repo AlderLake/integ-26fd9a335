@@ -750,4 +750,7 @@ func tiingoDaily(symbol string, from, to time.Time, token string) (Quote, error)
 
 func tiingoCrypto(symbol string, from, to time.Time, period Period, token string) (Quote, error) {
 
-	resamp
+	resampleFreq := "1day"
+	switch period {
+	case Min1:
+		resa
