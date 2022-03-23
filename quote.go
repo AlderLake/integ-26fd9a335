@@ -771,4 +771,6 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	case Hour6:
 		resampleFreq = "6hour"
 	case Hour8:
-		resampleFreq = 
+		resampleFreq = "8hour"
+	case Hour12:
+		resampleFreq = "12hour
