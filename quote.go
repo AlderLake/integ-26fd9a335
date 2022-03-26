@@ -779,4 +779,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	}
 
 	type priceData struct {
-		TradesDone     float64 `
+		TradesDone     float64 `json:"tradesDone"`
+		Close          float64 `json
