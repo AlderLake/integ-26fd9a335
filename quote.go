@@ -777,3 +777,6 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	case Daily:
 		resampleFreq = "1day"
 	}
+
+	type priceData struct {
+		TradesDone     float64 `
