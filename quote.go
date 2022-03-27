@@ -783,4 +783,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 		Close          float64 `json:"close"`
 		VolumeNotional float64 `json:"volumeNotional"`
 		Low            float64 `json:"low"`
-		Open    
+		Open           float64 `json:"open"`
+		Date           s
