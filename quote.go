@@ -793,4 +793,7 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 		Ticker        string      `json:"ticker"`
 		BaseCurrency  string      `json:"baseCurrency"`
 		QuoteCurrency string      `json:"quoteCurrency"`
-		PriceData     []priceData 
+		PriceData     []priceData `json:"priceData"`
+	}
+
+	var crypt
