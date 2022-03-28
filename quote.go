@@ -791,4 +791,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 
 	type cryptoData struct {
 		Ticker        string      `json:"ticker"`
-		Bas
+		BaseCurrency  string      `json:"baseCurrency"`
+		Q
