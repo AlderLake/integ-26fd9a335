@@ -796,4 +796,7 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 		PriceData     []priceData `json:"priceData"`
 	}
 
-	var crypt
+	var crypto []cryptoData
+
+	url := fmt.Sprintf(
+		"https:
