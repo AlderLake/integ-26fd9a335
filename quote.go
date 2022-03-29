@@ -799,4 +799,4 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	var crypto []cryptoData
 
 	url := fmt.Sprintf(
-		"https://api.tiingo.com/tiingo/crypto/prices?tickers=%
+		"https://api.tiingo.com/tiingo/crypto/prices?tickers=%s&startDate=%s&endDate=%s&resampleFreq=
