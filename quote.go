@@ -811,4 +811,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	resp, err := client.Do(req)
 
 	if err != nil {
-		Log.Printf("symbol '
+		Log.Printf("symbol '%s' not found\n", symbol)
+		return NewQuote("",
