@@ -801,4 +801,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	url := fmt.Sprintf(
 		"https://api.tiingo.com/tiingo/crypto/prices?tickers=%s&startDate=%s&endDate=%s&resampleFreq=%s",
 		symbol,
-		url.QueryEscape(from.Format("2006-
+		url.QueryEscape(from.Format("2006-1-2")),
+		url.QueryEscape(to.Format("2006-1-2"
