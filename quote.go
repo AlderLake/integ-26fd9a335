@@ -806,4 +806,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 		resampleFreq)
 
 	client := &http.Client{Timeout: ClientTimeout}
-	req, _ := http.NewRequest("GE
+	req, _ := http.NewRequest("GET", url, nil)
+	req.Header.Set("Authorization
