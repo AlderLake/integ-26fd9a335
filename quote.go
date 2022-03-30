@@ -807,4 +807,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 
 	client := &http.Client{Timeout: ClientTimeout}
 	req, _ := http.NewRequest("GET", url, nil)
-	req.Header.Set("Authorization", fmt.Sprintf("Token %s", to
+	req.Header.Set("Authorization", fmt.Sprintf("Token %s", token))
+	resp, err := client.Do(re
