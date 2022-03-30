@@ -805,4 +805,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 		url.QueryEscape(to.Format("2006-1-2")),
 		resampleFreq)
 
-	client := &http.Client{Timeout: C
+	client := &http.Client{Timeout: ClientTimeout}
+	req, _ := http.NewRequest("GE
