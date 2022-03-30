@@ -802,4 +802,7 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 		"https://api.tiingo.com/tiingo/crypto/prices?tickers=%s&startDate=%s&endDate=%s&resampleFreq=%s",
 		symbol,
 		url.QueryEscape(from.Format("2006-1-2")),
-		url.QueryEscape(to.Format("2006-1-2"
+		url.QueryEscape(to.Format("2006-1-2")),
+		resampleFreq)
+
+	client := &http.Client{Timeout: C
