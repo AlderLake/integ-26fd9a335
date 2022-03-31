@@ -816,4 +816,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	}
 	defer resp.Body.Close()
 
-	conte
+	contents, _ := ioutil.ReadAll(resp.Body)
+	e
