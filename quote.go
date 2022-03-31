@@ -817,4 +817,4 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	defer resp.Body.Close()
 
 	contents, _ := ioutil.ReadAll(resp.Body)
-	e
+	err = json.Unmarshal(contents, &cryp
