@@ -820,4 +820,6 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	err = json.Unmarshal(contents, &crypto)
 	if err != nil {
 		Log.Printf("tiingo crypto symbol '%s' error: %v\n", symbol, err)
-		re
+		return NewQuote("", 0), err
+	}
+	if len(crypto
