@@ -824,4 +824,7 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	}
 	if len(crypto) < 1 {
 		Log.Printf("tiingo crypto symbol '%s' No data returned", symbol)
-		r
+		return NewQuote("", 0), err
+	}
+
+	numrows := len(c
