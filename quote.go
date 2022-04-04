@@ -828,4 +828,7 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	}
 
 	numrows := len(crypto[0].PriceData)
-	quote := NewQuote(symbol, numrow
+	quote := NewQuote(symbol, numrows)
+
+	for bar := 0; bar < numrows; bar++ {
+		
