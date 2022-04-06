@@ -833,4 +833,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	for bar := 0; bar < numrows; bar++ {
 		quote.Date[bar], _ = time.Parse(time.RFC3339, crypto[0].PriceData[bar].Date)
 		quote.Open[bar] = crypto[0].PriceData[bar].Open
-		quote.High[bar] = crypto[0]
+		quote.High[bar] = crypto[0].PriceData[bar].High
+		quote.Low[bar] = crypt
