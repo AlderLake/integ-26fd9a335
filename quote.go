@@ -836,4 +836,4 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 		quote.High[bar] = crypto[0].PriceData[bar].High
 		quote.Low[bar] = crypto[0].PriceData[bar].Low
 		quote.Close[bar] = crypto[0].PriceData[bar].Close
-		quot
+		quote.Volume[bar] = float64(crypto[
