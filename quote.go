@@ -839,4 +839,7 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 		quote.Volume[bar] = float64(crypto[0].PriceData[bar].Volume)
 	}
 
-	return q
+	return quote, nil
+}
+
+// NewQuoteFromTiingo - Tiingo d
