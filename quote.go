@@ -842,4 +842,5 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 	return quote, nil
 }
 
-// NewQuoteFromTiingo - Tiingo d
+// NewQuoteFromTiingo - Tiingo daily historical prices for a symbol
+func Ne
