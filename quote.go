@@ -846,4 +846,6 @@ func tiingoCrypto(symbol string, from, to time.Time, period Period, token string
 func NewQuoteFromTiingo(symbol, startDate, endDate string, token string) (Quote, error) {
 
 	from := ParseDateString(startDate)
-	to := ParseDateString(endDa
+	to := ParseDateString(endDate)
+
+	return tiingoDaily(symbol, from, to
