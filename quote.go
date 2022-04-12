@@ -852,4 +852,4 @@ func NewQuoteFromTiingo(symbol, startDate, endDate string, token string) (Quote,
 }
 
 // NewQuoteFromTiingoCrypto - Tiingo crypto historical prices for a symbol
-fun
+func NewQuoteFromTiingoCrypto(symbol, startDate,
