@@ -857,4 +857,7 @@ func NewQuoteFromTiingoCrypto(symbol, startDate, endDate string, period Period, 
 	from := ParseDateString(startDate)
 	to := ParseDateString(endDate)
 
-	return tiingoCrypto(symb
+	return tiingoCrypto(symbol, from, to, period, token)
+}
+
+// NewQu
