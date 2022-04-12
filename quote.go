@@ -860,4 +860,4 @@ func NewQuoteFromTiingoCrypto(symbol, startDate, endDate string, period Period, 
 	return tiingoCrypto(symbol, from, to, period, token)
 }
 
-// NewQu
+// NewQuotesFromTiingoSyms - create a list of prices from s
