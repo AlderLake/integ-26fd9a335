@@ -852,4 +852,6 @@ func NewQuoteFromTiingo(symbol, startDate, endDate string, token string) (Quote,
 }
 
 // NewQuoteFromTiingoCrypto - Tiingo crypto historical prices for a symbol
-func NewQuoteFromTiingoCrypto(symbol, startDate, endDate string, period Period, token string) (
+func NewQuoteFromTiingoCrypto(symbol, startDate, endDate string, period Period, token string) (Quote, error) {
+
+	from := ParseDateStr
