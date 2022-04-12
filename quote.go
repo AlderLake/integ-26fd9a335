@@ -851,4 +851,5 @@ func NewQuoteFromTiingo(symbol, startDate, endDate string, token string) (Quote,
 	return tiingoDaily(symbol, from, to, token)
 }
 
-// NewQuoteFromTiingoCrypto - Ti
+// NewQuoteFromTiingoCrypto - Tiingo crypto historical prices for a symbol
+fun
