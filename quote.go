@@ -861,4 +861,4 @@ func NewQuoteFromTiingoCrypto(symbol, startDate, endDate string, period Period, 
 }
 
 // NewQuotesFromTiingoSyms - create a list of prices from symbols in string array
-func NewQuotesFromTiin
+func NewQuotesFromTiingoSyms(symbols []string, startDate, endDate
