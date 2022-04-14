@@ -869,4 +869,6 @@ func NewQuotesFromTiingoSyms(symbols []string, startDate, endDate string, token 
 		if err == nil {
 			quotes = append(quotes, quote)
 		} else {
-			Log.Println("e
+			Log.Println("error downloading " + symbol)
+		}
+		time.Sle
