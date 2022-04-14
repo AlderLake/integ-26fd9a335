@@ -865,4 +865,4 @@ func NewQuotesFromTiingoSyms(symbols []string, startDate, endDate string, token 
 
 	quotes := Quotes{}
 	for _, symbol := range symbols {
-		quote, err := NewQu
+		quote, err := NewQuoteFromTiingo(symbol, startDate, endDate
