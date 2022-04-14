@@ -867,4 +867,6 @@ func NewQuotesFromTiingoSyms(symbols []string, startDate, endDate string, token 
 	for _, symbol := range symbols {
 		quote, err := NewQuoteFromTiingo(symbol, startDate, endDate, token)
 		if err == nil {
-			quotes = append(
+			quotes = append(quotes, quote)
+		} else {
+			Log.Println("e
