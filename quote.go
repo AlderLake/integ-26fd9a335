@@ -871,4 +871,6 @@ func NewQuotesFromTiingoSyms(symbols []string, startDate, endDate string, token 
 		} else {
 			Log.Println("error downloading " + symbol)
 		}
-		time.Sle
+		time.Sleep(Delay * time.Millisecond)
+	}
+	return quotes
