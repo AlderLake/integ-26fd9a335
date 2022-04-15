@@ -876,4 +876,4 @@ func NewQuotesFromTiingoSyms(symbols []string, startDate, endDate string, token 
 	return quotes, nil
 }
 
-// NewQuotesFromTiingoCryptoSyms - 
+// NewQuotesFromTiingoCryptoSyms - create a list of prices from symbols in string a
