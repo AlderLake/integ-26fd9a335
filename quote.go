@@ -873,4 +873,7 @@ func NewQuotesFromTiingoSyms(symbols []string, startDate, endDate string, token 
 		}
 		time.Sleep(Delay * time.Millisecond)
 	}
-	return quotes
+	return quotes, nil
+}
+
+// NewQuotesFromTiingoCryptoSyms - 
