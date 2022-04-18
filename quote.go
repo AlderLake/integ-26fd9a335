@@ -881,4 +881,4 @@ func NewQuotesFromTiingoCryptoSyms(symbols []string, startDate, endDate string, 
 
 	quotes := Quotes{}
 	for _, symbol := range symbols {
-		quote, err 
+		quote, err := NewQuoteFromTiingoCrypto(symbol, startDate, e
