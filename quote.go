@@ -883,4 +883,6 @@ func NewQuotesFromTiingoCryptoSyms(symbols []string, startDate, endDate string, 
 	for _, symbol := range symbols {
 		quote, err := NewQuoteFromTiingoCrypto(symbol, startDate, endDate, period, token)
 		if err == nil {
-			quotes
+			quotes = append(quotes, quote)
+		} else {
+			Log
