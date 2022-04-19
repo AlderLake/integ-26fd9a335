@@ -885,4 +885,7 @@ func NewQuotesFromTiingoCryptoSyms(symbols []string, startDate, endDate string, 
 		if err == nil {
 			quotes = append(quotes, quote)
 		} else {
-			Log.Println("error downloading " + sym
+			Log.Println("error downloading " + symbol)
+		}
+		time.Sleep(Delay * time.Millisecond)
+	}
