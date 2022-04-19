@@ -889,3 +889,7 @@ func NewQuotesFromTiingoCryptoSyms(symbols []string, startDate, endDate string, 
 		}
 		time.Sleep(Delay * time.Millisecond)
 	}
+	return quotes, nil
+}
+
+// NewQuoteFromCoinb
