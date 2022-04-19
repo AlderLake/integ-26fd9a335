@@ -892,4 +892,4 @@ func NewQuotesFromTiingoCryptoSyms(symbols []string, startDate, endDate string, 
 	return quotes, nil
 }
 
-// NewQuoteFromCoinb
+// NewQuoteFromCoinbase - Coinbase Pro historical prices fo
