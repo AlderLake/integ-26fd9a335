@@ -893,4 +893,4 @@ func NewQuotesFromTiingoCryptoSyms(symbols []string, startDate, endDate string, 
 }
 
 // NewQuoteFromCoinbase - Coinbase Pro historical prices for a symbol
-func NewQuoteFromCoinbase(symbol, start
+func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Pe
