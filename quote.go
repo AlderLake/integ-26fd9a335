@@ -895,4 +895,5 @@ func NewQuotesFromTiingoCryptoSyms(symbols []string, startDate, endDate string, 
 // NewQuoteFromCoinbase - Coinbase Pro historical prices for a symbol
 func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quote, error) {
 
-	start := ParseDateString(startDate) //.In(time.Now().Locat
+	start := ParseDateString(startDate) //.In(time.Now().Location())
+	end := ParseDateString(endDate)     //.
