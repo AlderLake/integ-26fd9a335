@@ -896,4 +896,6 @@ func NewQuotesFromTiingoCryptoSyms(symbols []string, startDate, endDate string, 
 func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quote, error) {
 
 	start := ParseDateString(startDate) //.In(time.Now().Location())
-	end := ParseDateString(endDate)     //.
+	end := ParseDateString(endDate)     //.In(time.Now().Location())
+
+	var gra
