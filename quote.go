@@ -911,4 +911,6 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		granularity = 30 * 60
 	case Min60:
 		granularity = 60 * 60
-	c
+	case Daily:
+		granularity = 24 * 60 * 60
+	case 
