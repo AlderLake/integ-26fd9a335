@@ -898,4 +898,7 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 	start := ParseDateString(startDate) //.In(time.Now().Location())
 	end := ParseDateString(endDate)     //.In(time.Now().Location())
 
-	var gra
+	var granularity int // seconds
+
+	switch period {
+	case M
