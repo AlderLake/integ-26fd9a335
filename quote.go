@@ -904,4 +904,6 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 	case Min1:
 		granularity = 60
 	case Min5:
-		granularity = 5 * 6
+		granularity = 5 * 60
+	case Min15:
+		granularity = 15 * 60
