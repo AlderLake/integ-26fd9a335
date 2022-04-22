@@ -917,3 +917,9 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		granularity = 7 * 24 * 60 * 60
 	default:
 		granularity = 24 * 60 * 60
+	}
+
+	var quote Quote
+	quote.Symbol = symbol
+
+	
