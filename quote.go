@@ -922,4 +922,6 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 	var quote Quote
 	quote.Symbol = symbol
 
-	
+	maxBars := 200
+	var step time.Duration
+	step =
