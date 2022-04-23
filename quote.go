@@ -938,4 +938,4 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 	for startBar.Before(end) {
 
 		url := fmt.Sprintf(
-			"https://ap
+			"https://api.pro.coinbase.com/products/%s/cand
