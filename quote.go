@@ -929,4 +929,8 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 	startBar := start
 	endBar := startBar.Add(time.Duration(maxBars) * step)
 
-	if endB
+	if endBar.After(end) {
+		endBar = end
+	}
+
+	//Log.Pr
