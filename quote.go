@@ -933,4 +933,4 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		endBar = end
 	}
 
-	//Log.Pr
+	//Log.Printf("startBar=%v, endBar=%v\n", startB
