@@ -935,4 +935,7 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 
 	//Log.Printf("startBar=%v, endBar=%v\n", startBar, endBar)
 
-	for startBar.Before(en
+	for startBar.Before(end) {
+
+		url := fmt.Sprintf(
+			"https://ap
