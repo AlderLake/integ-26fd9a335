@@ -927,4 +927,6 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 	step = time.Second * time.Duration(granularity)
 
 	startBar := start
-	endBar := startBar
+	endBar := startBar.Add(time.Duration(maxBars) * step)
+
+	if endB
