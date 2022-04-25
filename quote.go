@@ -940,4 +940,5 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		url := fmt.Sprintf(
 			"https://api.pro.coinbase.com/products/%s/candles?start=%s&end=%s&granularity=%d",
 			symbol,
-			url.QueryEscape(startBar.Format(
+			url.QueryEscape(startBar.Format(time.RFC3339)),
+			url.Query
