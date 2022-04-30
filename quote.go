@@ -954,4 +954,4 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		}
 		defer resp.Body.Close()
 
-	
+		contents, _ := ioutil.ReadAll(resp.Body)
