@@ -946,4 +946,7 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 
 		client := &http.Client{Timeout: ClientTimeout}
 		req, _ := http.NewRequest("GET", url, nil)
-		resp, err := cl
+		resp, err := client.Do(req)
+
+		if err != nil {
+			Log.Print
