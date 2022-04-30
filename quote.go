@@ -949,4 +949,5 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		resp, err := client.Do(req)
 
 		if err != nil {
-			Log.Print
+			Log.Printf("coinbase error: %v\n", err)
+			return NewQuote("", 0),
