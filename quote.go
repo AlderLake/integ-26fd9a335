@@ -944,4 +944,5 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 			url.QueryEscape(endBar.Format(time.RFC3339)),
 			granularity)
 
-		client := &http.Cli
+		client := &http.Client{Timeout: ClientTimeout}
+		req, _ := http.NewRequ
