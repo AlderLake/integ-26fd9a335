@@ -958,4 +958,6 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 
 		type cb [6]float64
 		var bars []cb
-		err = json.Unmarshal(contents, &bars
+		err = json.Unmarshal(contents, &bars)
+		if err != nil {
+			Log.Printf("coinbase error: %
