@@ -964,4 +964,6 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		}
 
 		numrows := len(bars)
-		q := NewQ
+		q := NewQuote(symbol, numrows)
+
+		//Log.Printf("numrows=%
