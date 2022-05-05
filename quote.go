@@ -969,4 +969,5 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		//Log.Printf("numrows=%d, bars=%v\n", numrows, bars)
 
 		for row := 0; row < numrows; row++ {
-			bar := nu
+			bar := numrows - 1 - row // reverse the order
+	
