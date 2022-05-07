@@ -972,4 +972,5 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 			bar := numrows - 1 - row // reverse the order
 			q.Date[bar] = time.Unix(int64(bars[row][0]), 0)
 			q.Open[bar] = bars[row][1]
-			q.High[bar
+			q.High[bar] = bars[row][2]
+			q.Low[bar] = bars[row][3
