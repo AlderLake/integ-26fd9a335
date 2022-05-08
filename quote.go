@@ -977,4 +977,5 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 			q.Close[bar] = bars[row][4]
 			q.Volume[bar] = bars[row][5]
 		}
-		quote.Date = appen
+		quote.Date = append(quote.Date, q.Date...)
+		quote.Open = a
