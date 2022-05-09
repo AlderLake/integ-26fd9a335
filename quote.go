@@ -981,4 +981,4 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		quote.Open = append(quote.Open, q.Open...)
 		quote.High = append(quote.High, q.High...)
 		quote.Low = append(quote.Low, q.Low...)
-		qu
+		quote.Close = append(quote.Close, q.Close..
