@@ -985,4 +985,5 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 		quote.Volume = append(quote.Volume, q.Volume...)
 
 		time.Sleep(time.Second)
-	
+		startBar = endBar.Add(step)
+		endBar = st
