@@ -993,4 +993,4 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 	return quote, nil
 }
 
-// NewQuot
+// NewQuotesFromCoinbase - create a list of prices 
