@@ -994,4 +994,6 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 }
 
 // NewQuotesFromCoinbase - create a list of prices from symbols in file
-func NewQuotesFromCoinbase(filename, startDate, endDate string, pe
+func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (Quotes, error) {
+
+	quot
