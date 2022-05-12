@@ -1005,4 +1005,6 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 	scanner := bufio.NewScanner(inFile)
 	scanner.Split(bufio.ScanLines)
 
-	for scanner.
+	for scanner.Scan() {
+		sym := scanner.Text()
+		quot
