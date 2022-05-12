@@ -1001,4 +1001,5 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 	if err != nil {
 		return quotes, err
 	}
-	defer inFile.Clos
+	defer inFile.Close()
+	scanner := bufio.NewScanner(inFile)
