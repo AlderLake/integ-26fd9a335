@@ -997,4 +997,6 @@ func NewQuoteFromCoinbase(symbol, startDate, endDate string, period Period) (Quo
 func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (Quotes, error) {
 
 	quotes := Quotes{}
-	inFile, err := os.Op
+	inFile, err := os.Open(filename)
+	if err != nil {
+		return quotes, 
