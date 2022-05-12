@@ -1003,3 +1003,6 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 	}
 	defer inFile.Close()
 	scanner := bufio.NewScanner(inFile)
+	scanner.Split(bufio.ScanLines)
+
+	for scanner.
