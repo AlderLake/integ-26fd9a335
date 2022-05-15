@@ -1011,4 +1011,6 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 		if err == nil {
 			quotes = append(quotes, quote)
 		} else {
-			Log.Println("error downloading
+			Log.Println("error downloading " + sym)
+		}
+		time.Sleep(Delay * time.Milliseco
