@@ -1007,4 +1007,6 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 
 	for scanner.Scan() {
 		sym := scanner.Text()
-		quote, err := NewQuoteFromCoinbase(sym, startD
+		quote, err := NewQuoteFromCoinbase(sym, startDate, endDate, period)
+		if err == nil {
+			q
