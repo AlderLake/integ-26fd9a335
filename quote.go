@@ -1011,4 +1011,4 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 		if err == nil {
 			quotes = append(quotes, quote)
 		} else {
-	
+			Log.Println("error downloading
