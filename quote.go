@@ -1009,4 +1009,6 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 		sym := scanner.Text()
 		quote, err := NewQuoteFromCoinbase(sym, startDate, endDate, period)
 		if err == nil {
-			q
+			quotes = append(quotes, quote)
+		} else {
+	
