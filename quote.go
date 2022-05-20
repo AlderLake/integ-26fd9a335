@@ -1018,4 +1018,4 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 	return quotes, nil
 }
 
-// NewQuotesFromCoinbaseSyms - create a list of prices
+// NewQuotesFromCoinbaseSyms - create a list of prices from symbols in string ar
