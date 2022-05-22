@@ -1024,4 +1024,5 @@ func NewQuotesFromCoinbaseSyms(symbols []string, startDate, endDate string, peri
 	quotes := Quotes{}
 	for _, symbol := range symbols {
 		quote, err := NewQuoteFromCoinbase(symbol, startDate, endDate, period)
-		if err =
+		if err == nil {
+			quotes = append(quote
