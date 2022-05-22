@@ -1027,4 +1027,6 @@ func NewQuotesFromCoinbaseSyms(symbols []string, startDate, endDate string, peri
 		if err == nil {
 			quotes = append(quotes, quote)
 		} else {
-			Log.Print
+			Log.Println("error downloading " + symbol)
+		}
+		
