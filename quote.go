@@ -1019,4 +1019,7 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 }
 
 // NewQuotesFromCoinbaseSyms - create a list of prices from symbols in string array
-func NewQuotesFromCoinbaseSyms(symbols []string, startDate, endDate string, period Period) (Quotes, e
+func NewQuotesFromCoinbaseSyms(symbols []string, startDate, endDate string, period Period) (Quotes, error) {
+
+	quotes := Quotes{}
+	for _, sy
