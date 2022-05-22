@@ -1022,4 +1022,5 @@ func NewQuotesFromCoinbase(filename, startDate, endDate string, period Period) (
 func NewQuotesFromCoinbaseSyms(symbols []string, startDate, endDate string, period Period) (Quotes, error) {
 
 	quotes := Quotes{}
-	for _, sy
+	for _, symbol := range symbols {
+		quote, err := NewQuoteFr
