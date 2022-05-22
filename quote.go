@@ -1025,4 +1025,6 @@ func NewQuotesFromCoinbaseSyms(symbols []string, startDate, endDate string, peri
 	for _, symbol := range symbols {
 		quote, err := NewQuoteFromCoinbase(symbol, startDate, endDate, period)
 		if err == nil {
-			quotes = append(quote
+			quotes = append(quotes, quote)
+		} else {
+			Log.Print
