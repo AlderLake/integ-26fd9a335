@@ -1041,4 +1041,5 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 
 	switch period {
 	case Min1:
-		b
+		bittrexPeriod = "oneMin"
+	case Min5:
