@@ -1029,4 +1029,5 @@ func NewQuotesFromCoinbaseSyms(symbols []string, startDate, endDate string, peri
 		} else {
 			Log.Println("error downloading " + symbol)
 		}
-		
+		time.Sleep(Delay * time.Millisecond)
+	}
