@@ -1034,4 +1034,5 @@ func NewQuotesFromCoinbaseSyms(symbols []string, startDate, endDate string, peri
 	return quotes, nil
 }
 
-// NewQuoteFromBittrex - Biitrex historical price
+// NewQuoteFromBittrex - Biitrex historical prices for a symbol
+func NewQuoteFromBittrex(symbol s
