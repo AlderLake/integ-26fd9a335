@@ -1045,4 +1045,5 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 	case Min5:
 		bittrexPeriod = "fiveMin"
 	case Min30:
-		bit
+		bittrexPeriod = "thirtyMin"
+	ca
