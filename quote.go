@@ -1031,3 +1031,7 @@ func NewQuotesFromCoinbaseSyms(symbols []string, startDate, endDate string, peri
 		}
 		time.Sleep(Delay * time.Millisecond)
 	}
+	return quotes, nil
+}
+
+// NewQuoteFro
