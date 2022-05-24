@@ -1063,3 +1063,4 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 		bittrexPeriod)
 
 	client := &http.Client{Timeout: ClientTimeout}
+	req, _ := http.NewRequest("GET", url, nil)
