@@ -1058,4 +1058,8 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 	quote.Symbol = symbol
 
 	url := fmt.Sprintf(
-		"https://bittrex.com/Api/v2.0/pub/market/GetTicks?marketName=%s&tickInterv
+		"https://bittrex.com/Api/v2.0/pub/market/GetTicks?marketName=%s&tickInterval=%s",
+		symbol,
+		bittrexPeriod)
+
+	client
