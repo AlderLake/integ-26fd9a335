@@ -1057,4 +1057,5 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 	var quote Quote
 	quote.Symbol = symbol
 
-	url := fmt.Sp
+	url := fmt.Sprintf(
+		"https://bittrex.com/Api/v2.0/pub/
