@@ -1062,4 +1062,4 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 		symbol,
 		bittrexPeriod)
 
-	client
+	client := &http.Client{Timeout: ClientTimeout}
