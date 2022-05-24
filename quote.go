@@ -1054,4 +1054,7 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 		bittrexPeriod = "day"
 	}
 
-	var quote Quot
+	var quote Quote
+	quote.Symbol = symbol
+
+	url := fmt.Sp
