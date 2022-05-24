@@ -1051,3 +1051,7 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 	case Daily:
 		bittrexPeriod = "day"
 	default:
+		bittrexPeriod = "day"
+	}
+
+	var quote Quot
