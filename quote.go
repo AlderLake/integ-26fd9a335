@@ -1067,3 +1067,4 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 	resp, err := client.Do(req)
 
 	if err != nil {
+		Log.Printf("bittrex error: %v\n
