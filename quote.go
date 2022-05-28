@@ -1072,4 +1072,6 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 	}
 	defer resp.Body.Close()
 
-	contents, _ := ioutil.ReadAl
+	contents, _ := ioutil.ReadAll(resp.Body)
+
+	type OHLC struc
