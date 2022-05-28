@@ -1074,4 +1074,7 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 
 	contents, _ := ioutil.ReadAll(resp.Body)
 
-	type OHLC struc
+	type OHLC struct {
+		O  float64
+		H  float64
+		L  float64
