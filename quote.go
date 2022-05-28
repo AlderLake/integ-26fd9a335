@@ -1078,3 +1078,7 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 		O  float64
 		H  float64
 		L  float64
+		C  float64
+		V  float64
+		T  string
+		BV float64
