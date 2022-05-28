@@ -1069,3 +1069,7 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 	if err != nil {
 		Log.Printf("bittrex error: %v\n", err)
 		return NewQuote("", 0), err
+	}
+	defer resp.Body.Close()
+
+	contents, _ := ioutil.ReadAl
