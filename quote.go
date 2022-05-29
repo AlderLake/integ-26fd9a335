@@ -1084,4 +1084,5 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 		BV float64
 	}
 	type Result struct {
-		Success bo
+		Success bool   `json:"succes"`
+		Message string `jso
