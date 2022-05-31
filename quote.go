@@ -1093,4 +1093,8 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 
 	err = json.Unmarshal(contents, &result)
 	if err != nil {
-		Log.Printf("bittrex error: %v\n", er
+		Log.Printf("bittrex error: %v\n", err)
+	}
+
+	numrows := len(result.OHLC)
+	q := Ne
