@@ -1088,3 +1088,7 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 		Message string `json:"message"`
 		OHLC    []OHLC `json:"result"`
 	}
+
+	var result Result
+
+	err = json.Unmar
