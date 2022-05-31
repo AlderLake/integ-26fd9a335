@@ -1091,4 +1091,6 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 
 	var result Result
 
-	err = json.Unmar
+	err = json.Unmarshal(contents, &result)
+	if err != nil {
+		L
