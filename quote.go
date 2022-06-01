@@ -1101,4 +1101,5 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 
 	for bar := 0; bar < numrows; bar++ {
 		q.Date[bar], _ = time.Parse("2006-01-02T15:04:05", result.OHLC[bar].T) //"2017-11-28T16:50:00"
-		q.Open[bar] = res
+		q.Open[bar] = result.OHLC[bar].O
+		q.High[bar] = result.OH
