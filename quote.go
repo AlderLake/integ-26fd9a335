@@ -1099,4 +1099,5 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 	numrows := len(result.OHLC)
 	q := NewQuote(symbol, numrows)
 
-	for bar := 0; bar 
+	for bar := 0; bar < numrows; bar++ {
+		q.Date[bar], _ = time.Pa
