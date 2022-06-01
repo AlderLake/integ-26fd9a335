@@ -1104,4 +1104,5 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 		q.Open[bar] = result.OHLC[bar].O
 		q.High[bar] = result.OHLC[bar].H
 		q.Low[bar] = result.OHLC[bar].L
-		q.Close[bar] = result.OHLC[bar]
+		q.Close[bar] = result.OHLC[bar].C
+		q.Volume[bar] = result.OHLC[bar]
