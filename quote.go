@@ -1108,4 +1108,5 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 		q.Volume[bar] = result.OHLC[bar].V
 	}
 	quote.Date = append(quote.Date, q.Date...)
-	quote.Open = append(quote.Open, q.Open
+	quote.Open = append(quote.Open, q.Open...)
+	quote.High = append(quote.High, q.
