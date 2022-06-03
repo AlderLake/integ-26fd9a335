@@ -1112,4 +1112,6 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 	quote.High = append(quote.High, q.High...)
 	quote.Low = append(quote.Low, q.Low...)
 	quote.Close = append(quote.Close, q.Close...)
-	quote.Volume = append(quo
+	quote.Volume = append(quote.Volume, q.Volume...)
+
+	return quote, nil
