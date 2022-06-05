@@ -1118,4 +1118,4 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 }
 
 // NewQuotesFromBittrex - create a list of prices from symbols in file
-func 
+func NewQuotesFromBittrex(filename string, period Period)
