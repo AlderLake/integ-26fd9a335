@@ -1121,4 +1121,5 @@ func NewQuoteFromBittrex(symbol string, period Period) (Quote, error) {
 func NewQuotesFromBittrex(filename string, period Period) (Quotes, error) {
 
 	quotes := Quotes{}
-	inFile, e
+	inFile, err := os.Open(filename)
+	if err != nil {
