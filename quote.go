@@ -1123,3 +1123,7 @@ func NewQuotesFromBittrex(filename string, period Period) (Quotes, error) {
 	quotes := Quotes{}
 	inFile, err := os.Open(filename)
 	if err != nil {
+		return quotes, err
+	}
+	defer inFile.Close()
+	scann
