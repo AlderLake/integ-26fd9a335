@@ -1127,4 +1127,7 @@ func NewQuotesFromBittrex(filename string, period Period) (Quotes, error) {
 	}
 	defer inFile.Close()
 	scanner := bufio.NewScanner(inFile)
-	scanner.Split(bufio.S
+	scanner.Split(bufio.ScanLines)
+
+	for scanner.Scan() {
+		sym := scanne
