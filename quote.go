@@ -1135,4 +1135,6 @@ func NewQuotesFromBittrex(filename string, period Period) (Quotes, error) {
 		if err == nil {
 			quotes = append(quotes, quote)
 		} else {
-			Log.Println("err
+			Log.Println("error downloading " + sym)
+		}
+		time.Sleep(Delay * tim
