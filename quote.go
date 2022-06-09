@@ -1140,3 +1140,6 @@ func NewQuotesFromBittrex(filename string, period Period) (Quotes, error) {
 		time.Sleep(Delay * time.Millisecond)
 	}
 	return quotes, nil
+}
+
+// NewQuotesFromBittrexSyms - create
