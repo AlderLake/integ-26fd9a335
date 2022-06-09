@@ -1131,4 +1131,6 @@ func NewQuotesFromBittrex(filename string, period Period) (Quotes, error) {
 
 	for scanner.Scan() {
 		sym := scanner.Text()
-		quote, err := NewQuoteFromBittrex
+		quote, err := NewQuoteFromBittrex(sym, period)
+		if err == nil {
+			quotes = append(quotes, 
