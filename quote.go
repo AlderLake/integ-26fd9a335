@@ -1153,4 +1153,6 @@ func NewQuotesFromBittrexSyms(symbols []string, period Period) (Quotes, error) {
 		} else {
 			Log.Println("error downloading " + symbol)
 		}
-		time.Sleep(Dela
+		time.Sleep(Delay * time.Millisecond)
+	}
+	return quotes,
