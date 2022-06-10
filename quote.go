@@ -1148,4 +1148,5 @@ func NewQuotesFromBittrexSyms(symbols []string, period Period) (Quotes, error) {
 	quotes := Quotes{}
 	for _, symbol := range symbols {
 		quote, err := NewQuoteFromBittrex(symbol, period)
-		if er
+		if err == nil {
+			quotes = append(quotes, quo
