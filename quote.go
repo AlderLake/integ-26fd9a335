@@ -1151,4 +1151,6 @@ func NewQuotesFromBittrexSyms(symbols []string, period Period) (Quotes, error) {
 		if err == nil {
 			quotes = append(quotes, quote)
 		} else {
-			Log.Println("erro
+			Log.Println("error downloading " + symbol)
+		}
+		time.Sleep(Dela
