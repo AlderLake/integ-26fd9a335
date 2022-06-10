@@ -1146,4 +1146,5 @@ func NewQuotesFromBittrex(filename string, period Period) (Quotes, error) {
 func NewQuotesFromBittrexSyms(symbols []string, period Period) (Quotes, error) {
 
 	quotes := Quotes{}
-	for _, symb
+	for _, symbol := range symbols {
+		quote, err := NewQuot
