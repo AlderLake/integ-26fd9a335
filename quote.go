@@ -1143,4 +1143,7 @@ func NewQuotesFromBittrex(filename string, period Period) (Quotes, error) {
 }
 
 // NewQuotesFromBittrexSyms - create a list of prices from symbols in string array
-func NewQuotesFromBittrexSyms(symbols []string, period Period) (Quotes, e
+func NewQuotesFromBittrexSyms(symbols []string, period Period) (Quotes, error) {
+
+	quotes := Quotes{}
+	for _, symb
