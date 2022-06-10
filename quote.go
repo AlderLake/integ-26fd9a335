@@ -1142,4 +1142,4 @@ func NewQuotesFromBittrex(filename string, period Period) (Quotes, error) {
 	return quotes, nil
 }
 
-// NewQuotesFromBittrexSyms - create
+// NewQuotesFromBittrexSyms - create a list of prices from symb
