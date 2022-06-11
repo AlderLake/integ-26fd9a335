@@ -1155,4 +1155,7 @@ func NewQuotesFromBittrexSyms(symbols []string, period Period) (Quotes, error) {
 		}
 		time.Sleep(Delay * time.Millisecond)
 	}
-	return quotes,
+	return quotes, nil
+}
+
+// NewQuoteFromBinance - Binance historical 
