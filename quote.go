@@ -1158,4 +1158,5 @@ func NewQuotesFromBittrexSyms(symbols []string, period Period) (Quotes, error) {
 	return quotes, nil
 }
 
-// NewQuoteFromBinance - Binance historical 
+// NewQuoteFromBinance - Binance historical prices for a symbol
+func NewQuote
