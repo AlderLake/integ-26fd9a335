@@ -1162,4 +1162,7 @@ func NewQuotesFromBittrexSyms(symbols []string, period Period) (Quotes, error) {
 func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period) (Quote, error) {
 
 	start := ParseDateString(startDate)
-	end := ParseDateString(endD
+	end := ParseDateString(endDate)
+
+	var interval string
+	var granularity int
