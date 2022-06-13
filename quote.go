@@ -1165,4 +1165,8 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 	end := ParseDateString(endDate)
 
 	var interval string
-	var granularity int
+	var granularity int // seconds
+
+	switch period {
+	case Min1:
+		int
