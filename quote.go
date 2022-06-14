@@ -1171,4 +1171,6 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 	case Min1:
 		interval = "1m"
 		granularity = 60
-	case M
+	case Min3:
+		interval = "3m"
+		granularity = 3 * 60
