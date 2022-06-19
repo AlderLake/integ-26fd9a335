@@ -1201,4 +1201,6 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 	case Daily:
 		interval = "1d"
 		granularity = 24 * 60 * 60
-	case Day
+	case Day3:
+		interval = "3d"
+		granularity 
