@@ -1220,4 +1220,6 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 
 	maxBars := 500
 	var step time.Duration
-	step = time.Second * ti
+	step = time.Second * time.Duration(granularity)
+
+	startBar := start
