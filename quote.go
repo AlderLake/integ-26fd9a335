@@ -1219,4 +1219,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 	quote.Symbol = symbol
 
 	maxBars := 500
-	v
+	var step time.Duration
+	step = time.Second * ti
