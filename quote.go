@@ -1230,3 +1230,6 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 	}
 
 	for startBar.Before(end) {
+
+		url := fmt.Sprintf(
+			"https://api.binanc
