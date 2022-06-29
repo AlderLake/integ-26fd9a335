@@ -1223,3 +1223,4 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 	step = time.Second * time.Duration(granularity)
 
 	startBar := start
+	endBar := startBar.Add(time.Duration(maxBa
