@@ -1227,3 +1227,6 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 
 	if endBar.After(end) {
 		endBar = end
+	}
+
+	for startBar.Before(end) {
