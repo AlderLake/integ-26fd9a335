@@ -1232,4 +1232,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 	for startBar.Before(end) {
 
 		url := fmt.Sprintf(
-			"https://api.binance.com/api/v1/klines?symbol=%s&interval=
+			"https://api.binance.com/api/v1/klines?symbol=%s&interval=%s&startTime=%d&endTime=%d",
+			string
