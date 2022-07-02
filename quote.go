@@ -1234,4 +1234,6 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		url := fmt.Sprintf(
 			"https://api.binance.com/api/v1/klines?symbol=%s&interval=%s&startTime=%d&endTime=%d",
 			strings.ToUpper(symbol),
-			inter
+			interval,
+			startBar.UnixNano()/1000000,
+			end
