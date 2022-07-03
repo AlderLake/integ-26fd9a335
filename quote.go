@@ -1238,4 +1238,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 			startBar.UnixNano()/1000000,
 			endBar.UnixNano()/1000000)
 		//log.Println(url)
-		client := &http.Client{Timeout:
+		client := &http.Client{Timeout: ClientTimeout}
+		req, _ := http.NewReq
