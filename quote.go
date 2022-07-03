@@ -1236,4 +1236,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 			strings.ToUpper(symbol),
 			interval,
 			startBar.UnixNano()/1000000,
-			end
+			endBar.UnixNano()/1000000)
+		//log.Println(url)
