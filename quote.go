@@ -1240,4 +1240,7 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		//log.Println(url)
 		client := &http.Client{Timeout: ClientTimeout}
 		req, _ := http.NewRequest("GET", url, nil)
-		resp, err := clien
+		resp, err := client.Do(req)
+
+		if err != nil {
+			Log.Printf("bin
