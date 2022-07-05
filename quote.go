@@ -1248,4 +1248,7 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		}
 		defer resp.Body.Close()
 
-		contents, _ := ioutil.ReadAll(resp.Bo
+		contents, _ := ioutil.ReadAll(resp.Body)
+
+		type binance [12]interface{}
+		var 
