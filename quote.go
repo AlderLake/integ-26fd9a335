@@ -1243,4 +1243,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		resp, err := client.Do(req)
 
 		if err != nil {
-			Log.Printf("bin
+			Log.Printf("binance error: %v\n", err)
+			return NewQuote("", 0), 
