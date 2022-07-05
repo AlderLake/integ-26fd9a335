@@ -1251,4 +1251,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		contents, _ := ioutil.ReadAll(resp.Body)
 
 		type binance [12]interface{}
-		var 
+		var bars []binance
+		err = json.Unmarshal(con
