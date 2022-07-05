@@ -1246,4 +1246,6 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 			Log.Printf("binance error: %v\n", err)
 			return NewQuote("", 0), err
 		}
-		defer resp.Body.Close
+		defer resp.Body.Close()
+
+		contents, _ := ioutil.ReadAll(resp.Bo
