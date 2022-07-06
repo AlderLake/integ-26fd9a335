@@ -1257,4 +1257,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 			Log.Printf("binance error: %v\n", err)
 		}
 
-		numrows
+		numrows := len(bars)
+		q := NewQuote(symbol, numro
