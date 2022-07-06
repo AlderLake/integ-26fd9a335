@@ -1254,4 +1254,7 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		var bars []binance
 		err = json.Unmarshal(contents, &bars)
 		if err != nil {
-			Log.
+			Log.Printf("binance error: %v\n", err)
+		}
+
+		numrows
