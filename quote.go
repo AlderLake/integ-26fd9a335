@@ -1258,4 +1258,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		}
 
 		numrows := len(bars)
-		q := NewQuote(symbol, numro
+		q := NewQuote(symbol, numrows)
+		//fmt.Printf("numrows=%d, bars=%v\n"
