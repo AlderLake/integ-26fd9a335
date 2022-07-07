@@ -1262,4 +1262,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		//fmt.Printf("numrows=%d, bars=%v\n", numrows, bars)
 
 		/*
-			0       OpenTime    
+			0       OpenTime                 int64
+			1 			Open       
