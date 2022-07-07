@@ -1263,4 +1263,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 
 		/*
 			0       OpenTime                 int64
-			1 			Open       
+			1 			Open                     float64
+			2 			High                
