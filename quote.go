@@ -1271,4 +1271,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 			6 			CloseTime                int64
 			7 			QuoteAssetVolume         float64
 			8 			NumTrades                int64
-			9 			T
+			9 			TakerBuyBaseAssetVolume  float64
+			10 		
