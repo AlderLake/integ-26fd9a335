@@ -1276,4 +1276,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 			11 			Ignore                   float64
 		*/
 
-		for bar :=
+		for bar := 0; bar < numrows; bar++ {
+			q.Date[bar] = time.Unix
