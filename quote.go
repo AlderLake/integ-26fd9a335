@@ -1280,4 +1280,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 			q.Date[bar] = time.Unix(int64(bars[bar][6].(float64))/1000, 0)
 			q.Open[bar], _ = strconv.ParseFloat(bars[bar][1].(string), 64)
 			q.High[bar], _ = strconv.ParseFloat(bars[bar][2].(string), 64)
-			q.Low[bar], _ = strconv.ParseFloat
+			q.Low[bar], _ = strconv.ParseFloat(bars[bar][3].(string), 64)
+			q.Clo
