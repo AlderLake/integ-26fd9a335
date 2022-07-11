@@ -1281,4 +1281,4 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 			q.Open[bar], _ = strconv.ParseFloat(bars[bar][1].(string), 64)
 			q.High[bar], _ = strconv.ParseFloat(bars[bar][2].(string), 64)
 			q.Low[bar], _ = strconv.ParseFloat(bars[bar][3].(string), 64)
-			q.Clo
+			q.Close[bar], _ = strconv.ParseFloat(b
