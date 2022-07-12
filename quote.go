@@ -1285,4 +1285,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 			q.Volume[bar], _ = strconv.ParseFloat(bars[bar][5].(string), 64)
 		}
 		quote.Date = append(quote.Date, q.Date...)
-		quote.Open = append(q
+		quote.Open = append(quote.Open, q.Open...)
+		quote.High 
