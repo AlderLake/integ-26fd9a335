@@ -1296,4 +1296,7 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		endBar = startBar.Add(time.Duration(maxBars) * step)
 
 	}
-	return quot
+	return quote, nil
+}
+
+// NewQuotesFromBinance - create a
