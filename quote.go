@@ -1299,4 +1299,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 	return quote, nil
 }
 
-// NewQuotesFromBinance - create a
+// NewQuotesFromBinance - create a list of prices from symbols in file
+func NewQuotes
