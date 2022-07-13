@@ -1292,4 +1292,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		quote.Volume = append(quote.Volume, q.Volume...)
 
 		time.Sleep(time.Second)
-		startBar = endB
+		startBar = endBar.Add(step)
+		endBar = startBar.Add(time.Durat
