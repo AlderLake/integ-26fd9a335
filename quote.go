@@ -1293,4 +1293,7 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 
 		time.Sleep(time.Second)
 		startBar = endBar.Add(step)
-		endBar = startBar.Add(time.Durat
+		endBar = startBar.Add(time.Duration(maxBars) * step)
+
+	}
+	return quot
