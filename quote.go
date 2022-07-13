@@ -1300,4 +1300,4 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 }
 
 // NewQuotesFromBinance - create a list of prices from symbols in file
-func NewQuotesFromBinance(filename string, star
+func NewQuotesFromBinance(filename string, startDate, endDate string, period Period) (Quotes, e
