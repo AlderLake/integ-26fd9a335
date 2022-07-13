@@ -1287,4 +1287,5 @@ func NewQuoteFromBinance(symbol string, startDate, endDate string, period Period
 		quote.Date = append(quote.Date, q.Date...)
 		quote.Open = append(quote.Open, q.Open...)
 		quote.High = append(quote.High, q.High...)
-		quote.Low = appen
+		quote.Low = append(quote.Low, q.Low...)
+		quote.Cl
