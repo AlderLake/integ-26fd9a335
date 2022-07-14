@@ -1306,4 +1306,6 @@ func NewQuotesFromBinance(filename string, startDate, endDate string, period Per
 	if err != nil {
 		return quotes, err
 	}
-	defer inFile
+	defer inFile.Close()
+	scanner := bufio.NewScanner(inFile)
+	sca
