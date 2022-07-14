@@ -1310,4 +1310,6 @@ func NewQuotesFromBinance(filename string, startDate, endDate string, period Per
 	scanner := bufio.NewScanner(inFile)
 	scanner.Split(bufio.ScanLines)
 
+	for scanner.Scan() {
+		sym := scanner.Text()
 	
