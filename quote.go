@@ -1312,4 +1312,5 @@ func NewQuotesFromBinance(filename string, startDate, endDate string, period Per
 
 	for scanner.Scan() {
 		sym := scanner.Text()
-		quote, err := NewQuoteFromBinance(sym, s
+		quote, err := NewQuoteFromBinance(sym, startDate, endDate, period)
+		if er
