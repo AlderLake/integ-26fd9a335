@@ -1304,4 +1304,6 @@ func NewQuotesFromBinance(filename string, startDate, endDate string, period Per
 	quotes := Quotes{}
 	inFile, err := os.Open(filename)
 	if err != nil {
-		return q
+		return quotes, err
+	}
+	defer inFile
