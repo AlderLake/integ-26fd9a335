@@ -1315,4 +1315,5 @@ func NewQuotesFromBinance(filename string, startDate, endDate string, period Per
 		quote, err := NewQuoteFromBinance(sym, startDate, endDate, period)
 		if err == nil {
 			quotes = append(quotes, quote)
-		} e
+		} else {
+			Log.Println("error downloading 
