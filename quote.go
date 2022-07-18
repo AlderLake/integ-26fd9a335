@@ -1324,4 +1324,4 @@ func NewQuotesFromBinance(filename string, startDate, endDate string, period Per
 }
 
 // NewQuotesFromBinanceSyms - create a list of prices from symbols in string array
-func NewQuotesFromBinanceSyms(symbols []string, startDat
+func NewQuotesFromBinanceSyms(symbols []string, startDate, endDate string, period Period) (Quotes, err
