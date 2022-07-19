@@ -1327,4 +1327,5 @@ func NewQuotesFromBinance(filename string, startDate, endDate string, period Per
 func NewQuotesFromBinanceSyms(symbols []string, startDate, endDate string, period Period) (Quotes, error) {
 
 	quotes := Quotes{}
-	for _, 
+	for _, symbol := range symbols {
+		quote, err
