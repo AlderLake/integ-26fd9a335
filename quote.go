@@ -1328,4 +1328,4 @@ func NewQuotesFromBinanceSyms(symbols []string, startDate, endDate string, perio
 
 	quotes := Quotes{}
 	for _, symbol := range symbols {
-		quote, err
+		quote, err := NewQuoteFromBinance(symbol, s
