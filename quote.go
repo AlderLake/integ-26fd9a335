@@ -1336,4 +1336,7 @@ func NewQuotesFromBinanceSyms(symbols []string, startDate, endDate string, perio
 		}
 		time.Sleep(Delay * time.Millisecond)
 	}
-	retu
+	return quotes, nil
+}
+
+// NewEtfList - download a l
