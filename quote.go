@@ -1333,3 +1333,7 @@ func NewQuotesFromBinanceSyms(symbols []string, startDate, endDate string, perio
 			quotes = append(quotes, quote)
 		} else {
 			Log.Println("error downloading " + symbol)
+		}
+		time.Sleep(Delay * time.Millisecond)
+	}
+	retu
