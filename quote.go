@@ -1331,4 +1331,5 @@ func NewQuotesFromBinanceSyms(symbols []string, startDate, endDate string, perio
 		quote, err := NewQuoteFromBinance(symbol, startDate, endDate, period)
 		if err == nil {
 			quotes = append(quotes, quote)
-		} else
+		} else {
+			Log.Println("error downloading " + symbol)
