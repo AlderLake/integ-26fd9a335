@@ -1339,4 +1339,7 @@ func NewQuotesFromBinanceSyms(symbols []string, startDate, endDate string, perio
 	return quotes, nil
 }
 
-// NewEtfList - download a list of etf symbols to an array of st
+// NewEtfList - download a list of etf symbols to an array of strings
+func NewEtfList() ([]string, error) {
+
+	var 
