@@ -1344,4 +1344,4 @@ func NewEtfList() ([]string, error) {
 
 	var symbols []string
 
-	buf, err := getAn
+	buf, err := getAnonFTP("ftp.nasdaqtrader.com", "2
