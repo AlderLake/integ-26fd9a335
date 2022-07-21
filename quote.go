@@ -1345,4 +1345,6 @@ func NewEtfList() ([]string, error) {
 	var symbols []string
 
 	buf, err := getAnonFTP("ftp.nasdaqtrader.com", "21", "symboldirectory", "otherlisted.txt")
-	if err 
+	if err != nil {
+		Log.Println(err)
+		return symbols, er
