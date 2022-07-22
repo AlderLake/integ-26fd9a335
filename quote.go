@@ -1350,4 +1350,5 @@ func NewEtfList() ([]string, error) {
 		return symbols, err
 	}
 
-	for _, line := range strings.Spl
+	for _, line := range strings.Split(string(buf), "\n") {
+		// ACT Symbol|Security 
