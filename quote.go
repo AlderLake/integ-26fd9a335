@@ -1352,4 +1352,5 @@ func NewEtfList() ([]string, error) {
 
 	for _, line := range strings.Split(string(buf), "\n") {
 		// ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol
-		cols
+		cols := strings.Split(line, "|")
+		if len(cols) 
