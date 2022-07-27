@@ -1362,4 +1362,5 @@ func NewEtfList() ([]string, error) {
 }
 
 // NewEtfFile - download a list of etf symbols to a file
-func N
+func NewEtfFile(filename string) error {
+	if f
