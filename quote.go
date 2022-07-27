@@ -1354,4 +1354,7 @@ func NewEtfList() ([]string, error) {
 		// ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol
 		cols := strings.Split(line, "|")
 		if len(cols) > 5 && cols[4] == "Y" && cols[6] == "N" {
-			symbols = append(symbols, strings.ToLower(co
+			symbols = append(symbols, strings.ToLower(cols[0]))
+		}
+	}
+	sort.Strings(symbols)
