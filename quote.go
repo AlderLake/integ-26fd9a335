@@ -1361,4 +1361,5 @@ func NewEtfList() ([]string, error) {
 	return symbols, nil
 }
 
-// NewEtfFile - dow
+// NewEtfFile - download a list of etf symbols to a file
+func N
