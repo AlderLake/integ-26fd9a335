@@ -1358,3 +1358,7 @@ func NewEtfList() ([]string, error) {
 		}
 	}
 	sort.Strings(symbols)
+	return symbols, nil
+}
+
+// NewEtfFile - dow
