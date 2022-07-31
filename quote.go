@@ -1363,4 +1363,7 @@ func NewEtfList() ([]string, error) {
 
 // NewEtfFile - download a list of etf symbols to a file
 func NewEtfFile(filename string) error {
-	if f
+	if filename == "" {
+		filename = "etf.txt"
+	}
+	etfs, err :
