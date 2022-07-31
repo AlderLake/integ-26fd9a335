@@ -1371,4 +1371,6 @@ func NewEtfFile(filename string) error {
 		return err
 	}
 	ba := []byte(strings.Join(etfs, "\n"))
-	ret
+	return ioutil.WriteFile(filename, ba, 0644)
+}
+
