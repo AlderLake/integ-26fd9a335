@@ -1370,3 +1370,5 @@ func NewEtfFile(filename string) error {
 	if err != nil {
 		return err
 	}
+	ba := []byte(strings.Join(etfs, "\n"))
+	ret
