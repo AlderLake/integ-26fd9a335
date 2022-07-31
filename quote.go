@@ -1366,4 +1366,7 @@ func NewEtfFile(filename string) error {
 	if filename == "" {
 		filename = "etf.txt"
 	}
-	etfs, err :
+	etfs, err := NewEtfList()
+	if err != nil {
+		return err
+	}
