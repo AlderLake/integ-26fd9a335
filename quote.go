@@ -1392,4 +1392,7 @@ var ValidMarkets = [...]string{"etf",
 	//"consumerservices",
 	//"energy",
 	//"finance",
-	//"healthcare
+	//"healthcare",
+	//"miscellaneous",
+	//"utilities",
+	//"technology"
