@@ -1384,4 +1384,5 @@ var ValidMarkets = [...]string{"etf",
 	//"midcap",
 	//"smallcap",
 	//"microcap",
-	//"nan
+	//"nanocap",
+	//"basicindustries",
