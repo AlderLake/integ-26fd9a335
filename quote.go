@@ -1381,4 +1381,7 @@ var ValidMarkets = [...]string{"etf",
 	//"amex",
 	//"megacap",
 	//"largecap",
-	//"midca
+	//"midcap",
+	//"smallcap",
+	//"microcap",
+	//"nan
