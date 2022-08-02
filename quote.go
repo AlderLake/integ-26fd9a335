@@ -1374,4 +1374,5 @@ func NewEtfFile(filename string) error {
 	return ioutil.WriteFile(filename, ba, 0644)
 }
 
-// ValidMarkets list of markets that c
+// ValidMarkets list of markets that can be downloaded
+var ValidMarkets = [...]string{"e
