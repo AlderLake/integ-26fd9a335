@@ -1379,4 +1379,6 @@ var ValidMarkets = [...]string{"etf",
 	//"nasdaq",
 	//"nyse",
 	//"amex",
-	//
+	//"megacap",
+	//"largecap",
+	//"midca
