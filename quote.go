@@ -1374,3 +1374,4 @@ func NewEtfFile(filename string) error {
 	return ioutil.WriteFile(filename, ba, 0644)
 }
 
+// ValidMarkets list of markets that c
