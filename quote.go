@@ -1390,4 +1390,6 @@ var ValidMarkets = [...]string{"etf",
 	//"consumerdurables",
 	//"consumernondurable",
 	//"consumerservices",
-	//
+	//"energy",
+	//"finance",
+	//"healthcare
