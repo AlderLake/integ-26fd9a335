@@ -1375,4 +1375,8 @@ func NewEtfFile(filename string) error {
 }
 
 // ValidMarkets list of markets that can be downloaded
-var ValidMarkets = [...]string{"e
+var ValidMarkets = [...]string{"etf",
+	//"nasdaq",
+	//"nyse",
+	//"amex",
+	//
