@@ -1386,3 +1386,5 @@ var ValidMarkets = [...]string{"etf",
 	//"microcap",
 	//"nanocap",
 	//"basicindustries",
+	//"capitalgoods",
+	//"consumerdurables
