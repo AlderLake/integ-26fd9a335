@@ -1395,4 +1395,6 @@ var ValidMarkets = [...]string{"etf",
 	//"healthcare",
 	//"miscellaneous",
 	//"utilities",
-	//"technology"
+	//"technology",
+	//"transportation",
+	"bittre
