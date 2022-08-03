@@ -1397,4 +1397,6 @@ var ValidMarkets = [...]string{"etf",
 	//"utilities",
 	//"technology",
 	//"transportation",
-	"bittre
+	"bittrex-btc",
+	"bittrex-eth",
+	"bittrex
