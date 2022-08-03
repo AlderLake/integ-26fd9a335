@@ -1399,4 +1399,6 @@ var ValidMarkets = [...]string{"etf",
 	//"transportation",
 	"bittrex-btc",
 	"bittrex-eth",
-	"bittrex
+	"bittrex-usdt",
+	"binance-bnb",
+	"binance-btc"
