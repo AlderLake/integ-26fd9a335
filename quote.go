@@ -1410,4 +1410,5 @@ var ValidMarkets = [...]string{"etf",
 	"coinbase",
 }
 
-// ValidMarket - validate market 
+// ValidMarket - validate market string
+func ValidMarket(market string) 
