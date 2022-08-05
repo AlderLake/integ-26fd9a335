@@ -1406,4 +1406,8 @@ var ValidMarkets = [...]string{"etf",
 	"binance-usdt",
 	//"tiingo-btc",
 	//"tiingo-eth",
-	//"tiingo-usd"
+	//"tiingo-usd",
+	"coinbase",
+}
+
+// ValidMarket - validate market 
