@@ -1411,4 +1411,5 @@ var ValidMarkets = [...]string{"etf",
 }
 
 // ValidMarket - validate market string
-func ValidMarket(market string) 
+func ValidMarket(market string) bool {
+	if strings.HasPrefix(market, "tii
