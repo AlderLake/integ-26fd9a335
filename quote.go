@@ -1404,4 +1404,6 @@ var ValidMarkets = [...]string{"etf",
 	"binance-btc",
 	"binance-eth",
 	"binance-usdt",
-	//"
+	//"tiingo-btc",
+	//"tiingo-eth",
+	//"tiingo-usd"
