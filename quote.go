@@ -1413,4 +1413,5 @@ var ValidMarkets = [...]string{"etf",
 // ValidMarket - validate market string
 func ValidMarket(market string) bool {
 	if strings.HasPrefix(market, "tiingo") {
-		if os.Getenv("TIINGO_API_TOKEN
+		if os.Getenv("TIINGO_API_TOKEN") == "" {
+			fmt.Println("ERROR: Requires TIINGO_API_TO
