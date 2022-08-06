@@ -1424,3 +1424,6 @@ func ValidMarket(market string) bool {
 		}
 	}
 	return false
+}
+
+// NewMarketList - downloa
