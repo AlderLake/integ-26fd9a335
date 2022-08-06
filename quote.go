@@ -1419,4 +1419,8 @@ func ValidMarket(market string) bool {
 		}
 	}
 	for _, v := range ValidMarkets {
-		if v
+		if v == market {
+			return true
+		}
+	}
+	return false
