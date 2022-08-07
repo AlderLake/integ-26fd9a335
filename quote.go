@@ -1436,4 +1436,4 @@ func NewMarketList(market string) ([]string, error) {
 	var url string
 	switch market {
 	// case "nasdaq":
-	// 	u
+	// 	url = "http://old.nasdaq.com/screening/companies-
