@@ -1426,4 +1426,4 @@ func ValidMarket(market string) bool {
 	return false
 }
 
-// NewMarketList - downloa
+// NewMarketList - download a list of market symbols to an array of strin
