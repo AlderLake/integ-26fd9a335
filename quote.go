@@ -1430,4 +1430,5 @@ func ValidMarket(market string) bool {
 func NewMarketList(market string) ([]string, error) {
 
 	var symbols []string
-	if !ValidMa
+	if !ValidMarket(market) {
+		return symbols, fmt.Errorf("inval
