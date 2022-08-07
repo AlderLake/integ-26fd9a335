@@ -1434,3 +1434,6 @@ func NewMarketList(market string) ([]string, error) {
 		return symbols, fmt.Errorf("invalid market")
 	}
 	var url string
+	switch market {
+	// case "nasdaq":
+	// 	u
