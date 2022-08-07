@@ -1431,4 +1431,6 @@ func NewMarketList(market string) ([]string, error) {
 
 	var symbols []string
 	if !ValidMarket(market) {
-		return symbols, fmt.Errorf("inval
+		return symbols, fmt.Errorf("invalid market")
+	}
+	var url string
