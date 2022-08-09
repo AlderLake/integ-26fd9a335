@@ -1448,4 +1448,4 @@ func NewMarketList(market string) ([]string, error) {
 	// case "midcap":
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?marketcap=Mid-cap&render=download"
 	// case "smallcap":
-	// 	url 
+	// 	url = "http://old.nasdaq.com/screening/companies-by-indus
