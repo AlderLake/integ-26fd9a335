@@ -1445,4 +1445,5 @@ func NewMarketList(market string) ([]string, error) {
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?marketcap=Mega-cap&render=download"
 	// case "largecap":
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?marketcap=Large-cap&render=download"
-	// ca
+	// case "midcap":
+	// 	url = "ht
