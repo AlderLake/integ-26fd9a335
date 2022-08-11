@@ -1452,4 +1452,4 @@ func NewMarketList(market string) ([]string, error) {
 	// case "microcap":
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?marketcap=Micro-cap&render=download"
 	// case "nanocap":
-	// 	url = "http://old.nasdaq.com
+	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?marketcap=Na
