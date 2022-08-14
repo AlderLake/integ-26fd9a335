@@ -1455,4 +1455,5 @@ func NewMarketList(market string) ([]string, error) {
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?marketcap=Nano-cap&render=download"
 	// case "basicindustries":
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Basic%20Industries&render=download"
-	// case "cap
+	// case "capitalgoods":
+	// 	url = "http://o
