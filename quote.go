@@ -1461,4 +1461,5 @@ func NewMarketList(market string) ([]string, error) {
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Consumer%20Durables&render=download"
 	// case "consumernondurable":
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Consumer%20Non-Durables&render=download"
-	// case "consumerse
+	// case "consumerservices":
+	// 	url = "http://old.nasdaq.com/sc
