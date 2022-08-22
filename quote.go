@@ -1468,4 +1468,4 @@ func NewMarketList(market string) ([]string, error) {
 	// case "finance":
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Finance&render=download"
 	// case "healthcare":
-	// 	url = "http://old.nasdaq.com/screening/com
+	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Health-Care&rende
