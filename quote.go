@@ -1470,4 +1470,6 @@ func NewMarketList(market string) ([]string, error) {
 	// case "healthcare":
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Health-Care&render=download"
 	// case "miscellaneous":
-	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Miscellaneous
+	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Miscellaneous&render=download"
+	// case "utilities":
+	// 
