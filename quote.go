@@ -1474,4 +1474,5 @@ func NewMarketList(market string) ([]string, error) {
 	// case "utilities":
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Utilities&render=download"
 	// case "technology":
-	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Technology
+	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Technology&render=download"
+	// case "transportat
