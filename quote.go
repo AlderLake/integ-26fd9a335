@@ -1478,4 +1478,6 @@ func NewMarketList(market string) ([]string, error) {
 	// case "transportation":
 	// 	url = "http://old.nasdaq.com/screening/companies-by-industry.aspx?industry=Transportation&render=download"
 	case "bittrex-btc":
-		url = "https://bittrex.com/Api/v2.0/pub/markets/getmarketsumma
+		url = "https://bittrex.com/Api/v2.0/pub/markets/getmarketsummaries"
+	case "bittrex-eth":
+		url = "https://bittr
