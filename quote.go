@@ -1480,4 +1480,5 @@ func NewMarketList(market string) ([]string, error) {
 	case "bittrex-btc":
 		url = "https://bittrex.com/Api/v2.0/pub/markets/getmarketsummaries"
 	case "bittrex-eth":
-		url = "https://bittrex.com/Api/v2.0/pub/market
+		url = "https://bittrex.com/Api/v2.0/pub/markets/getmarketsummaries"
+	case "bittrex-usd
