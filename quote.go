@@ -1488,4 +1488,6 @@ func NewMarketList(market string) ([]string, error) {
 	case "binance-btc":
 		url = "https://api.binance.com/api/v1/exchangeInfo"
 	case "binance-eth":
-		url = "https://api.binance.com/api/v1/
+		url = "https://api.binance.com/api/v1/exchangeInfo"
+	case "binance-usdt":
+		url = "h
