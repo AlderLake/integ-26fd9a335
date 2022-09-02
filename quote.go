@@ -1491,3 +1491,5 @@ func NewMarketList(market string) ([]string, error) {
 		url = "https://api.binance.com/api/v1/exchangeInfo"
 	case "binance-usdt":
 		url = "https://api.binance.com/api/v1/exchangeInfo"
+	//case "tiingo-btc":
+	//	url = fmt
