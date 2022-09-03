@@ -1493,4 +1493,5 @@ func NewMarketList(market string) ([]string, error) {
 		url = "https://api.binance.com/api/v1/exchangeInfo"
 	//case "tiingo-btc":
 	//	url = fmt.Sprintf("https://api.tiingo.com/tiingo/crypto?token=%s", os.Getenv("TIINGO_API_TOKEN"))
-	//case "tiing
+	//case "tiingo-eth":
+	//	url = fmt.Sprintf("https://api.tiingo.
