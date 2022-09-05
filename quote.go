@@ -1497,4 +1497,5 @@ func NewMarketList(market string) ([]string, error) {
 	//	url = fmt.Sprintf("https://api.tiingo.com/tiingo/crypto?token=%s", os.Getenv("TIINGO_API_TOKEN"))
 	//case "tiingo-usd":
 	//	url = fmt.Sprintf("https://api.tiingo.com/tiingo/crypto?token=%s", os.Getenv("TIINGO_API_TOKEN"))
-	case "c
+	case "coinbase":
+		url = "https://api.pro.coinbase.
