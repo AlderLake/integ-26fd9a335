@@ -1501,4 +1501,5 @@ func NewMarketList(market string) ([]string, error) {
 		url = "https://api.pro.coinbase.com/products"
 	}
 
-	req, err := http.NewRequ
+	req, err := http.NewRequest("GET", url, nil)
+	req.Header.Add("
