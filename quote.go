@@ -1503,4 +1503,5 @@ func NewMarketList(market string) ([]string, error) {
 
 	req, err := http.NewRequest("GET", url, nil)
 	req.Header.Add("User-Agent", "markcheno/go-quote")
+	req.Header.Add("Accept", "application/xml")
 	
