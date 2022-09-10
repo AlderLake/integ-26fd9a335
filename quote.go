@@ -1505,4 +1505,6 @@ func NewMarketList(market string) ([]string, error) {
 	req.Header.Add("User-Agent", "markcheno/go-quote")
 	req.Header.Add("Accept", "application/xml")
 	req.Header.Add("Content-Type", "application/xml; charset=utf-8")
-	client := &http.Clien
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err !=
