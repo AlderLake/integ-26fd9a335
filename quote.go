@@ -1507,4 +1507,7 @@ func NewMarketList(market string) ([]string, error) {
 	req.Header.Add("Content-Type", "application/xml; charset=utf-8")
 	client := &http.Client{}
 	resp, err := client.Do(req)
-	if err !=
+	if err != nil {
+		return symbols, err
+	}
+	defer resp.
