@@ -1510,4 +1510,6 @@ func NewMarketList(market string) ([]string, error) {
 	if err != nil {
 		return symbols, err
 	}
-	defer resp.
+	defer resp.Body.Close()
+
+	if strings.HasPrefix(market, "bittre
