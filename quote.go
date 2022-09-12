@@ -1514,4 +1514,6 @@ func NewMarketList(market string) ([]string, error) {
 
 	if strings.HasPrefix(market, "bittrex") {
 		buf := new(bytes.Buffer)
-		buf.ReadFro
+		buf.ReadFrom(resp.Body)
+		newStr := buf.String()
+	
