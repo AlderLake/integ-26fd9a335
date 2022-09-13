@@ -1518,3 +1518,5 @@ func NewMarketList(market string) ([]string, error) {
 		newStr := buf.String()
 		return getBittrexMarket(market, newStr)
 	}
+
+	if strings.HasPrefix(market, "binance") {
