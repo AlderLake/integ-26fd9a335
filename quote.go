@@ -1523,4 +1523,7 @@ func NewMarketList(market string) ([]string, error) {
 		buf := new(bytes.Buffer)
 		buf.ReadFrom(resp.Body)
 		newStr := buf.String()
-		return get
+		return getBinanceMarket(market, newStr)
+	}
+
+	//if 
