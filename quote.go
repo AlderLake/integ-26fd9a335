@@ -1526,4 +1526,5 @@ func NewMarketList(market string) ([]string, error) {
 		return getBinanceMarket(market, newStr)
 	}
 
-	//if 
+	//if strings.HasPrefix(market, "tiingo") {
+	//	buf := new(b
