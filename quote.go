@@ -1527,4 +1527,5 @@ func NewMarketList(market string) ([]string, error) {
 	}
 
 	//if strings.HasPrefix(market, "tiingo") {
-	//	buf := new(b
+	//	buf := new(bytes.Buffer)
+	//	buf.ReadFrom(resp.Body)
