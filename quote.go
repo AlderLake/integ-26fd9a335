@@ -1533,4 +1533,4 @@ func NewMarketList(market string) ([]string, error) {
 	//	return getTiingoCryptoMarket(market, newStr)
 	//}
 
-	if
+	if strings.HasPrefix(market, "coinbas
