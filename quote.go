@@ -1538,3 +1538,7 @@ func NewMarketList(market string) ([]string, error) {
 		buf.ReadFrom(resp.Body)
 		newStr := buf.String()
 		return getCoinbaseMarket(market, newStr)
+	}
+
+	var csvdata [][]string
+	reader := 
