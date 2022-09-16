@@ -1533,4 +1533,6 @@ func NewMarketList(market string) ([]string, error) {
 	//	return getTiingoCryptoMarket(market, newStr)
 	//}
 
-	if strings.HasPrefix(market, "coinbas
+	if strings.HasPrefix(market, "coinbase") {
+		buf := new(bytes.Buffer)
+		buf.Read
