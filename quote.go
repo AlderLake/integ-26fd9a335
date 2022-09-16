@@ -1541,4 +1541,5 @@ func NewMarketList(market string) ([]string, error) {
 	}
 
 	var csvdata [][]string
-	reader := 
+	reader := csv.NewReader(resp.Body)
+	csvdata, err =
