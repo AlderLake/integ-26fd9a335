@@ -1547,4 +1547,5 @@ func NewMarketList(market string) ([]string, error) {
 		return symbols, err
 	}
 
-	r, _ := re
+	r, _ := regexp.Compile("^[a-z]+$")
+	for row := 1;
