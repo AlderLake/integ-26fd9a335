@@ -1544,4 +1544,7 @@ func NewMarketList(market string) ([]string, error) {
 	reader := csv.NewReader(resp.Body)
 	csvdata, err = reader.ReadAll()
 	if err != nil {
-		ret
+		return symbols, err
+	}
+
+	r, _ := re
