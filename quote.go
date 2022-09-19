@@ -1551,4 +1551,8 @@ func NewMarketList(market string) ([]string, error) {
 	for row := 1; row < len(csvdata); row++ {
 		sym := strings.TrimSpace(strings.ToLower(csvdata[row][0]))
 		if r.MatchString(sym) {
-			symbols = ap
+			symbols = append(symbols, sym)
+		}
+	}
+	sort.Strings(symbols)
+	return
