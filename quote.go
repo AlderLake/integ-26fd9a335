@@ -1549,4 +1549,6 @@ func NewMarketList(market string) ([]string, error) {
 
 	r, _ := regexp.Compile("^[a-z]+$")
 	for row := 1; row < len(csvdata); row++ {
-		sym := strings.TrimSpace(strings.ToLower(csvdata[ro
+		sym := strings.TrimSpace(strings.ToLower(csvdata[row][0]))
+		if r.MatchString(sym) {
+			symbols = ap
