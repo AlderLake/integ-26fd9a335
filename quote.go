@@ -1560,4 +1560,5 @@ func NewMarketList(market string) ([]string, error) {
 
 func getBinanceMarket(market, rawdata string) ([]string, error) {
 
-	type Symbol str
+	type Symbol struct {
+		Symbol             string `json:"symbol
