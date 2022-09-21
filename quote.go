@@ -1565,4 +1565,5 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 		Status             string `json:"status"`
 		BaseAsset          string `json:"baseAsset"`
 		BaseAssetPrecision int    `json:"baseAssetPrecision"`
-		QuoteAsset        
+		QuoteAsset         string `json:"quoteAsset"`
+		QuotePrecision    
