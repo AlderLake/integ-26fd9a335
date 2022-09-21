@@ -1555,4 +1555,7 @@ func NewMarketList(market string) ([]string, error) {
 		}
 	}
 	sort.Strings(symbols)
-	return
+	return symbols, nil
+}
+
+func getBinanceMarket(market, raw
