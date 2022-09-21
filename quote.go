@@ -1558,4 +1558,6 @@ func NewMarketList(market string) ([]string, error) {
 	return symbols, nil
 }
 
-func getBinanceMarket(market, raw
+func getBinanceMarket(market, rawdata string) ([]string, error) {
+
+	type Symbol str
