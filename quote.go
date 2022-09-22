@@ -1570,4 +1570,8 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 	}
 
 	type Markets struct {
-		Symbols []Symbol `json
+		Symbols []Symbol `json:"symbols"`
+	}
+
+	var markets Markets
+	err := json.Un
