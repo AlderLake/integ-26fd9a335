@@ -1574,4 +1574,6 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 	}
 
 	var markets Markets
-	err := json.Un
+	err := json.Unmarshal([]byte(rawdata), &markets)
+	if err != nil {
+		f
