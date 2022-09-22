@@ -1569,4 +1569,5 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 		QuotePrecision     int    `json:"quotePrecision"`
 	}
 
-	type 
+	type Markets struct {
+		Symbols []Symbol `json
