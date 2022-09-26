@@ -1582,4 +1582,5 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 	var symbols []string
 	for _, mkt := range markets.Symbols {
 		if strings.HasSuffix(market, "bnb") && mkt.QuoteAsset == "BNB" {
-			symbols =
+			symbols = append(symbols, mkt.Symbol)
+		} else if stri
