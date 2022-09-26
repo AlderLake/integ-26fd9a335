@@ -1585,4 +1585,4 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 			symbols = append(symbols, mkt.Symbol)
 		} else if strings.HasSuffix(market, "btc") && mkt.QuoteAsset == "BTC" {
 			symbols = append(symbols, mkt.Symbol)
-		} else if string
+		} else if strings.HasSuffix(market, "eth") && mkt.Quo
