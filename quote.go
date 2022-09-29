@@ -1592,4 +1592,7 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 		}
 	}
 
-	retur
+	return symbols, err
+}
+
+// func getTiingoCryptoMark
