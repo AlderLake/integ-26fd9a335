@@ -1595,4 +1595,6 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 	return symbols, err
 }
 
-// func getTiingoCryptoMarket(market, rawdata string) ([]string, err
+// func getTiingoCryptoMarket(market, rawdata string) ([]string, error) {
+
+// 	type Symbol struct
