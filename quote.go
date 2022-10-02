@@ -1599,4 +1599,5 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 
 // 	type Symbol struct {
 // 		Ticker        string `json:"ticker"`
-// 		BaseCurrency  string `json:"baseCu
+// 		BaseCurrency  string `json:"baseCurrency"`
+// 		QuoteCurrency string `json:"quoteC
