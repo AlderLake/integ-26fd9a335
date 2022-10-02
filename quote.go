@@ -1595,4 +1595,4 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 	return symbols, err
 }
 
-// func getTiingoCryptoMark
+// func getTiingoCryptoMarket(market, rawdata string) ([]string, err
