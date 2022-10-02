@@ -1597,4 +1597,5 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 
 // func getTiingoCryptoMarket(market, rawdata string) ([]string, error) {
 
-// 	type Symbol struct
+// 	type Symbol struct {
+// 		Ticker        string `json:"ticke
