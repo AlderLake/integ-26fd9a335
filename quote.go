@@ -1602,4 +1602,9 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 // 		BaseCurrency  string `json:"baseCurrency"`
 // 		QuoteCurrency string `json:"quoteCurrency"`
 // 		Name          string `json:"name"`
-// 		Description   string `json:"descr
+// 		Description   string `json:"description"`
+// 	}
+
+// 	var markets []Symbol
+
+// 
