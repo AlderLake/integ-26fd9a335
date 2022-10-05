@@ -1612,4 +1612,6 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 // 		fmt.Println(err)
 // 	}
 
-// 	var symbols []s
+// 	var symbols []string
+// 	for _, mkt := range markets {
+// 		i
