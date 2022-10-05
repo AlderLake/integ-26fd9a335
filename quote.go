@@ -1609,4 +1609,7 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 
 // 	err := json.Unmarshal([]byte(rawdata), &markets)
 // 	if err != nil {
-// 		fmt.Pr
+// 		fmt.Println(err)
+// 	}
+
+// 	var symbols []s
