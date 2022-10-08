@@ -1626,4 +1626,4 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 // 	return symbols, err
 // }
 
-func
+func getBittrexMarket(market, rawdata strin
