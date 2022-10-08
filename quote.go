@@ -1620,3 +1620,10 @@ func getBinanceMarket(market, rawdata string) ([]string, error) {
 // 			symbols = append(symbols, mkt.Ticker)
 // 		} else if strings.HasSuffix(market, "usd") && mkt.QuoteCurrency == "usd" {
 // 			symbols = append(symbols, mkt.Ticker)
+// 		}
+// 	}
+
+// 	return symbols, err
+// }
+
+func
