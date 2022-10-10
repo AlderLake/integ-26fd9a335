@@ -1630,4 +1630,6 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 
 	type Market struct {
 		MarketCurrency     string
-		BaseCurrency       str
+		BaseCurrency       string
+		MarketCurrencyLong string
+		BaseCurrencyLon
