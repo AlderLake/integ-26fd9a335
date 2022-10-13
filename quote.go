@@ -1633,4 +1633,5 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		BaseCurrency       string
 		MarketCurrencyLong string
 		BaseCurrencyLong   string
-		MinTradeSize       f
+		MinTradeSize       float64
+		MarketName         str
