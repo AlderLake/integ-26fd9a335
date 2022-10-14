@@ -1638,4 +1638,5 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		IsActive           bool
 		Created            string
 		Notice             string
-		IsSpons
+		IsSponsored        bool
+		LogoURL            string 
