@@ -1639,4 +1639,8 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		Created            string
 		Notice             string
 		IsSponsored        bool
-		LogoURL            string 
+		LogoURL            string `json:"LogoUrl"`
+	}
+
+	type Summary struct {
+		MarketName
