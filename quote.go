@@ -1636,4 +1636,6 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		MinTradeSize       float64
 		MarketName         string
 		IsActive           bool
-		Created
+		Created            string
+		Notice             string
+		IsSpons
