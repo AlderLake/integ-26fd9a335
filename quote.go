@@ -1643,4 +1643,6 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 	}
 
 	type Summary struct {
-		MarketName
+		MarketName     string
+		High           float64
+	
