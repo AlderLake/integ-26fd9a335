@@ -1646,4 +1646,6 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		MarketName     string
 		High           float64
 		Low            float64
-		Volume         
+		Volume         float64
+		Last           float64
+		BaseVolume 
