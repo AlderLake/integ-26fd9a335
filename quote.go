@@ -1651,4 +1651,6 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		BaseVolume     float64
 		TimeStamp      string
 		Bid            float64
-		Ask            float6
+		Ask            float64
+		OpenBuyOrders  int64
+		OpenSellOrders in
