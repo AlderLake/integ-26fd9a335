@@ -1655,4 +1655,8 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		OpenBuyOrders  int64
 		OpenSellOrders int64
 		PrevDay        float64
-		Created
+		Created        string
+	}
+
+	type Result struct {
+		Market     Marke
