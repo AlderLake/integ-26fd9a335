@@ -1661,4 +1661,8 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 	type Result struct {
 		Market     Market
 		Summary    Summary
-		IsVerified 
+		IsVerified bool
+	}
+
+	type Markets struct {
+		Succes
