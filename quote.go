@@ -1675,4 +1675,6 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 	if err != nil {
 		fmt.Println(err)
 	}
-	var symbols []
+	var symbols []string
+	for _, mkt := range markets.Result {
+		if st
