@@ -1659,4 +1659,6 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 	}
 
 	type Result struct {
-		Market     Marke
+		Market     Market
+		Summary    Summary
+		IsVerified 
