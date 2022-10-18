@@ -1671,4 +1671,5 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 	}
 
 	var markets Markets
-	err := json.U
+	err := json.Unmarshal([]byte(rawdata), &markets)
+	if e
