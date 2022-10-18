@@ -1677,4 +1677,5 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 	}
 	var symbols []string
 	for _, mkt := range markets.Result {
-		if strings.HasSuffix(market, "btc") && mkt.Marke
+		if strings.HasSuffix(market, "btc") && mkt.Market.BaseCurrency == "BTC" {
+			symb
