@@ -1668,4 +1668,7 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		Success bool     `json:"success"`
 		Message string   `json:"message"`
 		Result  []Result `json:"result"`
-	
+	}
+
+	var markets Markets
+	err := json.U
