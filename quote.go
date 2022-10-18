@@ -1665,4 +1665,5 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 	}
 
 	type Markets struct {
-		Succes
+		Success bool     `json:"success"`
+		Message string   `json:"
