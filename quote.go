@@ -1678,4 +1678,5 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 	var symbols []string
 	for _, mkt := range markets.Result {
 		if strings.HasSuffix(market, "btc") && mkt.Market.BaseCurrency == "BTC" {
-			symbols = append(symbols, mkt.Market.MarketN
+			symbols = append(symbols, mkt.Market.MarketName)
+		} else if strings.HasSuffix(ma
