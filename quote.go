@@ -1686,4 +1686,7 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		}
 	}
 
-	return symbols, e
+	return symbols, err
+}
+
+func getCoinbaseMarket(market, rawdata str
