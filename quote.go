@@ -1682,4 +1682,8 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 		} else if strings.HasSuffix(market, "eth") && mkt.Market.BaseCurrency == "ETH" {
 			symbols = append(symbols, mkt.Market.MarketName)
 		} else if strings.HasSuffix(market, "usdt") && mkt.Market.BaseCurrency == "USDT" {
-			symbols = append(symbols, mkt.Market.Market
+			symbols = append(symbols, mkt.Market.MarketName)
+		}
+	}
+
+	return symbols, e
