@@ -1689,4 +1689,6 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 	return symbols, err
 }
 
-func getCoinbaseMarket(market, rawdata str
+func getCoinbaseMarket(market, rawdata string) ([]string, error) {
+
+	type Symbol stru
