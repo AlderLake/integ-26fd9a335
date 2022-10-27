@@ -1691,4 +1691,6 @@ func getBittrexMarket(market, rawdata string) ([]string, error) {
 
 func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 
-	type Symbol stru
+	type Symbol struct {
+		ID             string `json:"id"`
+		BaseCurrency
