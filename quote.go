@@ -1693,4 +1693,5 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 
 	type Symbol struct {
 		ID             string `json:"id"`
-		BaseCurrency
+		BaseCurrency   string `json:"base_currency"`
+		QuoteCur
