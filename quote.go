@@ -1695,4 +1695,4 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 		ID             string `json:"id"`
 		BaseCurrency   string `json:"base_currency"`
 		QuoteCurrency  string `json:"quote_currency"`
-		Ba
+		BaseMinSize    string `json:"base_min_siz
