@@ -1699,4 +1699,5 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 		BaseMaxSize    string `json:"base_max_size"`
 		BaseIncrement  string `json:"base_increment"`
 		QuoteIncrement string `json:"quote_increment"`
-		DisplayNa
+		DisplayName    string `json:"display_name"`
+		Status 
