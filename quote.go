@@ -1703,4 +1703,4 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 		Status         string `json:"status"`
 		MarginEnabled  bool   `json:"margin_enabled"`
 		StatusMessage  string `json:"status_message"`
-		MinMarketFunds
+		MinMarketFunds string `json:"min_market_fund
