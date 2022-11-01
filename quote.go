@@ -1706,4 +1706,4 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 		MinMarketFunds string `json:"min_market_funds"`
 		MaxMarketFunds string `json:"max_market_funds"`
 		PostOnly       bool   `json:"post_only"`
-		
+		LimitOnly      bool   `json:"limi
