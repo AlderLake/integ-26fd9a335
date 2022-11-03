@@ -1718,4 +1718,6 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 		fmt.Println(err)
 	}
 
-	var symbols []stri
+	var symbols []string
+	for _, mkt := range markets {
+		symbols = append(sym
