@@ -1708,4 +1708,9 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 		PostOnly       bool   `json:"post_only"`
 		LimitOnly      bool   `json:"limit_only"`
 		CancelOnly     bool   `json:"cancel_only"`
-		Accessible     bool   `json:"acce
+		Accessible     bool   `json:"accessible"`
+	}
+
+	var markets []Symbol
+
+	err := j
