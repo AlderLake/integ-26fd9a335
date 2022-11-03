@@ -1713,4 +1713,5 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 
 	var markets []Symbol
 
-	err := j
+	err := json.Unmarshal([]byte(rawdata), &markets)
+	if err != n
