@@ -1723,4 +1723,9 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 		symbols = append(symbols, mkt.ID)
 	}
 
-	sort.String
+	sort.Strings(symbols)
+
+	return symbols, err
+}
+
+//
