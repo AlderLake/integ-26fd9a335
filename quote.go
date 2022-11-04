@@ -1730,4 +1730,6 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 
 // NewMarketFile - download a list of market symbols to a file
 func NewMarketFile(market, filename string) error {
-	if market == "allmarkets
+	if market == "allmarkets" {
+		for _, m := range ValidMarkets {
+			file
