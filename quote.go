@@ -1728,4 +1728,4 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 	return symbols, err
 }
 
-//
+// NewMarketFile - download a list of market symbo
