@@ -1720,4 +1720,7 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 
 	var symbols []string
 	for _, mkt := range markets {
-		symbols = append(sym
+		symbols = append(symbols, mkt.ID)
+	}
+
+	sort.String
