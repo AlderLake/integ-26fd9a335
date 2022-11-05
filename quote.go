@@ -1735,4 +1735,6 @@ func NewMarketFile(market, filename string) error {
 			filename = m + ".txt"
 			syms, err := NewMarketList(m)
 			if err != nil {
-				Log.Println
+				Log.Println(err)
+			}
+			ba := []byte(strings.Joi
