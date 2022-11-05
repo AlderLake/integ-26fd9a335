@@ -1732,4 +1732,6 @@ func getCoinbaseMarket(market, rawdata string) ([]string, error) {
 func NewMarketFile(market, filename string) error {
 	if market == "allmarkets" {
 		for _, m := range ValidMarkets {
-			file
+			filename = m + ".txt"
+			syms, err := NewMarketList(m)
+			
