@@ -1742,4 +1742,5 @@ func NewMarketFile(market, filename string) error {
 		}
 		return nil
 	}
-	if !Val
+	if !ValidMarket(market) {
+		return fmt.Errorf("invalid
