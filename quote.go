@@ -1734,4 +1734,5 @@ func NewMarketFile(market, filename string) error {
 		for _, m := range ValidMarkets {
 			filename = m + ".txt"
 			syms, err := NewMarketList(m)
-			
+			if err != nil {
+				Log.Println
