@@ -1747,4 +1747,5 @@ func NewMarketFile(market, filename string) error {
 	}
 
 	// default filename
-	if filena
+	if filename == "" {
+		filename = market + ".txt"
