@@ -1749,3 +1749,6 @@ func NewMarketFile(market, filename string) error {
 	// default filename
 	if filename == "" {
 		filename = market + ".txt"
+	}
+	syms, err := NewMarketList(market)
+	
