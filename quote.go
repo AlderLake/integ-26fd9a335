@@ -1760,4 +1760,6 @@ func NewMarketFile(market, filename string) error {
 
 // NewSymbolsFromFile - read symbols from a file
 func NewSymbolsFromFile(filename string) ([]string, error) {
-	raw, err := ioutil.ReadFile(filen
+	raw, err := ioutil.ReadFile(filename)
+	if err != nil {
+		return []string{}, err
