@@ -1754,4 +1754,7 @@ func NewMarketFile(market, filename string) error {
 	if err != nil {
 		return err
 	}
-	ba := []byte(strings.Join(syms, "\
+	ba := []byte(strings.Join(syms, "\n"))
+	return ioutil.WriteFile(filename, ba, 0644)
+}
+
