@@ -1754,4 +1754,4 @@ func NewMarketFile(market, filename string) error {
 	if err != nil {
 		return err
 	}
-	
+	ba := []byte(strings.Join(syms, "\
