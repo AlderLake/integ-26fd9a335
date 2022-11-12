@@ -1763,3 +1763,6 @@ func NewSymbolsFromFile(filename string) ([]string, error) {
 	raw, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return []string{}, err
+	}
+
+	a := strings.Split(strings.ToLower(st
