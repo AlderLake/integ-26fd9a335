@@ -1765,4 +1765,9 @@ func NewSymbolsFromFile(filename string) ([]string, error) {
 		return []string{}, err
 	}
 
-	a := strings.Split(strings.ToLower(st
+	a := strings.Split(strings.ToLower(string(raw)), "\n")
+
+	return deleteEmpty(a), nil
+}
+
+// d
