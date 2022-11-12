@@ -1759,4 +1759,5 @@ func NewMarketFile(market, filename string) error {
 }
 
 // NewSymbolsFromFile - read symbols from a file
-func NewSymbolsFromFile(filename string) ([
+func NewSymbolsFromFile(filename string) ([]string, error) {
+	raw, err := ioutil.ReadFile(filen
