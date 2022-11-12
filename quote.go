@@ -1758,3 +1758,4 @@ func NewMarketFile(market, filename string) error {
 	return ioutil.WriteFile(filename, ba, 0644)
 }
 
+// NewSymbolsFromFile - read symbols from 
