@@ -1771,4 +1771,5 @@ func NewSymbolsFromFile(filename string) ([]string, error) {
 }
 
 // delete empty strings from a string array
-fu
+func deleteEmpty(s []string) []string {
+	var r []
