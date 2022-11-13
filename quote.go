@@ -1774,4 +1774,6 @@ func NewSymbolsFromFile(filename string) ([]string, error) {
 func deleteEmpty(s []string) []string {
 	var r []string
 	for _, str := range s {
-		if
+		if str != "" {
+			r = append(r, str)
+		}
