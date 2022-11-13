@@ -1777,3 +1777,8 @@ func deleteEmpty(s []string) []string {
 		if str != "" {
 			r = append(r, str)
 		}
+	}
+	return r
+}
+
+// Grab a file via 
