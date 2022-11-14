@@ -1786,4 +1786,6 @@ func getAnonFTP(addr, port string, dir string, fname string) ([]byte, error) {
 
 	var err error
 	var contents []byte
-	c
+	const timeout = 5 * time.Second
+
+	nconn,
