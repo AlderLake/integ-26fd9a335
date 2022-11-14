@@ -1781,4 +1781,5 @@ func deleteEmpty(s []string) []string {
 	return r
 }
 
-// Grab a file via 
+// Grab a file via anonymous FTP
+func getAnonFTP(addr, port stri
