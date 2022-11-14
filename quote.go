@@ -1788,4 +1788,4 @@ func getAnonFTP(addr, port string, dir string, fname string) ([]byte, error) {
 	var contents []byte
 	const timeout = 5 * time.Second
 
-	nconn,
+	nconn, err := net.DialTimeout("tcp", addr+":"+por
