@@ -1802,4 +1802,7 @@ func getAnonFTP(addr, port string, dir string, fname string) ([]byte, error) {
 	_, _, _ = conn.ReadResponse(0)
 
 	_ = conn.PrintfLine("PASS anonymous")
-	_, _, _ = conn.ReadResponse(
+	_, _, _ = conn.ReadResponse(230)
+
+	_ = conn.PrintfLine("CWD %s", dir)
+	_
