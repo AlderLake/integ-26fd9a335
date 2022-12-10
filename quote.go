@@ -1808,4 +1808,6 @@ func getAnonFTP(addr, port string, dir string, fname string) ([]byte, error) {
 	_, _, _ = conn.ReadResponse(250)
 
 	_ = conn.PrintfLine("PASV")
-	_, message, _ := 
+	_, message, _ := conn.ReadResponse(1)
+
+	// PASV response f
