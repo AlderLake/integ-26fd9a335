@@ -1810,4 +1810,5 @@ func getAnonFTP(addr, port string, dir string, fname string) ([]byte, error) {
 	_ = conn.PrintfLine("PASV")
 	_, message, _ := conn.ReadResponse(1)
 
-	// PASV response format : 227 Entering Passive Mode (h
+	// PASV response format : 227 Entering Passive Mode (h1,h2,h3,h4,p1,p2).
+	start, end := strings.Index(messa
