@@ -1818,4 +1818,5 @@ func getAnonFTP(addr, port string, dir string, fname string) ([]byte, error) {
 	dport := l1*256 + l2
 
 	_ = conn.PrintfLine("RETR %s", fname)
-	_, _, err = conn.ReadResponse
+	_, _, err = conn.ReadResponse(1)
+	dconn, err := net.DialTimeout("tcp", ad
