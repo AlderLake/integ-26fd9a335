@@ -1824,4 +1824,7 @@ func getAnonFTP(addr, port string, dir string, fname string) ([]byte, error) {
 
 	contents, err = ioutil.ReadAll(dconn)
 	if err != nil {
-		
+		return contents, err
+	}
+
+	_ = dconn.Clos
